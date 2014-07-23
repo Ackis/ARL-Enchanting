@@ -1159,30 +1159,6 @@ function module:InitializeRecipes()
 	recipe:AddFilters(F.ALLIANCE, F.HORDE, F.HEALER, F.CASTER)
 	recipe:AddMobDrop(19952)
 
-	-- Enchant Ring - Striking -- 27920
-	recipe = AddRecipe(27920, V.TBC, Q.COMMON)
-	recipe:SetSkillLevels(360, 360, 370, 377, 385)
-	recipe:SetRecipeItem(22535, "BIND_ON_PICKUP")
-	recipe:SetItemFilterType("ENCHANTING_RING")
-	recipe:AddFilters(F.ALLIANCE, F.HORDE, F.CONSORTIUM)
-	recipe:AddRepVendor(FAC.CONSORTIUM, REP.REVERED, 17518)
-
-	-- Enchant Ring - Minor Intellect -- 27924
-	recipe = AddRecipe(27924, V.TBC, Q.COMMON)
-	recipe:SetSkillLevels(360, 360, 370, 377, 385)
-	recipe:SetRecipeItem(22536, "BIND_ON_PICKUP")
-	recipe:SetItemFilterType("ENCHANTING_RING")
-	recipe:AddFilters(F.ALLIANCE, F.HORDE, F.HEALER, F.CASTER, F.KOT)
-	recipe:AddRepVendor(FAC.KEEPERS_OF_TIME, REP.HONORED, 21643)
-
-	-- Enchant Ring - Stats -- 27927
-	recipe = AddRecipe(27927, V.TBC, Q.COMMON)
-	recipe:SetSkillLevels(375, 375, 380, 385, 390)
-	recipe:SetRecipeItem(22538, "BIND_ON_PICKUP")
-	recipe:SetItemFilterType("ENCHANTING_RING")
-	recipe:AddFilters(F.ALLIANCE, F.HORDE, F.LOWERCITY)
-	recipe:AddRepVendor(FAC.LOWERCITY, REP.HONORED, 21655)
-
 	-- Enchant Shield - Lesser Dodge -- 27944
 	recipe = AddRecipe(27944, V.TBC, Q.COMMON)
 	recipe:SetSkillLevels(310, 310, 320, 335, 350)
@@ -1844,20 +1820,6 @@ function module:InitializeRecipes()
 	recipe:AddFilters(F.ALLIANCE, F.HORDE, F.HEALER, F.CASTER)
 	recipe:AddTrainer(1317, 3011, 3345, 3606, 4213, 5157, 5695, 16725, 18773, 19251, 19252, 19540, 26906, 26954, 26980, 26990, 28693, 33583, 33610, 33633, 53410, 65127)
 
-	-- Enchant Ring - Lesser Intellect -- 44636
-	recipe = AddRecipe(44636, V.WOTLK, Q.COMMON)
-	recipe:SetSkillLevels(400, 400, 400, 407, 415)
-	recipe:SetItemFilterType("ENCHANTING_RING")
-	recipe:AddFilters(F.ALLIANCE, F.HORDE, F.HEALER, F.CASTER)
-	recipe:AddTrainer(1317, 3011, 3345, 3606, 4213, 5157, 5695, 16725, 18773, 19251, 19252, 19540, 26906, 26954, 26980, 26990, 28693, 33583, 33610, 33633, 53410, 65127)
-
-	-- Enchant Ring - Assault -- 44645
-	recipe = AddRecipe(44645, V.WOTLK, Q.COMMON)
-	recipe:SetSkillLevels(400, 400, 400, 407, 415)
-	recipe:SetItemFilterType("ENCHANTING_RING")
-	recipe:AddFilters(F.ALLIANCE, F.HORDE, F.DPS)
-	recipe:AddTrainer(1317, 3011, 3345, 3606, 4213, 5157, 5695, 16725, 18773, 19251, 19252, 19540, 26906, 26954, 26980, 26990, 28693, 33583, 33610, 33633, 53410, 65127)
-
 	-- Enchant Chest - Dodge -- 46594
 	recipe = AddRecipe(46594, V.WOTLK, Q.COMMON)
 	recipe:SetSkillLevels(360, 360, 370, 385, 400)
@@ -1935,13 +1897,6 @@ function module:InitializeRecipes()
 	recipe:SetItemFilterType("ENCHANTING_WEAPON")
 	recipe:AddFilters(F.ALLIANCE, F.HORDE)
 	recipe:AddVendor(32514)
-
-	-- Enchant Ring - Lesser Stamina -- 59636
-	recipe = AddRecipe(59636, V.WOTLK, Q.COMMON)
-	recipe:SetSkillLevels(400, 400, 400, 407, 415)
-	recipe:SetItemFilterType("ENCHANTING_RING")
-	recipe:AddFilters(F.ALLIANCE, F.HORDE)
-	recipe:AddTrainer(1317, 3011, 3345, 3606, 4213, 5157, 5695, 16725, 18773, 19251, 19252, 19540, 26906, 26954, 26980, 26990, 28693, 33583, 33610, 33633, 53410, 65127)
 
 	-- Enchant Boots - Assault -- 60606
 	recipe = AddRecipe(60606, V.WOTLK, Q.COMMON)
@@ -2233,34 +2188,6 @@ function module:InitializeRecipes()
 	recipe:AddFilters(F.ALLIANCE, F.HORDE)
 	recipe:AddTrainer(1317, 3011, 3345, 3606, 4213, 4616, 5157, 5695, 16633, 16725, 18773, 19251, 19252, 19540, 26906, 26990, 28693, 33583, 33610, 33633, 53410, 65127)
 
-	-- Enchant Ring - Strength -- 74215
-	recipe = AddRecipe(74215, V.CATA, Q.COMMON)
-	recipe:SetSkillLevels(475, 475, 475, 475, 495)
-	recipe:SetItemFilterType("ENCHANTING_RING")
-	recipe:AddFilters(F.ALLIANCE, F.HORDE)
-	recipe:AddTrainer(1317, 3011, 3345, 3606, 4213, 4616, 5157, 5695, 16633, 16725, 18773, 19251, 19252, 19540, 26906, 26990, 28693, 33583, 33610, 33633, 53410, 65127)
-
-	-- Enchant Ring - Agility -- 74216
-	recipe = AddRecipe(74216, V.CATA, Q.COMMON)
-	recipe:SetSkillLevels(475, 475, 475, 475, 495)
-	recipe:SetItemFilterType("ENCHANTING_RING")
-	recipe:AddFilters(F.ALLIANCE, F.HORDE)
-	recipe:AddTrainer(1317, 3011, 3345, 3606, 4213, 4616, 5157, 5695, 16633, 16725, 18773, 19251, 19252, 19540, 26906, 26990, 28693, 33583, 33610, 33633, 53410, 65127)
-
-	-- Enchant Ring - Intellect -- 74217
-	recipe = AddRecipe(74217, V.CATA, Q.COMMON)
-	recipe:SetSkillLevels(475, 475, 475, 475, 495)
-	recipe:SetItemFilterType("ENCHANTING_RING")
-	recipe:AddFilters(F.ALLIANCE, F.HORDE)
-	recipe:AddTrainer(1317, 3011, 3345, 3606, 4213, 4616, 5157, 5695, 16633, 16725, 18773, 19251, 19252, 19540, 26906, 26990, 28693, 33583, 33610, 33633, 53410, 65127)
-
-	-- Enchant Ring - Stamina -- 74218
-	recipe = AddRecipe(74218, V.CATA, Q.COMMON)
-	recipe:SetSkillLevels(475, 475, 475, 475, 495)
-	recipe:SetItemFilterType("ENCHANTING_RING")
-	recipe:AddFilters(F.ALLIANCE, F.HORDE)
-	recipe:AddTrainer(1317, 3011, 3345, 3606, 4213, 4616, 5157, 5695, 16633, 16725, 18773, 19251, 19252, 19540, 26906, 26990, 28693, 33583, 33610, 33633, 53410, 65127)
-
 	-- Enchant Gloves - Greater Expertise -- 74220
 	recipe = AddRecipe(74220, V.CATA, Q.COMMON)
 	recipe:SetSkillLevels(480, 480, 490, 500, 510)
@@ -2524,34 +2451,6 @@ function module:InitializeRecipes()
 	-------------------------------------------------------------------------------
 	-- Mists of Pandaria.
 	-------------------------------------------------------------------------------
-	-- Enchant Ring - Greater Agility -- 103461
-	recipe = AddRecipe(103461, V.MOP, Q.COMMON)
-	recipe:SetSkillLevels(550, 550, 560, 565, 570)
-	recipe:SetItemFilterType("ENCHANTING_RING")
-	recipe:AddFilters(F.ALLIANCE, F.HORDE)
-	recipe:AddTrainer(1317, 3011, 3345, 3606, 4213, 4616, 5157, 5695, 16633, 16725, 18773, 19251, 19252, 19540, 26906, 26990, 28693, 33583, 33610, 33633, 53410, 65127)
-
-	-- Enchant Ring - Greater Intellect -- 103462
-	recipe = AddRecipe(103462, V.MOP, Q.COMMON)
-	recipe:SetSkillLevels(550, 550, 560, 565, 570)
-	recipe:SetItemFilterType("ENCHANTING_RING")
-	recipe:AddFilters(F.ALLIANCE, F.HORDE)
-	recipe:AddTrainer(1317, 3011, 3345, 3606, 4213, 4616, 5157, 5695, 16633, 16725, 18773, 19251, 19252, 19540, 26906, 26990, 28693, 33583, 33610, 33633, 53410, 65127)
-
-	-- Enchant Ring - Greater Stamina -- 103463
-	recipe = AddRecipe(103463, V.MOP, Q.COMMON)
-	recipe:SetSkillLevels(550, 550, 560, 565, 570)
-	recipe:SetItemFilterType("ENCHANTING_RING")
-	recipe:AddFilters(F.ALLIANCE, F.HORDE)
-	recipe:AddTrainer(1317, 3011, 3345, 3606, 4213, 4616, 5157, 5695, 16633, 16725, 18773, 19251, 19252, 19540, 26906, 26990, 28693, 33583, 33610, 33633, 53410, 65127)
-
-	-- Enchant Ring - Greater Strength -- 103465
-	recipe = AddRecipe(103465, V.MOP, Q.COMMON)
-	recipe:SetSkillLevels(550, 550, 560, 565, 570)
-	recipe:SetItemFilterType("ENCHANTING_RING")
-	recipe:AddFilters(F.ALLIANCE, F.HORDE)
-	recipe:AddTrainer(1317, 3011, 3345, 3606, 4213, 4616, 5157, 5695, 16633, 16725, 18773, 19251, 19252, 19540, 26906, 26990, 28693, 33583, 33610, 33633, 53410, 65127)
-
 	-- Enchant Bracer - Mastery -- 104338
 	recipe = AddRecipe(104338, V.MOP, Q.COMMON)
 	recipe:SetSkillLevels(500, 500, 510, 515, 520)
