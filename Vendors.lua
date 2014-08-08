@@ -32,6 +32,7 @@ function module:InitializeVendors()
 	AddVendor(50146,	L["Agatian Fallanos"],			Z.TWILIGHT_HIGHLANDS,		76.7,	49.5,	"Horde")
 	AddVendor(64001,	L["Sage Lotusbloom"],			Z.SHRINE_OF_TWO_MOONS,		62.6,	23.2,	"Horde")
 	AddVendor(64595,	L["Rushi the Fox"],			Z.TOWNLONG_STEPPES,		48.8,	70.6,	"Neutral")
+	AddVendor(77354,	L["Ayada the White"],			Z.LUNARFALL,			 0.0,	 0.0,	"Alliance") -- Alliance Garrison
 
 	self.InitializeVendors = nil
 end
