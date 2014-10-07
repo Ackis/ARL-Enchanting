@@ -49,6 +49,8 @@ function module:InitializeTrainers()
 	addon:AddTrainer(33676, "Zurii", Z.SHATTRATH_CITY, 36.4, 44.6, "Neutral")
 	addon:AddTrainer(53410, "Lissah Spellwick", Z.DUSTWALLOW_MARSH, 66.0, 49.7, "Alliance")
 	addon:AddTrainer(65127, "Lai the Spellpaw", Z.THE_JADE_FOREST, 46.8, 42.9, "Neutral")
+	addon:AddTrainer(85914, "Bil Sparktonic", Z.STORMSHIELD, 56.7, 65.4, "Alliance")
+	addon:AddTrainer(86027,	"Hane'ke", Z.WARSPEAR, 78.8, 52.4, "Horde")
 
 	self.InitializeTrainers = nil
 end
