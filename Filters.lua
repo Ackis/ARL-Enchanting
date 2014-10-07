@@ -39,6 +39,7 @@ function module:InitializeItemFilters(parent_panel)
 		enchanting_gloves	= { tt = L["FILTER_DESC_FORMAT"]:format(L["Gloves"]),		text = L["Gloves"],		row = 3, col = 1},
 		enchanting_ring		= { tt = L["FILTER_DESC_FORMAT"]:format(L["Ring"]),		text = L["Ring"],		row = 3, col = 2},
 		enchanting_shield	= { tt = L["FILTER_DESC_FORMAT"]:format(L["Shield"]),		text = L["Shield"],		row = 4, col = 1},
+		enchanting_neck		= { tt = L["FILTER_DESC_FORMAT"]:format(L["Necklace"]),		text = L["Necklace"],		row = 4, col = 2},
 	}
 
 	armor_toggle:SetScript("OnClick", function(self, button)
