@@ -33,6 +33,7 @@ function module:InitializeVendors()
 	AddVendor(64001,	L["Sage Lotusbloom"],			Z.SHRINE_OF_TWO_MOONS,		62.6,	23.2,	"Horde")
 	AddVendor(64595,	L["Rushi the Fox"],			Z.TOWNLONG_STEPPES,		48.8,	70.6,	"Neutral")
 	AddVendor(77354,	L["Ayada the White"],			Z.LUNARFALL,			 0.0,	 0.0,	"Alliance") -- Alliance Garrison
+	AddVendor(79821,	L["Yukla Greenshadow"],			Z.FROSTWALL,			 0.0,	 0.0,	"Horde") -- Horde Garrison
 	AddVendor(86045,	L["Ged'kah"],				Z.WARSPEAR,			78.6,	52.6,	"Horde") -- Horde Ashran
 	AddVendor(87022,	L["Bob"],				Z.STORMSHIELD,			56.7,	64.6,	"Alliance") -- Alliance Ashran
 
