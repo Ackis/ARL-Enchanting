@@ -125,7 +125,7 @@ function module:InitializeRecipes()
 	recipe:AddLimitedVendor(3346, 1)
 
 	-- Minor Agility -- 7779
-	recipe = AddRecipe(7779, V.ORIG, Q.COMMON)
+	recipe = AddRecipe(7779, V.ORIG, Q.UNCOMMON)
 	recipe:SetSkillLevels(80, 80, 115, 135, 155)
 	recipe:SetItemFilterType("ENCHANTING_BRACER")
 	recipe:AddFilters(F.ALLIANCE, F.HORDE, F.DPS)
@@ -692,7 +692,7 @@ function module:InitializeRecipes()
 	recipe:SetRecipeItem(45050, "BIND_ON_PICKUP")
 	recipe:SetCraftedItem(45050, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("ENCHANTING_MISC")
-	recipe:AddFilters(F.ALLIANCE, F.HORDE, F.INSTANCE)
+	recipe:AddFilters(F.ALLIANCE, F.HORDE, F.INSTANCE, F.DPS, F.HEALER, F.CASTER)
 	recipe:AddMobDrop(9025)
 
 	-- Enchanted Thorium Bar -- 17180
@@ -1019,7 +1019,7 @@ function module:InitializeRecipes()
 	recipe:SetRecipeItem(20731, "BIND_ON_PICKUP")
 	recipe:SetItemFilterType("ENCHANTING_GLOVES")
 	recipe:AddFilters(F.ALLIANCE, F.HORDE, F.RAID, F.DPS)
-	recipe:AddVendor(1318, 3012, 3346, 4228, 4617, 5158, 5757, 5758, 15419, 16635, 16722, 18753, 18773, 18951, 19234, 19537, 19540, 19663, 26569, 27030, 27054, 27147, 28714, 44030, 53410)
+	recipe:AddTrainer(85914)
 	recipe:AddWorldDrop(Z.AHNQIRAJ)
 	recipe:AddRepVendor(FAC.KEEPERS_OF_TIME, REP.EXALTED, 21643)
 
@@ -1038,7 +1038,7 @@ function module:InitializeRecipes()
 	recipe:SetRecipeItem(33148, "BIND_ON_PICKUP")
 	recipe:SetItemFilterType("ENCHANTING_CLOAK")
 	recipe:AddFilters(F.ALLIANCE, F.HORDE, F.RAID, F.TANK)
-	recipe:AddVendor(1318, 3012, 3346, 4228, 4617, 5158, 5757, 5758, 15419, 16635, 16722, 18753, 18773, 18951, 19234, 19537, 19540, 19663, 26569, 27030, 27054, 27147, 28714, 44030, 53410)
+	recipe:AddTrainer(85914)
 	recipe:AddWorldDrop(Z.AHNQIRAJ)
 	recipe:AddRepVendor(FAC.LOWER_CITY, REP.EXALTED, 21655)
 
@@ -1528,7 +1528,7 @@ function module:InitializeRecipes()
 
 	-- Nexus Transformation -- 42613
 	recipe = AddRecipe(42613, V.TBC, Q.COMMON)
-	recipe:SetSkillLevels(335, 335, 345, 350, 355)
+	recipe:SetSkillLevels(300, 300, 310, 315, 320)
 	recipe:SetCraftedItem(22448, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("ENCHANTING_MISC")
 	recipe:AddFilters(F.ALLIANCE, F.HORDE)
@@ -2749,250 +2749,320 @@ function module:InitializeRecipes()
 	-------------------------------------------------------------------------------
 	-- Breath of Critical Strike -- 158877
 	recipe = AddRecipe(158877, V.WOD, Q.COMMON)
-	recipe:SetSkillLevels(0, 0, 0, 0, 0)
-	recipe:SetRecipeItem(118394, "BIND_ON_PICKUP")
+	recipe:SetSkillLevels(1, 1, 625, 627, 630)
+--	recipe:SetRecipeItem(118394, "BIND_ON_PICKUP")
 	recipe:SetItemFilterType("ENCHANTING_CLOAK")
-	recipe:AddFilters(F.ALLIANCE, F.HORDE)
+	recipe:AddFilters(F.ALLIANCE, F.HORDE, F.MISC1)
+	recipe:AddCustom("DRAENOR_DEFAULT")
 
 	-- Breath of Haste -- 158878
 	recipe = AddRecipe(158878, V.WOD, Q.COMMON)
-	recipe:SetSkillLevels(0, 0, 0, 0, 0)
+	recipe:SetSkillLevels(1, 1, 625, 627, 630)
 	recipe:SetRecipeItem(118429, "BIND_ON_PICKUP")
 	recipe:SetItemFilterType("ENCHANTING_CLOAK")
 	recipe:AddFilters(F.ALLIANCE, F.HORDE)
-	recipe:AddVendor(86045, 87022)
+	recipe:AddVendor(77354, 79821, 86045, 87022)
 
 	-- Breath of Mastery -- 158879
 	recipe = AddRecipe(158879, V.WOD, Q.COMMON)
-	recipe:SetSkillLevels(0, 0, 0, 0, 0)
-	recipe:SetRecipeItem(118394, "BIND_ON_PICKUP")
+	recipe:SetSkillLevels(1, 1, 625, 627, 630)
+	recipe:SetRecipeItem(118430, "BIND_ON_PICKUP")
 	recipe:SetItemFilterType("ENCHANTING_CLOAK")
 	recipe:AddFilters(F.ALLIANCE, F.HORDE)
-	recipe:AddVendor(86045, 87022)
+	recipe:AddVendor(77354, 79821, 86045, 87022)
 
 	-- Breath of Multistrike -- 158880
 	recipe = AddRecipe(158880, V.WOD, Q.COMMON)
-	recipe:SetSkillLevels(0, 0, 0, 0, 0)
+	recipe:SetSkillLevels(1, 1, 625, 627, 630)
 	recipe:SetRecipeItem(118431, "BIND_ON_PICKUP")
 	recipe:SetItemFilterType("ENCHANTING_CLOAK")
 	recipe:AddFilters(F.ALLIANCE, F.HORDE)
-	recipe:AddVendor(86045, 87022)
+	recipe:AddVendor(77354, 79821, 86045, 87022)
 
 	-- Breath of Versatility -- 158881
 	recipe = AddRecipe(158881, V.WOD, Q.COMMON)
-	recipe:SetSkillLevels(0, 0, 0, 0, 0)
+	recipe:SetSkillLevels(1, 1, 625, 627, 630)
 	recipe:SetRecipeItem(118432, "BIND_ON_PICKUP")
 	recipe:SetItemFilterType("ENCHANTING_CLOAK")
 	recipe:AddFilters(F.ALLIANCE, F.HORDE)
-	recipe:AddVendor(86045, 87022)
+	recipe:AddVendor(77354, 79821, 86045, 87022)
 
 	-- Gift of Critical Strike -- 158884
 	recipe = AddRecipe(158884, V.WOD, Q.COMMON)
-	recipe:SetSkillLevels(0, 0, 0, 0, 0)
+	recipe:SetSkillLevels(1, 1, 700, 702, 705)
 	recipe:SetRecipeItem(118433, "BIND_ON_PICKUP")
 	recipe:SetItemFilterType("ENCHANTING_CLOAK")
 	recipe:AddFilters(F.ALLIANCE, F.HORDE)
-	recipe:AddVendor(86045, 87022)
+	recipe:AddVendor(77354, 79821, 86045, 87022)
 
 	-- Gift of Haste -- 158885
 	recipe = AddRecipe(158885, V.WOD, Q.COMMON)
-	recipe:SetSkillLevels(0, 0, 0, 0, 0)
+	recipe:SetSkillLevels(1, 1, 700, 702, 705)
 	recipe:SetRecipeItem(118434, "BIND_ON_PICKUP")
 	recipe:SetItemFilterType("ENCHANTING_CLOAK")
 	recipe:AddFilters(F.ALLIANCE, F.HORDE)
-	recipe:AddVendor(86045, 87022)
+	recipe:AddVendor(77354, 79821, 86045, 87022)
 
 	-- Gift of Mastery -- 158886
 	recipe = AddRecipe(158886, V.WOD, Q.COMMON)
-	recipe:SetSkillLevels(0, 0, 0, 0, 0)
+	recipe:SetSkillLevels(1, 1, 700, 702, 705)
 	recipe:SetRecipeItem(118435, "BIND_ON_PICKUP")
 	recipe:SetItemFilterType("ENCHANTING_CLOAK")
 	recipe:AddFilters(F.ALLIANCE, F.HORDE)
-	recipe:AddVendor(86045, 87022)
+	recipe:AddVendor(77354, 79821, 86045, 87022)
 
 	-- Gift of Multistrike -- 158887
 	recipe = AddRecipe(158887, V.WOD, Q.COMMON)
-	recipe:SetSkillLevels(0, 0, 0, 0, 0)
+	recipe:SetSkillLevels(1, 1, 700, 702, 705)
 	recipe:SetRecipeItem(118436, "BIND_ON_PICKUP")
 	recipe:SetItemFilterType("ENCHANTING_CLOAK")
 	recipe:AddFilters(F.ALLIANCE, F.HORDE)
-	recipe:AddVendor(86045, 87022)
+	recipe:AddVendor(77354, 79821, 86045, 87022)
 
 	-- Gift of Versatility -- 158889
 	recipe = AddRecipe(158889, V.WOD, Q.COMMON)
-	recipe:SetSkillLevels(0, 0, 0, 0, 0)
+	recipe:SetSkillLevels(1, 1, 700, 702, 705)
 	recipe:SetRecipeItem(118437, "BIND_ON_PICKUP")
 	recipe:SetItemFilterType("ENCHANTING_CLOAK")
 	recipe:AddFilters(F.ALLIANCE, F.HORDE)
-	recipe:AddVendor(86045, 87022)
+	recipe:AddVendor(77354, 79821, 86045, 87022)
 
 	-- Breath of Critical Strike -- 158892
 	recipe = AddRecipe(158892, V.WOD, Q.COMMON)
-	recipe:SetSkillLevels(0, 0, 0, 0, 0)
+	recipe:SetSkillLevels(1, 1, 625, 627, 630)
 	recipe:SetRecipeItem(118438, "BIND_ON_PICKUP")
 	recipe:SetItemFilterType("ENCHANTING_NECK")
 	recipe:AddFilters(F.ALLIANCE, F.HORDE)
-	recipe:AddVendor(86045, 87022)
+	recipe:AddVendor(77354, 79821, 86045, 87022)
 
 	-- Breath of Haste -- 158893
 	recipe = AddRecipe(158893, V.WOD, Q.COMMON)
-	recipe:SetSkillLevels(0, 0, 0, 0, 0)
+	recipe:SetSkillLevels(1, 1, 625, 627, 630)
+	recipe:SetRecipeItem(118439, "BIND_ON_PICKUP")
+	recipe:SetItemFilterType("ENCHANTING_NECK")
 	recipe:AddFilters(F.ALLIANCE, F.HORDE)
+	recipe:AddVendor(77354, 79821, 86045, 87022)
 
 	-- Breath of Mastery -- 158894
 	recipe = AddRecipe(158894, V.WOD, Q.COMMON)
-	recipe:SetSkillLevels(0, 0, 0, 0, 0)
+	recipe:SetSkillLevels(1, 1, 625, 627, 630)
+	recipe:SetRecipeItem(118440, "BIND_ON_PICKUP")
+	recipe:SetItemFilterType("ENCHANTING_NECK")
 	recipe:AddFilters(F.ALLIANCE, F.HORDE)
+	recipe:AddVendor(77354, 79821, 86045, 87022)
 
 	-- Breath of Multistrike -- 158895
 	recipe = AddRecipe(158895, V.WOD, Q.COMMON)
-	recipe:SetSkillLevels(0, 0, 0, 0, 0)
+	recipe:SetSkillLevels(1, 1, 625, 627, 630)
+	recipe:SetRecipeItem(118441, "BIND_ON_PICKUP")
+	recipe:SetItemFilterType("ENCHANTING_NECK")
 	recipe:AddFilters(F.ALLIANCE, F.HORDE)
+	recipe:AddVendor(77354, 79821, 86045, 87022)
 
 	-- Breath of Versatility -- 158896
 	recipe = AddRecipe(158896, V.WOD, Q.COMMON)
-	recipe:SetSkillLevels(0, 0, 0, 0, 0)
+	recipe:SetSkillLevels(1, 1, 625, 627, 630)
+	recipe:SetRecipeItem(118442, "BIND_ON_PICKUP")
+	recipe:SetItemFilterType("ENCHANTING_NECK")
 	recipe:AddFilters(F.ALLIANCE, F.HORDE)
-	recipe:AddCustom("DRAENOR_DEFAULT")
+	recipe:AddVendor(77354, 79821, 86045, 87022)
 
 	-- Gift of Critical Strike -- 158899
 	recipe = AddRecipe(158899, V.WOD, Q.COMMON)
-	recipe:SetSkillLevels(0, 0, 0, 0, 0)
+	recipe:SetSkillLevels(1, 1, 700, 702, 705)
+	recipe:SetRecipeItem(118443, "BIND_ON_PICKUP")
+	recipe:SetItemFilterType("ENCHANTING_NECK")
 	recipe:AddFilters(F.ALLIANCE, F.HORDE)
+	recipe:AddVendor(77354, 79821, 86045, 87022)
 
 	-- Gift of Haste -- 158900
 	recipe = AddRecipe(158900, V.WOD, Q.COMMON)
-	recipe:SetSkillLevels(0, 0, 0, 0, 0)
+	recipe:SetSkillLevels(1, 1, 700, 702, 705)
+	recipe:SetRecipeItem(118444, "BIND_ON_PICKUP")
+	recipe:SetItemFilterType("ENCHANTING_NECK")
 	recipe:AddFilters(F.ALLIANCE, F.HORDE)
+	recipe:AddVendor(77354, 79821, 86045, 87022)
 
 	-- Gift of Mastery -- 158901
 	recipe = AddRecipe(158901, V.WOD, Q.COMMON)
-	recipe:SetSkillLevels(0, 0, 0, 0, 0)
+	recipe:SetSkillLevels(1, 1, 700, 702, 705)
+	recipe:SetRecipeItem(118445, "BIND_ON_PICKUP")
+	recipe:SetItemFilterType("ENCHANTING_NECK")
 	recipe:AddFilters(F.ALLIANCE, F.HORDE)
+	recipe:AddVendor(77354, 79821, 86045, 87022)
 
 	-- Gift of Multistrike -- 158902
 	recipe = AddRecipe(158902, V.WOD, Q.COMMON)
-	recipe:SetSkillLevels(0, 0, 0, 0, 0)
+	recipe:SetSkillLevels(1, 1, 700, 702, 705)
+	recipe:SetRecipeItem(118446, "BIND_ON_PICKUP")
+	recipe:SetItemFilterType("ENCHANTING_NECK")
 	recipe:AddFilters(F.ALLIANCE, F.HORDE)
+	recipe:AddVendor(77354, 79821, 86045, 87022)
 
 	-- Gift of Versatility -- 158903
 	recipe = AddRecipe(158903, V.WOD, Q.COMMON)
-	recipe:SetSkillLevels(0, 0, 0, 0, 0)
+	recipe:SetSkillLevels(1, 1, 700, 702, 705)
+	recipe:SetRecipeItem(118447, "BIND_ON_PICKUP")
+	recipe:SetItemFilterType("ENCHANTING_NECK")
 	recipe:AddFilters(F.ALLIANCE, F.HORDE)
+	recipe:AddVendor(77354, 79821, 86045, 87022)
 
 	-- Breath of Critical Strike -- 158907
 	recipe = AddRecipe(158907, V.WOD, Q.COMMON)
-	recipe:SetSkillLevels(0, 0, 0, 0, 0)
-	recipe:AddFilters(F.ALLIANCE, F.HORDE, F.DPS, F.HEALER, F.CASTER)
+	recipe:SetSkillLevels(1, 600, 625, 627, 630)
+	recipe:SetItemFilterType("ENCHANTING_RING")
+	recipe:AddFilters(F.ALLIANCE, F.HORDE, F.DPS, F.HEALER, F.CASTER, F.MISC1)
 	recipe:AddCustom("DRAENOR_DEFAULT")
 
 	-- Breath of Haste -- 158908
 	recipe = AddRecipe(158908, V.WOD, Q.COMMON)
-	recipe:SetSkillLevels(0, 0, 0, 0, 0)
-	recipe:AddFilters(F.ALLIANCE, F.HORDE, F.DPS, F.HEALER, F.CASTER)
+	recipe:SetSkillLevels(1, 600, 625, 627, 630)
+	recipe:SetItemFilterType("ENCHANTING_RING")
+	recipe:AddFilters(F.ALLIANCE, F.HORDE, F.DPS, F.HEALER, F.CASTER, F.MISC1)
 	recipe:AddCustom("DRAENOR_DEFAULT")
 
 	-- Breath of Mastery -- 158909
 	recipe = AddRecipe(158909, V.WOD, Q.COMMON)
-	recipe:SetSkillLevels(0, 0, 0, 0, 0)
-	recipe:AddFilters(F.ALLIANCE, F.HORDE, F.DPS, F.HEALER, F.CASTER)
+	recipe:SetSkillLevels(1, 600, 625, 627, 630)
+	recipe:SetItemFilterType("ENCHANTING_RING")
+	recipe:AddFilters(F.ALLIANCE, F.HORDE, F.DPS, F.HEALER, F.CASTER, F.MISC1)
 	recipe:AddCustom("DRAENOR_DEFAULT")
 
 	-- Breath of Multistrike -- 158910
 	recipe = AddRecipe(158910, V.WOD, Q.COMMON)
-	recipe:SetSkillLevels(0, 0, 0, 0, 0)
-	recipe:AddFilters(F.ALLIANCE, F.HORDE)
+	recipe:SetSkillLevels(1, 600, 625, 627, 630)
+	recipe:SetItemFilterType("ENCHANTING_RING")
+	recipe:AddFilters(F.ALLIANCE, F.HORDE, F.MISC1)
 	recipe:AddCustom("DRAENOR_DEFAULT")
 
 	-- Breath of Versatility -- 158911
 	recipe = AddRecipe(158911, V.WOD, Q.COMMON)
-	recipe:SetSkillLevels(0, 0, 0, 0, 0)
-	recipe:AddFilters(F.ALLIANCE, F.HORDE)
+	recipe:SetSkillLevels(1, 600, 625, 627, 630)
+	recipe:SetItemFilterType("ENCHANTING_RING")
+	recipe:AddFilters(F.ALLIANCE, F.HORDE, F.MISC1)
 	recipe:AddCustom("DRAENOR_DEFAULT")
 
 	-- Gift of Critical Strike -- 158914
 	recipe = AddRecipe(158914, V.WOD, Q.COMMON)
-	recipe:SetSkillLevels(0, 0, 0, 0, 0)
+	recipe:SetSkillLevels(1, 1, 700, 702, 705)
+	recipe:SetRecipeItem(118453, "BIND_ON_PICKUP")
+	recipe:SetItemFilterType("ENCHANTING_RING")
 	recipe:AddFilters(F.ALLIANCE, F.HORDE, F.DPS, F.HEALER, F.CASTER)
+	recipe:AddVendor(77354, 79821, 86045, 87022)
 
 	-- Gift of Haste -- 158915
 	recipe = AddRecipe(158915, V.WOD, Q.COMMON)
-	recipe:SetSkillLevels(0, 0, 0, 0, 0)
+	recipe:SetSkillLevels(1, 1, 700, 702, 705)
+	recipe:SetRecipeItem(118454, "BIND_ON_PICKUP")
+	recipe:SetItemFilterType("ENCHANTING_RING")
 	recipe:AddFilters(F.ALLIANCE, F.HORDE, F.DPS, F.HEALER, F.CASTER)
+	recipe:AddVendor(77354, 79821, 86045, 87022)
 
 	-- Gift of Mastery -- 158916
 	recipe = AddRecipe(158916, V.WOD, Q.COMMON)
-	recipe:SetSkillLevels(0, 0, 0, 0, 0)
+	recipe:SetSkillLevels(1, 1, 700, 702, 705)
+	recipe:SetRecipeItem(118455, "BIND_ON_PICKUP")
+	recipe:SetItemFilterType("ENCHANTING_RING")
 	recipe:AddFilters(F.ALLIANCE, F.HORDE)
+	recipe:AddVendor(77354, 79821, 86045, 87022)
 
 	-- Gift of Multistrike -- 158917
 	recipe = AddRecipe(158917, V.WOD, Q.COMMON)
-	recipe:SetSkillLevels(0, 0, 0, 0, 0)
+	recipe:SetSkillLevels(1, 1, 700, 702, 705)
+	recipe:SetRecipeItem(118456, "BIND_ON_PICKUP")
+	recipe:SetItemFilterType("ENCHANTING_RING")
 	recipe:AddFilters(F.ALLIANCE, F.HORDE)
+	recipe:AddVendor(77354, 79821, 86045, 87022)
 
 	-- Gift of Versatility -- 158918
 	recipe = AddRecipe(158918, V.WOD, Q.COMMON)
-	recipe:SetSkillLevels(0, 0, 0, 0, 0)
+	recipe:SetSkillLevels(1, 1, 700, 702, 705)
+	recipe:SetRecipeItem(118457, "BIND_ON_PICKUP")
+	recipe:SetItemFilterType("ENCHANTING_RING")
 	recipe:AddFilters(F.ALLIANCE, F.HORDE)
+	recipe:AddVendor(77354, 79821, 86045, 87022)
 
 	-- Mark of the Thunderlord -- 159235
 	recipe = AddRecipe(159235, V.WOD, Q.COMMON)
-	recipe:SetSkillLevels(0, 0, 0, 0, 0)
+	recipe:SetSkillLevels(1, 1, 700, 702, 705)
+	recipe:SetRecipeItem(118458, "BIND_ON_PICKUP")
+	recipe:SetItemFilterType("ENCHANTING_WEAPON")
 	recipe:AddFilters(F.ALLIANCE, F.HORDE)
+	recipe:AddVendor(77354, 79821, 86045, 87022)
 
 	-- Mark of the Shattered Hand -- 159236
 	recipe = AddRecipe(159236, V.WOD, Q.COMMON)
-	recipe:SetSkillLevels(0, 0, 0, 0, 0)
-	recipe:AddFilters(F.ALLIANCE, F.HORDE)
+	recipe:SetSkillLevels(1, 1, 700, 702, 705)
+	recipe:SetItemFilterType("ENCHANTING_WEAPON")
+	recipe:AddFilters(F.ALLIANCE, F.HORDE, F.MISC1)
 	recipe:AddCustom("DRAENOR_DEFAULT")
 
 	-- Mark of Warsong -- 159671
 	recipe = AddRecipe(159671, V.WOD, Q.COMMON)
-	recipe:SetSkillLevels(0, 0, 0, 0, 0)
+	recipe:SetSkillLevels(1, 1, 700, 702, 705)
+	recipe:SetRecipeItem(118460, "BIND_ON_PICKUP")
+	recipe:SetItemFilterType("ENCHANTING_WEAPON")
 	recipe:AddFilters(F.ALLIANCE, F.HORDE)
+	recipe:AddVendor(77354, 79821, 86045, 87022)
 
 	-- Mark of the Frostwolf -- 159672
 	recipe = AddRecipe(159672, V.WOD, Q.COMMON)
-	recipe:SetSkillLevels(0, 0, 0, 0, 0)
+	recipe:SetSkillLevels(1, 1, 700, 702, 705)
+	recipe:SetRecipeItem(118461, "BIND_ON_PICKUP")
+	recipe:SetItemFilterType("ENCHANTING_WEAPON")
 	recipe:AddFilters(F.ALLIANCE, F.HORDE)
+	recipe:AddVendor(77354, 79821, 86045, 87022)
 
 	-- Mark of Shadowmoon -- 159673
 	recipe = AddRecipe(159673, V.WOD, Q.COMMON)
-	recipe:SetSkillLevels(0, 0, 0, 0, 0)
+	recipe:SetSkillLevels(1, 1, 700, 702, 705)
+	recipe:SetRecipeItem(118462, "BIND_ON_PICKUP")
+	recipe:SetItemFilterType("ENCHANTING_WEAPON")
 	recipe:AddFilters(F.ALLIANCE, F.HORDE)
+	recipe:AddVendor(77354, 79821, 86045, 87022)
 
 	-- Mark of Blackrock -- 159674
 	recipe = AddRecipe(159674, V.WOD, Q.COMMON)
-	recipe:SetSkillLevels(0, 0, 0, 0, 0)
+	recipe:SetSkillLevels(1, 1, 700, 702, 705)
+	recipe:SetRecipeItem(118463, "BIND_ON_PICKUP")
+	recipe:SetItemFilterType("ENCHANTING_WEAPON")
 	recipe:AddFilters(F.ALLIANCE, F.HORDE)
+	recipe:AddVendor(77354, 79821, 86045, 87022)
 
 	-- Enchanted Dust -- 162948
 	recipe = AddRecipe(162948, V.WOD, Q.COMMON)
-	recipe:SetSkillLevels(0, 0, 0, 0, 0)
-	recipe:AddFilters(F.ALLIANCE, F.HORDE)
+	recipe:SetSkillLevels(1, 45, 50, 100, 150)
+	recipe:SetItemFilterType("ENCHANTING_MATERIALS")
+	recipe:AddFilters(F.ALLIANCE, F.HORDE, F.MISC1)
 	recipe:AddCustom("DRAENOR_DEFAULT")
 
 	-- Luminous Shard -- 169091
 	recipe = AddRecipe(169091, V.WOD, Q.COMMON)
-	recipe:SetSkillLevels(0, 0, 0, 0, 0)
-	recipe:AddFilters(F.ALLIANCE, F.HORDE)
+	recipe:SetSkillLevels(1, 600, 625, 627, 630)
+	recipe:SetItemFilterType("ENCHANTING_MATERIALS")
+	recipe:AddFilters(F.ALLIANCE, F.HORDE, F.MISC1)
 	recipe:AddCustom("DRAENOR_DEFAULT")
 
 	-- Temporal Crystal -- 169092
 	recipe = AddRecipe(169092, V.WOD, Q.COMMON)
-	recipe:SetSkillLevels(0, 0, 0, 0, 0)
-	recipe:AddFilters(F.ALLIANCE, F.HORDE)
+	recipe:SetSkillLevels(1, 600, 600, 800, 1000)
+	recipe:SetItemFilterType("ENCHANTING_MATERIALS")
+	recipe:AddFilters(F.ALLIANCE, F.HORDE, F.MISC1)
 	recipe:AddCustom("DRAENOR_DEFAULT")
 
 	-- Mark of Bleeding Hollow -- 173323
 	recipe = AddRecipe(173323, V.WOD, Q.COMMON)
-	recipe:SetSkillLevels(0, 0, 0, 0, 0)
+	recipe:SetSkillLevels(1, 1, 700, 702, 705)
+	recipe:SetRecipeItem(118467, "BIND_ON_PICKUP")
+	recipe:SetItemFilterType("ENCHANTING_WEAPON")
 	recipe:AddFilters(F.ALLIANCE, F.HORDE)
+	recipe:AddVendor(77354, 79821, 86045, 87022)
 
 	-- Secrets of Draenor Enchanting -- 177043
 	recipe = AddRecipe(177043, V.WOD, Q.COMMON)
-	recipe:SetSkillLevels(0, 0, 0, 0, 0)
-	recipe:AddFilters(F.ALLIANCE, F.HORDE)
+	recipe:SetSkillLevels(1, 600, 600, 650, 700)
+	recipe:SetItemFilterType("ENCHANTING_MISC")
+	recipe:AddFilters(F.ALLIANCE, F.HORDE, F.MISC1)
 	recipe:AddCustom("DRAENOR_DEFAULT")
 
 	-- Temporal Crystal -- 178241
