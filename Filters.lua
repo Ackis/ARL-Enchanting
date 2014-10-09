@@ -133,10 +133,11 @@ function module:InitializeItemFilters(parent_panel)
 	addon.SetTooltipScripts(general_toggle, L["GROUP_TOGGLE_FORMAT"]:format(_G.GENERAL))
 
 	local general_types = {
-		enchanting_misc	= { tt = L["FILTER_DESC_FORMAT"]:format(_G.MISCELLANEOUS),	text = _G.MISCELLANEOUS,	row = 1, col = 1 },
-		enchanting_oil	= { tt = L["FILTER_DESC_FORMAT"]:format(L["Oil"]),		text = L["Oil"],		row = 1, col = 2 },
-		enchanting_rod	= { tt = L["FILTER_DESC_FORMAT"]:format(L["Rod"]),		text = L["Rod"],		row = 2, col = 1 },
-		enchanting_wand	= { tt = L["FILTER_DESC_FORMAT"]:format(L["Wand"]),		text = L["Wand"],		row = 2, col = 2 },
+		enchanting_misc		= { tt = L["FILTER_DESC_FORMAT"]:format(_G.MISCELLANEOUS),	text = _G.MISCELLANEOUS,	row = 1, col = 1 },
+		enchanting_oil		= { tt = L["FILTER_DESC_FORMAT"]:format(L["Oil"]),		text = L["Oil"],		row = 1, col = 2 },
+		enchanting_rod		= { tt = L["FILTER_DESC_FORMAT"]:format(L["Rod"]),		text = L["Rod"],		row = 2, col = 1 },
+		enchanting_wand		= { tt = L["FILTER_DESC_FORMAT"]:format(L["Wand"]),		text = L["Wand"],		row = 2, col = 2 },
+		enchanting_materials 	= { tt = L["FILTER_DESC_FORMAT"]:format(L["Materials"]),	text = L["Materials"],		row = 3, col = 1 },
 	}
 
 	general_toggle:SetScript("OnClick", function(self, button)

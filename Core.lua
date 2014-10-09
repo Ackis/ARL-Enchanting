@@ -35,6 +35,7 @@ module.ITEM_FILTER_TYPES = {
 	ENCHANTING_ROD = true,
 	ENCHANTING_WAND = true,
 	ENCHANTING_MISC = true,
+	ENCHANTING_MATERIALS = true,
 }
 
 function module:OnInitialize()
