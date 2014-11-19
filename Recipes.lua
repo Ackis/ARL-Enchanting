@@ -160,7 +160,6 @@ function module:InitializeRecipes()
 	recipe:SetRecipeItem(6349, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("ENCHANTING_2H_WEAPON")
 	recipe:AddFilters(F.ALLIANCE, F.HORDE, F.HEALER, F.CASTER)
-	recipe:AddTrainer(1317, 3011, 3345, 3606, 4213, 4616, 5157, 5695, 7949, 11072, 11073, 11074, 16160, 16633, 16725, 18753, 18773, 19251, 19252, 19540, 26906, 26990, 28693, 33583, 33610, 33633, 33676, 53410, 65127, 85914)
 	recipe:AddVendor(5758)
 	recipe:AddLimitedVendor(3012, 1, 3346, 1, 5158, 1)
 
@@ -177,7 +176,6 @@ function module:InitializeRecipes()
 	recipe:SetRecipeItem(6375, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("ENCHANTING_BRACER")
 	recipe:AddFilters(F.ALLIANCE, F.HORDE, F.HEALER, F.CASTER)
-	recipe:AddTrainer(1317, 3011, 3345, 3606, 4213, 4616, 5157, 5695, 7949, 11072, 11073, 11074, 16160, 16633, 16725, 18753, 18773, 19251, 19252, 19540, 26906, 26990, 28693, 33583, 33610, 33633, 33676, 53410, 65127, 85914)
 	recipe:AddWorldDrop(Z.EASTERN_KINGDOMS, Z.KALIMDOR)
 
 	-- Minor Stamina -- 7863
@@ -193,7 +191,6 @@ function module:InitializeRecipes()
 	recipe:SetRecipeItem(6377, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("ENCHANTING_BOOTS")
 	recipe:AddFilters(F.ALLIANCE, F.HORDE, F.DPS)
-	recipe:AddTrainer(1317, 3011, 3345, 3606, 4213, 4616, 5157, 5695, 7949, 11072, 11073, 11074, 16160, 16633, 16725, 18753, 18773, 19251, 19252, 19540, 26906, 26990, 28693, 33583, 33610, 33633, 33676, 53410, 65127, 85914)
 	recipe:AddLimitedVendor(3012, 1, 3537, 1)
 
 	-- Minor Stamina -- 13378
@@ -209,7 +206,6 @@ function module:InitializeRecipes()
 	recipe:SetRecipeItem(11038, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("ENCHANTING_2H_WEAPON")
 	recipe:AddFilters(F.ALLIANCE, F.HORDE, F.HEALER, F.CASTER)
-	recipe:AddTrainer(1317, 3011, 3345, 3606, 4213, 4616, 5157, 5695, 7949, 11072, 11073, 11074, 16160, 16633, 16725, 18753, 18773, 19251, 19252, 19540, 26906, 26990, 28693, 33583, 33610, 33633, 33676, 53410, 65127, 85914)
 	recipe:AddWorldDrop(Z.EASTERN_KINGDOMS, Z.KALIMDOR)
 
 	-- Minor Agility -- 13419
@@ -218,7 +214,6 @@ function module:InitializeRecipes()
 	recipe:SetRecipeItem(11039, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("ENCHANTING_CLOAK")
 	recipe:AddFilters(F.ALLIANCE, F.HORDE, F.DPS)
-	recipe:AddTrainer(1317, 3011, 3345, 3606, 4213, 4616, 5157, 5695, 7949, 11072, 11073, 11074, 16160, 16633, 16725, 18753, 18773, 19251, 19252, 19540, 26906, 26990, 28693, 33583, 33610, 33633, 33676, 53410, 65127, 85914)
 	recipe:AddVendor(3954, 12043)
 	recipe:AddWorldDrop(Z.EASTERN_KINGDOMS, Z.KALIMDOR)
 
@@ -235,7 +230,6 @@ function module:InitializeRecipes()
 	recipe:SetRecipeItem(11081, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("ENCHANTING_SHIELD")
 	recipe:AddFilters(F.ALLIANCE, F.HORDE, F.TANK)
-	recipe:AddTrainer(1317, 3011, 3345, 3606, 4213, 4616, 5157, 5695, 7949, 11072, 11073, 11074, 16160, 16633, 16725, 18753, 18773, 19251, 19252, 19540, 26906, 26990, 28693, 33583, 33610, 33633, 33676, 53410, 65127, 85914)
 	recipe:AddWorldDrop(Z.EASTERN_KINGDOMS, Z.KALIMDOR)
 
 	-- Lesser Spirit -- 13485
@@ -425,7 +419,6 @@ function module:InitializeRecipes()
 	recipe:SetRecipeItem(11167, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("ENCHANTING_BOOTS")
 	recipe:AddFilters(F.ALLIANCE, F.HORDE, F.HEALER, F.CASTER)
-	recipe:AddTrainer(1317, 3011, 3345, 3606, 4213, 4616, 5157, 5695, 7949, 11072, 11073, 11074, 16160, 16633, 16725, 18753, 18773, 19251, 19252, 19540, 26906, 26990, 28693, 33583, 33610, 33633, 33676, 53410, 65127, 85914)
 	recipe:AddWorldDrop(Z.EASTERN_KINGDOMS, Z.KALIMDOR)
 
 	-- Lesser Parry -- 13689
@@ -485,7 +478,6 @@ function module:InitializeRecipes()
 	recipe:SetRecipeItem(11202, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("ENCHANTING_SHIELD")
 	recipe:AddFilters(F.ALLIANCE, F.HORDE)
-	recipe:AddTrainer(1317, 3011, 3345, 3606, 4213, 4616, 5157, 5695, 7949, 11072, 11073, 11074, 16160, 16633, 16725, 18753, 18773, 19251, 19252, 19540, 26906, 26990, 28693, 33583, 33610, 33633, 33676, 53410, 65127, 85914)
 	recipe:AddWorldDrop(Z.EASTERN_KINGDOMS, Z.KALIMDOR)
 
 	-- Intellect -- 13822
@@ -516,7 +508,6 @@ function module:InitializeRecipes()
 	recipe:SetRecipeItem(11204, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("ENCHANTING_BRACER")
 	recipe:AddFilters(F.ALLIANCE, F.HORDE, F.HEALER, F.CASTER)
-	recipe:AddTrainer(1317, 3011, 3345, 3606, 4213, 4616, 5157, 5695, 7949, 11072, 11073, 11074, 16160, 16633, 16725, 18753, 18773, 19251, 19252, 19540, 26906, 26990, 28693, 33583, 33610, 33633, 33676, 53410, 65127, 85914)
 	recipe:AddWorldDrop(Z.EASTERN_KINGDOMS, Z.KALIMDOR)
 
 	-- Superior Health -- 13858
@@ -540,7 +531,6 @@ function module:InitializeRecipes()
 	recipe:SetRecipeItem(71714, "BIND_ON_PICKUP")
 	recipe:SetItemFilterType("ENCHANTING_CLOAK")
 	recipe:AddFilters(F.ALLIANCE, F.HORDE, F.DPS)
-	recipe:AddTrainer(1317, 3011, 3345, 3606, 4213, 4616, 5157, 5695, 7949, 11072, 11073, 11074, 16160, 16633, 16725, 18753, 18773, 19251, 19252, 19540, 26906, 26990, 28693, 33583, 33610, 33633, 33676, 53410, 65127, 85914)
 	recipe:AddWorldDrop(Z.TANARIS)
 
 	-- Strength -- 13887
@@ -593,7 +583,6 @@ function module:InitializeRecipes()
 	recipe:SetRecipeItem(11223, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("ENCHANTING_BRACER")
 	recipe:AddFilters(F.ALLIANCE, F.HORDE, F.TANK)
-	recipe:AddTrainer(1317, 3011, 3345, 3606, 4213, 4616, 5157, 5695, 7949, 11072, 11073, 11074, 16160, 16633, 16725, 18753, 18773, 19251, 19252, 19540, 26906, 26990, 28693, 33583, 33610, 33633, 33676, 53410, 65127, 85914)
 	recipe:AddLimitedVendor(989, 1, 4229, 1)
 
 	-- Agility -- 13935
@@ -740,7 +729,6 @@ function module:InitializeRecipes()
 	recipe:SetRecipeItem(16251, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("ENCHANTING_BRACER")
 	recipe:AddFilters(F.ALLIANCE, F.HORDE)
-	recipe:AddTrainer(1317, 3011, 3345, 3606, 4213, 4616, 5157, 5695, 7949, 11072, 11073, 11074, 16160, 16633, 16725, 18753, 18773, 19251, 19252, 19540, 26906, 26990, 28693, 33583, 33610, 33633, 33676, 53410, 65127, 85914)
 	recipe:AddWorldDrop(Z.EASTERN_KINGDOMS, Z.KALIMDOR)
 
 	-- Greater Agility -- 20012
@@ -802,7 +790,6 @@ function module:InitializeRecipes()
 	recipe:SetRecipeItem(16220, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("ENCHANTING_BOOTS")
 	recipe:AddFilters(F.ALLIANCE, F.HORDE, F.HEALER, F.CASTER)
-	recipe:AddTrainer(1317, 3011, 3345, 3606, 4213, 4616, 5157, 5695, 7949, 11072, 11073, 11074, 16160, 16633, 16725, 18753, 18773, 19251, 19252, 19540, 26906, 26990, 28693, 33583, 33610, 33633, 33676, 53410, 65127, 85914)
 	recipe:AddWorldDrop(Z.EASTERN_KINGDOMS, Z.KALIMDOR)
 
 	-- Greater Stats -- 20025
@@ -811,7 +798,6 @@ function module:InitializeRecipes()
 	recipe:SetRecipeItem(16253, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("ENCHANTING_CHEST")
 	recipe:AddFilters(F.ALLIANCE, F.HORDE)
-	recipe:AddTrainer(1317, 3011, 3345, 3606, 4213, 4616, 5157, 5695, 7949, 11072, 11073, 11074, 16160, 16633, 16725, 18753, 18773, 19251, 19252, 19540, 26906, 26990, 28693, 33583, 33610, 33633, 33676, 53410, 65127, 85914)
 	recipe:AddWorldDrop(Z.OUTLAND)
 
 	-- Major Health -- 20026
@@ -883,7 +869,6 @@ function module:InitializeRecipes()
 	recipe:SetRecipeItem(16255, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("ENCHANTING_2H_WEAPON")
 	recipe:AddFilters(F.ALLIANCE, F.HORDE, F.INSTANCE, F.HEALER, F.CASTER)
-	recipe:AddTrainer(1317, 3011, 3345, 3606, 4213, 4616, 5157, 5695, 7949, 11072, 11073, 11074, 16160, 16633, 16725, 18753, 18773, 19251, 19252, 19540, 26906, 26990, 28693, 33583, 33610, 33633, 33676, 53410, 65127, 85914)
 	recipe:AddMobDrop(10469)
 
 	-- Major Intellect -- 20036
@@ -892,7 +877,6 @@ function module:InitializeRecipes()
 	recipe:SetRecipeItem(16249, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("ENCHANTING_2H_WEAPON")
 	recipe:AddFilters(F.ALLIANCE, F.HORDE, F.INSTANCE, F.HEALER, F.CASTER)
-	recipe:AddTrainer(1317, 3011, 3345, 3606, 4213, 4616, 5157, 5695, 7949, 11072, 11073, 11074, 16160, 16633, 16725, 18753, 18773, 19251, 19252, 19540, 26906, 26990, 28693, 33583, 33610, 33633, 33676, 53410, 65127, 85914)
 	recipe:AddMobDrop(10422)
 
 	-- Winter's Might -- 21931
@@ -909,7 +893,6 @@ function module:InitializeRecipes()
 	recipe:SetRecipeItem(18259, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("ENCHANTING_WEAPON")
 	recipe:AddFilters(F.ALLIANCE, F.HORDE, F.RAID, F.HEALER, F.CASTER)
-	recipe:AddTrainer(1317, 3011, 3345, 3606, 4213, 4616, 5157, 5695, 7949, 11072, 11073, 11074, 16160, 16633, 16725, 18753, 18773, 19251, 19252, 19540, 26906, 26990, 28693, 33583, 33610, 33633, 33676, 53410, 65127, 85914)
 	recipe:AddWorldDrop(Z.MOLTEN_CORE)
 
 	-- Healing Power -- 22750
@@ -926,7 +909,6 @@ function module:InitializeRecipes()
 	recipe:SetRecipeItem(19444, "BIND_ON_PICKUP")
 	recipe:SetItemFilterType("ENCHANTING_WEAPON")
 	recipe:AddFilters(F.ALLIANCE, F.HORDE, F.DPS)
-	recipe:AddTrainer(1317, 3011, 3345, 3606, 4213, 4616, 5157, 5695, 7949, 11072, 11073, 11074, 16160, 16633, 16725, 18753, 18773, 19251, 19252, 19540, 26906, 26990, 28693, 33583, 33610, 33633, 33676, 53410, 65127, 85914)
 	recipe:AddRepVendor(FAC.THORIUM_BROTHERHOOD, REP.FRIENDLY, 12944)
 
 	-- Agility -- 23800
@@ -936,7 +918,6 @@ function module:InitializeRecipes()
 	recipe:SetRequiredFaction("Horde")
 	recipe:SetItemFilterType("ENCHANTING_WEAPON")
 	recipe:AddFilters(F.ALLIANCE, F.HORDE, F.DPS)
-	recipe:AddTrainer(1317, 3011, 3345, 3606, 4213, 4616, 5157, 5695, 7949, 11072, 11073, 11074, 16160, 16633, 16725, 18753, 18773, 19251, 19252, 19540, 26906, 26990, 28693, 33583, 33610, 33633, 33676, 53410, 65127, 85914)
 	recipe:AddRepVendor(FAC.TIMBERMAW_HOLD, REP.HONORED, 11557)
 
 	-- Mana Regeneration -- 23801
@@ -961,7 +942,6 @@ function module:InitializeRecipes()
 	recipe:SetRecipeItem(19448, "BIND_ON_PICKUP")
 	recipe:SetItemFilterType("ENCHANTING_WEAPON")
 	recipe:AddFilters(F.ALLIANCE, F.HORDE, F.HEALER, F.CASTER)
-	recipe:AddTrainer(1317, 3011, 3345, 3606, 4213, 4616, 5157, 5695, 7949, 11072, 11073, 11074, 16160, 16633, 16725, 18753, 18773, 19251, 19252, 19540, 26906, 26990, 28693, 33583, 33610, 33633, 33676, 53410, 65127, 85914)
 	recipe:AddRepVendor(FAC.THORIUM_BROTHERHOOD, REP.HONORED, 12944)
 
 	-- Mighty Intellect -- 23804
@@ -1111,7 +1091,6 @@ function module:InitializeRecipes()
 	recipe:SetRecipeItem(22392, "BIND_ON_PICKUP")
 	recipe:SetItemFilterType("ENCHANTING_2H_WEAPON")
 	recipe:AddFilters(F.ALLIANCE, F.HORDE, F.DPS)
-	recipe:AddTrainer(1317, 3011, 3345, 3606, 4213, 5157, 5695, 16725, 18753, 18773, 19251, 19252, 19540, 26906, 26990, 28693, 33583, 33610, 33633, 33676, 53410, 65127, 85914)
 	recipe:AddRepVendor(FAC.TIMBERMAW_HOLD, REP.FRIENDLY, 11557)
 
 	-------------------------------------------------------------------------------
@@ -1147,7 +1126,6 @@ function module:InitializeRecipes()
 	recipe:SetRecipeItem(22530, "BIND_ON_PICKUP")
 	recipe:SetItemFilterType("ENCHANTING_BRACER")
 	recipe:AddFilters(F.ALLIANCE, F.HORDE, F.TANK)
-	recipe:AddTrainer(1317, 3011, 3345, 3606, 4213, 5157, 5695, 16725, 18753, 18773, 19251, 19252, 19540, 26906, 26990, 28693, 33583, 33610, 33633, 33676, 53410, 65127, 85914)
 	recipe:AddMobDrop(22822, 23008)
 
 	-- Superior Healing -- 27911
@@ -1165,7 +1143,6 @@ function module:InitializeRecipes()
 	recipe:SetRecipeItem(22532, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("ENCHANTING_BRACER")
 	recipe:AddFilters(F.ALLIANCE, F.HORDE, F.HEALER, F.CASTER)
-	recipe:AddTrainer(1317, 3011, 3345, 3606, 4213, 5157, 5695, 16725, 18753, 18773, 19251, 19252, 19540, 26906, 26990, 28693, 33583, 33610, 33633, 33676, 53410, 65127, 85914)
 	recipe:AddWorldDrop(Z.OUTLAND)
 
 	-- Fortitude -- 27914
@@ -1182,7 +1159,6 @@ function module:InitializeRecipes()
 	recipe:SetRecipeItem(22534, "BIND_ON_PICKUP")
 	recipe:SetItemFilterType("ENCHANTING_BRACER")
 	recipe:AddFilters(F.ALLIANCE, F.HORDE, F.HEALER, F.CASTER)
-	recipe:AddTrainer(1317, 3011, 3345, 3606, 4213, 5157, 5695, 16725, 18753, 18773, 19251, 19252, 19540, 26906, 26990, 28693, 33583, 33610, 33633, 33676, 53410, 65127, 85914)
 	recipe:AddMobDrop(19952)
 
 	-- Lesser Dodge -- 27944
@@ -1198,7 +1174,6 @@ function module:InitializeRecipes()
 	recipe:SetRecipeItem(22539, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("ENCHANTING_SHIELD")
 	recipe:AddFilters(F.ALLIANCE, F.HORDE, F.HEALER, F.CASTER)
-	recipe:AddTrainer(1317, 3011, 3345, 3606, 4213, 5157, 5695, 16725, 18753, 18773, 19251, 19252, 19540, 26906, 26990, 28693, 33583, 33610, 33633, 33676, 53410, 65127, 85914)
 	recipe:AddVendor(18664)
 
 	-- Parry -- 27946
@@ -1215,7 +1190,6 @@ function module:InitializeRecipes()
 	recipe:SetRecipeItem(22542, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("ENCHANTING_BOOTS")
 	recipe:AddFilters(F.ALLIANCE, F.HORDE)
-	recipe:AddTrainer(1317, 3011, 3345, 3606, 4213, 5157, 5695, 16725, 18753, 18773, 19251, 19252, 19540, 26906, 26990, 28693, 33583, 33610, 33633, 33676, 53410, 65127, 85914)
 	recipe:AddMobDrop(24664)
 
 	-- Fortitude -- 27950
@@ -1279,7 +1253,6 @@ function module:InitializeRecipes()
 	recipe:SetRecipeItem(22551, "BIND_ON_PICKUP")
 	recipe:SetItemFilterType("ENCHANTING_WEAPON")
 	recipe:AddFilters(F.ALLIANCE, F.HORDE, F.HEALER, F.CASTER)
-	recipe:AddTrainer(1317, 3011, 3345, 3606, 4213, 5157, 5695, 16725, 18753, 18773, 19251, 19252, 19540, 26906, 26990, 28693, 33583, 33610, 33633, 33676, 53410, 65127, 85914)
 	recipe:AddMobDrop(20136)
 
 	-- Savagery -- 27971
@@ -1312,7 +1285,6 @@ function module:InitializeRecipes()
 	recipe:SetRecipeItem(22556, "BIND_ON_PICKUP")
 	recipe:SetItemFilterType("ENCHANTING_2H_WEAPON")
 	recipe:AddFilters(F.ALLIANCE, F.HORDE, F.INSTANCE, F.DPS)
-	recipe:AddTrainer(1317, 3011, 3345, 3606, 4213, 5157, 5695, 16725, 18753, 18773, 19251, 19252, 19540, 26906, 26990, 28693, 33583, 33610, 33633, 33676, 53410, 65127, 85914)
 	recipe:AddMobDrop(20880)
 
 	-- Sunfire -- 27981
@@ -1755,7 +1727,6 @@ function module:InitializeRecipes()
 	recipe:SetRecipeItem(37347, "BIND_ON_PICKUP")
 	recipe:SetItemFilterType("ENCHANTING_CLOAK")
 	recipe:AddFilters(F.ALLIANCE, F.HORDE, F.TANK)
-	recipe:AddTrainer(1317, 3011, 3345, 3606, 4213, 5157, 5695, 16725, 18773, 19251, 19252, 19540, 26906, 26954, 26980, 26990, 28693, 33583, 33610, 33633, 53410, 65127, 85914)
 	recipe:AddVendor(32514)
 
 	-- Exceptional Spellpower -- 44592
@@ -1860,7 +1831,6 @@ function module:InitializeRecipes()
 	recipe:SetRecipeItem(35500, "BIND_ON_PICKUP")
 	recipe:SetItemFilterType("ENCHANTING_CHEST")
 	recipe:AddFilters(F.ALLIANCE, F.HORDE, F.TANK)
-	recipe:AddTrainer(1317, 3011, 3345, 3606, 4213, 5157, 5695, 16725, 18773, 19251, 19252, 19540, 26906, 26954, 26980, 26990, 28693, 33583, 33610, 33633, 53410, 65127, 85914)
 	recipe:AddRepVendor(FAC.SHATTERED_SUN_OFFENSIVE, REP.HONORED, 25032)
 
 	-- Mighty Stamina -- 47672
@@ -1915,7 +1885,6 @@ function module:InitializeRecipes()
 	recipe:SetRecipeItem(44496, "BIND_ON_PICKUP")
 	recipe:SetItemFilterType("ENCHANTING_WEAPON")
 	recipe:AddFilters(F.ALLIANCE, F.HORDE, F.DPS, F.CASTER)
-	recipe:AddTrainer(1317, 3011, 3345, 3606, 4213, 5157, 5695, 16725, 18773, 19251, 19252, 19540, 26906, 26954, 26980, 26990, 28693, 33583, 33610, 33633, 53410, 65127, 85914)
 	recipe:AddVendor(32514)
 
 	-- Berserking -- 59621
@@ -2055,7 +2024,6 @@ function module:InitializeRecipes()
 	recipe:SetRecipeItem(45059, "BIND_ON_PICKUP")
 	recipe:SetItemFilterType("ENCHANTING_STAFF")
 	recipe:AddFilters(F.ALLIANCE, F.HORDE, F.HEALER, F.CASTER)
-	recipe:AddTrainer(1317, 3011, 3345, 3606, 4213, 5157, 5695, 16725, 18773, 19251, 19252, 19540, 26906, 26954, 26980, 26990, 28693, 33583, 33610, 33633, 53410, 65127, 85914)
 	recipe:AddVendor(32514)
 
 	-- Spellpower -- 62959
@@ -2519,7 +2487,6 @@ function module:InitializeRecipes()
 	recipe:SetRecipeItem(84561, "BIND_ON_PICKUP")
 	recipe:SetItemFilterType("ENCHANTING_BRACER")
 	recipe:AddFilters(F.ALLIANCE, F.HORDE, F.DPS)
-	recipe:AddTrainer(1317, 3011, 3345, 3606, 4213, 4616, 5157, 5695, 16633, 16725, 18773, 19251, 19252, 19540, 26906, 26990, 28693, 33583, 33610, 33633, 53410, 65127, 85914)
 	recipe:AddRepVendor(FAC.THE_AUGUST_CELESTIALS, REP.REVERED, 64001, 64032)
 
 	-- Greater Agility -- 104391
@@ -2528,7 +2495,6 @@ function module:InitializeRecipes()
 	recipe:SetRecipeItem(84557, "BIND_ON_PICKUP")
 	recipe:SetItemFilterType("ENCHANTING_BRACER")
 	recipe:AddFilters(F.ALLIANCE, F.HORDE, F.DPS)
-	recipe:AddTrainer(1317, 3011, 3345, 3606, 4213, 4616, 5157, 5695, 16633, 16725, 18773, 19251, 19252, 19540, 26906, 26990, 28693, 33583, 33610, 33633, 53410, 65127, 85914)
 	recipe:AddRepVendor(FAC.THE_AUGUST_CELESTIALS, REP.REVERED, 64001, 64032)
 
 	-- Super Resilience -- 104392
