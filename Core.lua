@@ -19,25 +19,6 @@ private.addon = addon
 
 local module = addon:NewModule(MODULE_NAME)
 
-module.ITEM_FILTER_TYPES = {
-	ENCHANTING_BOOTS = true,
-	ENCHANTING_BRACER = true,
-	ENCHANTING_CHEST = true,
-	ENCHANTING_CLOAK = true,
-	ENCHANTING_GLOVES = true,
-	ENCHANTING_RING = true,
-	ENCHANTING_NECK = true,
-	ENCHANTING_SHIELD = true,
-	ENCHANTING_WEAPON = true,
-	ENCHANTING_2H_WEAPON = true,
-	ENCHANTING_STAFF = true,
-	ENCHANTING_OIL = true,
-	ENCHANTING_ROD = true,
-	ENCHANTING_WAND = true,
-	ENCHANTING_MISC = true,
-	ENCHANTING_MATERIALS = true,
-}
-
 function module:OnInitialize()
 	local defaults = {
 		profile = {
