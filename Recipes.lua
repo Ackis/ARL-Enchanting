@@ -3066,15 +3066,17 @@ function module:InitializeRecipes()
 
 	-- Secrets of Draenor Enchanting -- 177043
 	recipe = AddRecipe(177043, V.WOD, Q.COMMON)
-	recipe:SetSkillLevels(1, 600, 600, 650, 700)
+	recipe:SetSkillLevels(1, 1, 600, 650, 700)
 	recipe:SetItemFilterType("ENCHANTING_MISC")
 	recipe:AddFilters(F.ALLIANCE, F.HORDE, F.MISC1)
 	recipe:AddCustom("DRAENOR_DEFAULT")
 
 	-- Temporal Crystal -- 178241
 	recipe = AddRecipe(178241, V.WOD, Q.COMMON)
-	recipe:SetSkillLevels(0, 0, 0, 0, 0)
+	recipe:SetSkillLevels(1, 1, 600, 650, 700)
+	recipe:SetItemFilterType("ENCHANTING_MATERIALS")
 	recipe:AddFilters(F.ALLIANCE, F.HORDE)
+	recipe:AddCustom("DRAENOR_DEFAULT")
 
 	self.InitializeRecipes = nil
 end
