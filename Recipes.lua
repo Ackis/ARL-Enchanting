@@ -2915,35 +2915,35 @@ function module:InitializeRecipes()
 
 	-- Breath of Critical Strike -- 158907
 	recipe = AddRecipe(158907, V.WOD, Q.COMMON)
-	recipe:SetSkillLevels(1, 600, 625, 627, 630)
+	recipe:SetSkillLevels(1, 1, 625, 627, 630)
 	recipe:SetItemFilterType("ENCHANTING_RING")
 	recipe:AddFilters(F.ALLIANCE, F.HORDE, F.DPS, F.HEALER, F.CASTER, F.MISC1)
 	recipe:AddCustom("DRAENOR_DEFAULT")
 
 	-- Breath of Haste -- 158908
 	recipe = AddRecipe(158908, V.WOD, Q.COMMON)
-	recipe:SetSkillLevels(1, 600, 625, 627, 630)
+	recipe:SetSkillLevels(1, 1, 625, 627, 630)
 	recipe:SetItemFilterType("ENCHANTING_RING")
 	recipe:AddFilters(F.ALLIANCE, F.HORDE, F.DPS, F.HEALER, F.CASTER, F.MISC1)
 	recipe:AddCustom("DRAENOR_DEFAULT")
 
 	-- Breath of Mastery -- 158909
 	recipe = AddRecipe(158909, V.WOD, Q.COMMON)
-	recipe:SetSkillLevels(1, 600, 625, 627, 630)
+	recipe:SetSkillLevels(1, 1, 625, 627, 630)
 	recipe:SetItemFilterType("ENCHANTING_RING")
 	recipe:AddFilters(F.ALLIANCE, F.HORDE, F.DPS, F.HEALER, F.CASTER, F.MISC1)
 	recipe:AddCustom("DRAENOR_DEFAULT")
 
 	-- Breath of Multistrike -- 158910
 	recipe = AddRecipe(158910, V.WOD, Q.COMMON)
-	recipe:SetSkillLevels(1, 600, 625, 627, 630)
+	recipe:SetSkillLevels(1, 1, 625, 627, 630)
 	recipe:SetItemFilterType("ENCHANTING_RING")
 	recipe:AddFilters(F.ALLIANCE, F.HORDE, F.MISC1)
 	recipe:AddCustom("DRAENOR_DEFAULT")
 
 	-- Breath of Versatility -- 158911
 	recipe = AddRecipe(158911, V.WOD, Q.COMMON)
-	recipe:SetSkillLevels(1, 600, 625, 627, 630)
+	recipe:SetSkillLevels(1, 1, 625, 627, 630)
 	recipe:SetItemFilterType("ENCHANTING_RING")
 	recipe:AddFilters(F.ALLIANCE, F.HORDE, F.MISC1)
 	recipe:AddCustom("DRAENOR_DEFAULT")
@@ -3037,21 +3037,21 @@ function module:InitializeRecipes()
 
 	-- Enchanted Dust -- 162948
 	recipe = AddRecipe(162948, V.WOD, Q.COMMON)
-	recipe:SetSkillLevels(1, 45, 50, 100, 150)
+	recipe:SetSkillLevels(1, 1, 50, 100, 150)
 	recipe:SetItemFilterType("ENCHANTING_MATERIALS")
 	recipe:AddFilters(F.ALLIANCE, F.HORDE, F.MISC1)
 	recipe:AddCustom("DRAENOR_DEFAULT")
 
 	-- Luminous Shard -- 169091
 	recipe = AddRecipe(169091, V.WOD, Q.COMMON)
-	recipe:SetSkillLevels(1, 600, 625, 627, 630)
+	recipe:SetSkillLevels(1, 1, 625, 627, 630)
 	recipe:SetItemFilterType("ENCHANTING_MATERIALS")
 	recipe:AddFilters(F.ALLIANCE, F.HORDE, F.MISC1)
 	recipe:AddCustom("DRAENOR_DEFAULT")
 
 	-- Temporal Crystal -- 169092
 	recipe = AddRecipe(169092, V.WOD, Q.COMMON)
-	recipe:SetSkillLevels(1, 600, 600, 800, 1000)
+	recipe:SetSkillLevels(1, 1, 600, 800, 1000)
 	recipe:SetItemFilterType("ENCHANTING_MATERIALS")
 	recipe:AddFilters(F.ALLIANCE, F.HORDE, F.MISC1)
 	recipe:AddCustom("DRAENOR_DEFAULT")
