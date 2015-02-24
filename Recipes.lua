@@ -240,7 +240,7 @@ function module:InitializeRecipes()
 	recipe:AddWorldDrop(Z.EASTERN_KINGDOMS, Z.KALIMDOR)
 
 	-- Lesser Protection -- 13421
-	recipe = AddRecipe(13421, V.ORIG, Q.COMMON)
+	recipe = AddRecipe(13421, V.ORIG, Q.UNCOMMON)
 	recipe:SetSkillLevels(115, 115, 140, 160, 180)
 	recipe:SetItemFilterType("ENCHANTING_CLOAK")
 	recipe:AddFilters(F.TANK)
@@ -255,7 +255,7 @@ function module:InitializeRecipes()
 	recipe:AddWorldDrop(Z.EASTERN_KINGDOMS, Z.KALIMDOR)
 
 	-- Lesser Spirit -- 13485
-	recipe = AddRecipe(13485, V.ORIG, Q.COMMON)
+	recipe = AddRecipe(13485, V.ORIG, Q.UNCOMMON)
 	recipe:SetSkillLevels(130, 130, 155, 175, 195)
 	recipe:SetItemFilterType("ENCHANTING_SHIELD")
 	recipe:AddFilters(F.CASTER, F.HEALER)
@@ -462,7 +462,7 @@ function module:InitializeRecipes()
 	recipe:AddTrainer(1317, 3011, 3345, 3606, 4213, 4616, 5157, 5695, 7949, 11072, 11073, 11074, 16160, 16633, 16725, 18753, 18773, 19251, 19252, 19540, 26906, 26990, 28693, 33583, 33610, 33633, 33676, 53410, 65127, 85914, 86027)
 
 	-- Agility -- 13815
-	recipe = AddRecipe(13815, V.ORIG, Q.RARE)
+	recipe = AddRecipe(13815, V.ORIG, Q.COMMON)
 	recipe:SetSkillLevels(235, 235, 245, 250, 255)
 	recipe:SetItemFilterType("ENCHANTING_GLOVES")
 	recipe:AddFilters(F.DPS)
@@ -741,7 +741,7 @@ function module:InitializeRecipes()
 	recipe:AddWorldDrop(Z.EASTERN_KINGDOMS, Z.KALIMDOR)
 
 	-- Greater Agility -- 20023
-	recipe = AddRecipe(20023, V.ORIG, Q.COMMON)
+	recipe = AddRecipe(20023, V.ORIG, Q.RARE)
 	recipe:SetSkillLevels(310, 310, 320, 325, 330)
 	recipe:SetItemFilterType("ENCHANTING_BOOTS")
 	recipe:AddFilters(F.DPS)
@@ -1382,7 +1382,7 @@ function module:InitializeRecipes()
 	recipe:AddRepVendor(FAC.THE_CONSORTIUM, REP.FRIENDLY, 20242, 23007)
 
 	-- Greater Agility -- 34004
-	recipe = AddRecipe(34004, V.TBC, Q.RARE)
+	recipe = AddRecipe(34004, V.TBC, Q.COMMON)
 	recipe:SetSkillLevels(310, 310, 320, 335, 350)
 	recipe:SetItemFilterType("ENCHANTING_CLOAK")
 	recipe:AddFilters(F.DPS)
@@ -1704,7 +1704,7 @@ function module:InitializeRecipes()
 	recipe:AddTrainer(1317, 3011, 3345, 3606, 4213, 5157, 5695, 16725, 18773, 19251, 19252, 19540, 26906, 26954, 26980, 26990, 28693, 33583, 33610, 33633, 53410, 65127, 85914, 86027)
 
 	-- Greater Spellpower -- 44635
-	recipe = AddRecipe(44635, V.WOTLK, Q.COMMON)
+	recipe = AddRecipe(44635, V.WOTLK, Q.RARE)
 	recipe:SetSkillLevels(395, 395, 405, 415, 425)
 	recipe:SetItemFilterType("ENCHANTING_BRACER")
 	recipe:AddFilters(F.CASTER, F.HEALER)
@@ -2791,6 +2791,10 @@ function module:InitializeRecipes()
 	recipe:SetSkillLevels(1, 1, 600, 650, 700)
 	recipe:SetItemFilterType("ENCHANTING_MATERIALS")
 	recipe:AddCustom("DRAENOR_DEFAULT")
+
+	-- Temporal Binding -- 182129
+	recipe = AddRecipe(182129, V.WOD, Q.COMMON)
+	recipe:SetSkillLevels(0, 0, 0, 0, 0)
 
 	self.InitializeRecipes = nil
 end
