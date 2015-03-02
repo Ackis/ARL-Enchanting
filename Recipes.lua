@@ -2758,18 +2758,21 @@ function module:InitializeRecipes()
 	-- Enchanted Dust -- 162948
 	recipe = AddRecipe(162948, V.WOD, Q.COMMON)
 	recipe:SetSkillLevels(1, 1, 50, 100, 150)
+	recipe:SetCraftedItem(112321, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("ENCHANTING_MATERIALS")
 	recipe:AddCustom("DRAENOR_DEFAULT")
 
 	-- Luminous Shard -- 169091
 	recipe = AddRecipe(169091, V.WOD, Q.COMMON)
 	recipe:SetSkillLevels(1, 1, 625, 627, 630)
+	recipe:SetCraftedItem(111245, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("ENCHANTING_MATERIALS")
 	recipe:AddCustom("DRAENOR_DEFAULT")
 
 	-- Temporal Crystal -- 169092
 	recipe = AddRecipe(169092, V.WOD, Q.COMMON)
 	recipe:SetSkillLevels(1, 1, 600, 800, 1000)
+	recipe:SetCraftedItem(113588, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("ENCHANTING_MATERIALS")
 	recipe:AddCustom("DRAENOR_DEFAULT")
 
@@ -2783,18 +2786,17 @@ function module:InitializeRecipes()
 	-- Secrets of Draenor Enchanting -- 177043
 	recipe = AddRecipe(177043, V.WOD, Q.COMMON)
 	recipe:SetSkillLevels(1, 1, 600, 650, 700)
+	recipe:SetCraftedItem(119293, "BIND_ON_PICKUP")
 	recipe:SetItemFilterType("ENCHANTING_MISC")
-	recipe:AddCustom("DRAENOR_DEFAULT")
-
-	-- Temporal Crystal -- 178241
-	recipe = AddRecipe(178241, V.WOD, Q.COMMON)
-	recipe:SetSkillLevels(1, 1, 600, 650, 700)
-	recipe:SetItemFilterType("ENCHANTING_MATERIALS")
 	recipe:AddCustom("DRAENOR_DEFAULT")
 
 	-- Temporal Binding -- 182129
 	recipe = AddRecipe(182129, V.WOD, Q.COMMON)
-	recipe:SetSkillLevels(0, 0, 0, 0, 0)
+	recipe:SetSkillLevels(1, 1, 700, 700, 700)
+	recipe:SetRecipeItem(122711, "BIND_ON_PICKUP")
+	recipe:SetCraftedItem(113588, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("ENCHANTING_MATERIALS")
+	recipe:AddVendor(91020, 91029)
 
 	self.InitializeRecipes = nil
 end
