@@ -240,7 +240,7 @@ function module:InitializeRecipes()
 	recipe:AddWorldDrop(Z.EASTERN_KINGDOMS, Z.KALIMDOR)
 
 	-- Lesser Protection -- 13421
-	recipe = AddRecipe(13421, V.ORIG, Q.UNCOMMON)
+	recipe = AddRecipe(13421, V.ORIG, Q.COMMON)
 	recipe:SetSkillLevels(115, 115, 140, 160, 180)
 	recipe:SetItemFilterType("ENCHANTING_CLOAK")
 	recipe:AddFilters(F.TANK)
@@ -255,7 +255,7 @@ function module:InitializeRecipes()
 	recipe:AddWorldDrop(Z.EASTERN_KINGDOMS, Z.KALIMDOR)
 
 	-- Lesser Spirit -- 13485
-	recipe = AddRecipe(13485, V.ORIG, Q.UNCOMMON)
+	recipe = AddRecipe(13485, V.ORIG, Q.COMMON)
 	recipe:SetSkillLevels(130, 130, 155, 175, 195)
 	recipe:SetItemFilterType("ENCHANTING_SHIELD")
 	recipe:AddFilters(F.CASTER, F.HEALER)
@@ -396,7 +396,7 @@ function module:InitializeRecipes()
 	recipe:AddWorldDrop(Z.EASTERN_KINGDOMS, Z.KALIMDOR)
 
 	-- Spirit -- 13659
-	recipe = AddRecipe(13659, V.ORIG, Q.UNCOMMON)
+	recipe = AddRecipe(13659, V.ORIG, Q.COMMON)
 	recipe:SetSkillLevels(180, 180, 200, 220, 240)
 	recipe:SetItemFilterType("ENCHANTING_SHIELD")
 	recipe:AddFilters(F.CASTER, F.HEALER)
