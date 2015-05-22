@@ -188,7 +188,7 @@ function module:InitializeRecipes()
 	recipe:SetRecipeItem(6349, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("ENCHANTING_2H_WEAPON")
 	recipe:AddVendor(5758)
-	recipe:AddLimitedVendor(3012, 1, 3346, 1, 5158, 1)
+	recipe:AddLimitedVendor(3012, 1, 3346, 1, 5158, 1, 5758, 1)
 
 	-- Health -- 7857
 	recipe = AddRecipe(7857, V.ORIG, Q.COMMON)
