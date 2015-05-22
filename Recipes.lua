@@ -2650,32 +2650,35 @@ function module:InitializeRecipes()
 	recipe = AddRecipe(158907, V.WOD, Q.COMMON)
 	recipe:SetSkillLevels(1, 1, 625, 627, 630)
 	recipe:SetItemFilterType("ENCHANTING_RING")
-	recipe:AddFilters(F.CASTER, F.DPS, F.HEALER)
+	recipe:AddFilters(F.CASTER, F.DPS, F.HEALER, F.MISC1)
 	recipe:AddCustom("DRAENOR_DEFAULT")
 
 	-- Breath of Haste -- 158908
 	recipe = AddRecipe(158908, V.WOD, Q.COMMON)
 	recipe:SetSkillLevels(1, 1, 625, 627, 630)
 	recipe:SetItemFilterType("ENCHANTING_RING")
-	recipe:AddFilters(F.CASTER, F.DPS, F.HEALER)
+	recipe:AddFilters(F.CASTER, F.DPS, F.HEALER, F.MISC1)
 	recipe:AddCustom("DRAENOR_DEFAULT")
 
 	-- Breath of Mastery -- 158909
 	recipe = AddRecipe(158909, V.WOD, Q.COMMON)
 	recipe:SetSkillLevels(1, 1, 625, 627, 630)
 	recipe:SetItemFilterType("ENCHANTING_RING")
+	recipe:AddFilters(F.CASTER, F.DPS, F.HEALER, F.MISC1)
 	recipe:AddCustom("DRAENOR_DEFAULT")
 
 	-- Breath of Multistrike -- 158910
 	recipe = AddRecipe(158910, V.WOD, Q.COMMON)
 	recipe:SetSkillLevels(1, 1, 625, 627, 630)
 	recipe:SetItemFilterType("ENCHANTING_RING")
+	recipe:AddFilters(F.CASTER, F.DPS, F.HEALER, F.MISC1)
 	recipe:AddCustom("DRAENOR_DEFAULT")
 
 	-- Breath of Versatility -- 158911
 	recipe = AddRecipe(158911, V.WOD, Q.COMMON)
 	recipe:SetSkillLevels(1, 1, 625, 627, 630)
 	recipe:SetItemFilterType("ENCHANTING_RING")
+	recipe:AddFilters(F.CASTER, F.DPS, F.HEALER, F.MISC1)
 	recipe:AddCustom("DRAENOR_DEFAULT")
 
 	-- Gift of Critical Strike -- 158914
@@ -2726,6 +2729,7 @@ function module:InitializeRecipes()
 	recipe = AddRecipe(159236, V.WOD, Q.COMMON)
 	recipe:SetSkillLevels(1, 1, 700, 702, 705)
 	recipe:SetItemFilterType("ENCHANTING_WEAPON")
+	recipe:AddFilters(F.ALLIANCE, F.HORDE, F.DPS, F.MISC1)
 	recipe:AddCustom("DRAENOR_DEFAULT")
 
 	-- Mark of Warsong -- 159671
@@ -2761,6 +2765,7 @@ function module:InitializeRecipes()
 	recipe:SetSkillLevels(1, 1, 50, 100, 150)
 	recipe:SetCraftedItem(112321, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("ENCHANTING_MATERIALS")
+	recipe:AddFilters(F.MISC1)
 	recipe:AddCustom("DRAENOR_DEFAULT")
 
 	-- Luminous Shard -- 169091
@@ -2768,6 +2773,7 @@ function module:InitializeRecipes()
 	recipe:SetSkillLevels(1, 1, 625, 627, 630)
 	recipe:SetCraftedItem(111245, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("ENCHANTING_MATERIALS")
+	recipe:AddFilters(F.ALLIANCE, F.HORDE, F.MISC1)
 	recipe:AddCustom("DRAENOR_DEFAULT")
 
 	-- Temporal Crystal -- 169092
@@ -2775,6 +2781,7 @@ function module:InitializeRecipes()
 	recipe:SetSkillLevels(1, 1, 600, 800, 1000)
 	recipe:SetCraftedItem(113588, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("ENCHANTING_MATERIALS")
+	recipe:AddFilters(F.ALLIANCE, F.HORDE, F.MISC1)
 	recipe:AddCustom("DRAENOR_DEFAULT")
 
 	-- Mark of Bleeding Hollow -- 173323
@@ -2789,6 +2796,7 @@ function module:InitializeRecipes()
 	recipe:SetSkillLevels(1, 1, 600, 650, 700)
 	recipe:SetCraftedItem(119293, "BIND_ON_PICKUP")
 	recipe:SetItemFilterType("ENCHANTING_MISC")
+	recipe:AddFilters(F.ALLIANCE, F.HORDE, F.MISC1)
 	recipe:AddCustom("DRAENOR_DEFAULT")
 
 	-- Temporal Binding -- 182129
