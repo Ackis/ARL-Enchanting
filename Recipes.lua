@@ -2506,8 +2506,9 @@ function module:InitializeRecipes()
 	-- Breath of Critical Strike -- 158877
 	recipe = AddRecipe(158877, V.WOD, Q.COMMON)
 	recipe:SetSkillLevels(1, 1, 625, 627, 630)
+	recipe:SetRecipeItem(118394, "BIND_ON_PICKUP")
 	recipe:SetItemFilterType("ENCHANTING_CLOAK")
-	recipe:AddCustom("DRAENOR_DEFAULT")
+	recipe:AddVendor(77354, 79821, 86045, 87022)
 
 	-- Breath of Haste -- 158878
 	recipe = AddRecipe(158878, V.WOD, Q.COMMON)
