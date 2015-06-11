@@ -79,7 +79,7 @@ function module:InitializeRecipes()
 	recipe = AddRecipe(7418, V.ORIG, Q.COMMON)
 	recipe:SetSkillLevels(15, 15, 25, 30, 35)
 	recipe:SetItemFilterType("ENCHANTING_BRACER")
-	recipe:AddTrainer(1317, 3011, 3345, 3606, 4213, 4616, 5157, 5695, 7949, 11072, 11073, 11074, 16160, 16633, 16725, 18753, 18773, 19251, 19252, 19540, 26906, 26990, 28693, 33583, 33610, 33633, 33676, 47384, 47396, 47400, 47418, 47419, 47420, 47431, 48619, 53410, 57620, 65043, 65127, 85914, 86027)
+	recipe:AddTrainer(1317, 3011, 3606, 4213, 4616, 5157, 5695, 7949, 11072, 11073, 11074, 16160, 16633, 16725, 18753, 18773, 19251, 19252, 19540, 26906, 26990, 28693, 33583, 33610, 33633, 33676, 47396, 47400, 47418, 47419, 47420, 47431, 48619, 53410, 57620, 65043, 65127, 86027)
 
 	-- Minor Health -- 7420
 	recipe = AddRecipe(7420, V.ORIG, Q.COMMON)
@@ -104,6 +104,7 @@ function module:InitializeRecipes()
 	recipe = AddRecipe(7428, V.ORIG, Q.COMMON)
 	recipe:SetSkillLevels(1, 1, 80, 100, 120)
 	recipe:SetItemFilterType("ENCHANTING_BRACER")
+	recipe:AddFilters(F.TANK)
 	recipe:AddCustom("DEFAULT_RECIPE")
 
 	-- Minor Mana -- 7443
@@ -116,7 +117,7 @@ function module:InitializeRecipes()
 
 	-- Minor Stamina -- 7457
 	recipe = AddRecipe(7457, V.ORIG, Q.COMMON)
-	recipe:SetSkillLevels(125, 125, 135, 140, 145)
+	recipe:SetSkillLevels(50, 50, 60, 65, 70)
 	recipe:SetItemFilterType("ENCHANTING_BRACER")
 	recipe:AddTrainer(1317, 3011, 3345, 3606, 4213, 4616, 5157, 5695, 7949, 11072, 11073, 11074, 16160, 16633, 16725, 18753, 18773, 19251, 19252, 19540, 26906, 26990, 28693, 33583, 33610, 33633, 33676, 47384, 47396, 47400, 47418, 47419, 47420, 47431, 48619, 53410, 57620, 65043, 65127, 85914, 86027)
 
@@ -144,6 +145,7 @@ function module:InitializeRecipes()
 	recipe = AddRecipe(7771, V.ORIG, Q.COMMON)
 	recipe:SetSkillLevels(70, 70, 110, 130, 150)
 	recipe:SetItemFilterType("ENCHANTING_CLOAK")
+	recipe:AddFilters(F.TANK)
 	recipe:AddTrainer(1317, 3011, 3345, 3606, 4213, 4616, 5157, 5695, 7949, 11072, 11073, 11074, 16160, 16633, 16725, 18753, 18773, 19251, 19252, 19540, 26906, 26990, 28693, 33583, 33610, 33633, 33676, 47384, 47396, 47400, 47418, 47419, 47420, 47431, 48619, 53410, 57620, 65043, 65127, 85914, 86027)
 
 	-- Lesser Mana -- 7776
@@ -159,6 +161,7 @@ function module:InitializeRecipes()
 	recipe = AddRecipe(7779, V.ORIG, Q.COMMON)
 	recipe:SetSkillLevels(80, 80, 115, 135, 155)
 	recipe:SetItemFilterType("ENCHANTING_BRACER")
+	recipe:AddFilters(F.DPS)
 	recipe:AddTrainer(1317, 3011, 3345, 3606, 4213, 4616, 5157, 5695, 7949, 11072, 11073, 11074, 16160, 16633, 16725, 18753, 18773, 19251, 19252, 19540, 26906, 26990, 28693, 33583, 33610, 33633, 33676, 53410, 65127, 85914, 86027)
 
 	-- Minor Strength -- 7782
@@ -187,7 +190,7 @@ function module:InitializeRecipes()
 	recipe:SetSkillLevels(150, 150, 160, 165, 170)
 	recipe:SetRecipeItem(6349, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("ENCHANTING_2H_WEAPON")
-	recipe:AddVendor(5758)
+	recipe:AddFilters(F.CASTER, F.HEALER)
 	recipe:AddLimitedVendor(3012, 1, 3346, 1, 5158, 1, 5758, 1)
 
 	-- Health -- 7857
@@ -201,6 +204,7 @@ function module:InitializeRecipes()
 	recipe:SetSkillLevels(130, 130, 140, 145, 150)
 	recipe:SetRecipeItem(6375, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("ENCHANTING_BRACER")
+	recipe:AddFilters(F.CASTER, F.HEALER)
 	recipe:AddWorldDrop(Z.EASTERN_KINGDOMS, Z.KALIMDOR)
 
 	-- Minor Stamina -- 7863
@@ -214,11 +218,12 @@ function module:InitializeRecipes()
 	recipe:SetSkillLevels(80, 80, 90, 95, 100)
 	recipe:SetRecipeItem(6377, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("ENCHANTING_BOOTS")
+	recipe:AddFilters(F.DPS)
 	recipe:AddLimitedVendor(3012, 1, 3537, 1)
 
 	-- Minor Stamina -- 13378
 	recipe = AddRecipe(13378, V.ORIG, Q.COMMON)
-	recipe:SetSkillLevels(125, 125, 135, 140, 145)
+	recipe:SetSkillLevels(105, 105, 115, 120, 125)
 	recipe:SetItemFilterType("ENCHANTING_SHIELD")
 	recipe:AddTrainer(1317, 3011, 3345, 3606, 4213, 4616, 5157, 5695, 7949, 11072, 11073, 11074, 16160, 16633, 16725, 18753, 18773, 19251, 19252, 19540, 26906, 26990, 28693, 33583, 33610, 33633, 33676, 53410, 65127, 85914, 86027)
 
@@ -263,7 +268,7 @@ function module:InitializeRecipes()
 
 	-- Lesser Stamina -- 13501
 	recipe = AddRecipe(13501, V.ORIG, Q.COMMON)
-	recipe:SetSkillLevels(170, 170, 180, 185, 190)
+	recipe:SetSkillLevels(130, 130, 140, 145, 150)
 	recipe:SetItemFilterType("ENCHANTING_BRACER")
 	recipe:AddTrainer(1317, 3011, 3345, 3606, 4213, 4616, 5157, 5695, 7949, 11072, 11073, 11074, 16160, 16633, 16725, 18753, 18773, 19251, 19252, 19540, 26906, 26990, 28693, 33583, 33610, 33633, 33676, 53410, 65127, 85914, 86027)
 
@@ -297,6 +302,7 @@ function module:InitializeRecipes()
 	recipe = AddRecipe(13607, V.ORIG, Q.COMMON)
 	recipe:SetSkillLevels(145, 145, 170, 190, 210)
 	recipe:SetItemFilterType("ENCHANTING_CHEST")
+	recipe:AddFilters(F.CASTER, F.HEALER)
 	recipe:AddTrainer(1317, 3011, 3345, 3606, 4213, 4616, 5157, 5695, 7949, 11072, 11073, 11074, 16160, 16633, 16725, 18753, 18773, 19251, 19252, 19540, 26906, 26990, 28693, 33583, 33610, 33633, 33676, 53410, 65127, 85914, 86027)
 
 	-- Mining -- 13612
@@ -335,7 +341,7 @@ function module:InitializeRecipes()
 
 	-- Lesser Stamina -- 13631
 	recipe = AddRecipe(13631, V.ORIG, Q.COMMON)
-	recipe:SetSkillLevels(170, 170, 180, 185, 190)
+	recipe:SetSkillLevels(155, 155, 165, 170, 175)
 	recipe:SetItemFilterType("ENCHANTING_SHIELD")
 	recipe:AddTrainer(1317, 3011, 3345, 3606, 4213, 4616, 5157, 5695, 7949, 11072, 11073, 11074, 16160, 16633, 16725, 18753, 18773, 19251, 19252, 19540, 26906, 26990, 28693, 33583, 33610, 33633, 33676, 53410, 65127, 85914, 86027)
 
@@ -343,12 +349,14 @@ function module:InitializeRecipes()
 	recipe = AddRecipe(13635, V.ORIG, Q.COMMON)
 	recipe:SetSkillLevels(155, 155, 175, 195, 215)
 	recipe:SetItemFilterType("ENCHANTING_CLOAK")
+	recipe:AddFilters(F.TANK)
 	recipe:AddTrainer(1317, 3011, 3345, 3606, 4213, 4616, 5157, 5695, 7949, 11072, 11073, 11074, 16160, 16633, 16725, 18753, 18773, 19251, 19252, 19540, 26906, 26990, 28693, 33583, 33610, 33633, 33676, 53410, 65127, 85914, 86027)
 
 	-- Lesser Agility -- 13637
 	recipe = AddRecipe(13637, V.ORIG, Q.COMMON)
 	recipe:SetSkillLevels(160, 160, 180, 200, 220)
 	recipe:SetItemFilterType("ENCHANTING_BOOTS")
+	recipe:AddFilters(F.DPS)
 	recipe:AddTrainer(1317, 3011, 3345, 3606, 4213, 4616, 5157, 5695, 7949, 11072, 11073, 11074, 16160, 16633, 16725, 18753, 18773, 19251, 19252, 19540, 26906, 26990, 28693, 33583, 33610, 33633, 33676, 53410, 65127, 85914, 86027)
 
 	-- Greater Health -- 13640
@@ -359,8 +367,9 @@ function module:InitializeRecipes()
 
 	-- Spirit -- 13642
 	recipe = AddRecipe(13642, V.ORIG, Q.COMMON)
-	recipe:SetSkillLevels(180, 180, 190, 195, 200)
+	recipe:SetSkillLevels(165, 165, 175, 180, 185)
 	recipe:SetItemFilterType("ENCHANTING_BRACER")
+	recipe:AddFilters(F.CASTER, F.HEALER)
 	recipe:AddTrainer(1317, 3011, 3345, 3606, 4213, 4616, 5157, 5695, 7949, 11072, 11073, 11074, 16160, 16633, 16725, 18753, 18773, 19251, 19252, 19540, 26906, 26990, 28693, 33583, 33610, 33633, 33676, 53410, 65127, 85914, 86027)
 
 	-- Lesser Stamina -- 13644
@@ -371,13 +380,14 @@ function module:InitializeRecipes()
 
 	-- Lesser Dodge -- 13646
 	recipe = AddRecipe(13646, V.ORIG, Q.COMMON)
-	recipe:SetSkillLevels(310, 310, 320, 325, 330)
+	recipe:SetSkillLevels(170, 170, 180, 185, 190)
 	recipe:SetItemFilterType("ENCHANTING_BRACER")
+	recipe:AddFilters(F.TANK)
 	recipe:AddTrainer(1317, 3011, 3345, 3606, 4213, 5157, 5695, 16725, 18773, 26906, 26990, 28693, 33583, 33610, 53410, 65127, 85914, 86027)
 
 	-- Stamina -- 13648
 	recipe = AddRecipe(13648, V.ORIG, Q.COMMON)
-	recipe:SetSkillLevels(460, 460, 470, 475, 480)
+	recipe:SetSkillLevels(170, 170, 180, 185, 190)
 	recipe:SetItemFilterType("ENCHANTING_BRACER")
 	recipe:AddTrainer(1317, 3011, 3345, 3606, 4213, 4616, 5157, 5695, 7949, 11072, 11073, 11074, 16160, 16633, 16725, 18753, 18773, 19251, 19252, 19540, 26906, 26990, 28693, 33583, 33610, 33633, 33676, 53410, 65127, 85914, 86027)
 
@@ -404,7 +414,7 @@ function module:InitializeRecipes()
 
 	-- Strength -- 13661
 	recipe = AddRecipe(13661, V.ORIG, Q.COMMON)
-	recipe:SetSkillLevels(225, 225, 235, 240, 245)
+	recipe:SetSkillLevels(180, 180, 190, 195, 200)
 	recipe:SetItemFilterType("ENCHANTING_BRACER")
 	recipe:AddFilters(F.DPS)
 	recipe:AddTrainer(1317, 3011, 3345, 3606, 4213, 4616, 5157, 5695, 7949, 11072, 11073, 11074, 16160, 16633, 16725, 18753, 18773, 19251, 19252, 19540, 26906, 26990, 28693, 33583, 33610, 33633, 33676, 53410, 65127, 85914, 86027)
@@ -413,6 +423,7 @@ function module:InitializeRecipes()
 	recipe = AddRecipe(13663, V.ORIG, Q.COMMON)
 	recipe:SetSkillLevels(185, 185, 205, 225, 245)
 	recipe:SetItemFilterType("ENCHANTING_CHEST")
+	recipe:AddFilters(F.CASTER, F.HEALER)
 	recipe:AddTrainer(1317, 3011, 3345, 3606, 4213, 4616, 5157, 5695, 7949, 11072, 11073, 11074, 16160, 16633, 16725, 18753, 18773, 19251, 19252, 19540, 26906, 26990, 28693, 33583, 33610, 33633, 33676, 53410, 65127, 85914, 86027)
 
 	-- Lesser Spirit -- 13687
@@ -420,6 +431,7 @@ function module:InitializeRecipes()
 	recipe:SetSkillLevels(130, 130, 140, 145, 150)
 	recipe:SetRecipeItem(11167, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("ENCHANTING_BOOTS")
+	recipe:AddFilters(F.CASTER, F.HEALER)
 	recipe:AddWorldDrop(Z.EASTERN_KINGDOMS, Z.KALIMDOR)
 
 	-- Lesser Parry -- 13689
@@ -459,11 +471,12 @@ function module:InitializeRecipes()
 	recipe = AddRecipe(13746, V.ORIG, Q.COMMON)
 	recipe:SetSkillLevels(205, 205, 225, 245, 265)
 	recipe:SetItemFilterType("ENCHANTING_CLOAK")
+	recipe:AddFilters(F.TANK)
 	recipe:AddTrainer(1317, 3011, 3345, 3606, 4213, 4616, 5157, 5695, 7949, 11072, 11073, 11074, 16160, 16633, 16725, 18753, 18773, 19251, 19252, 19540, 26906, 26990, 28693, 33583, 33610, 33633, 33676, 53410, 65127, 85914, 86027)
 
 	-- Agility -- 13815
 	recipe = AddRecipe(13815, V.ORIG, Q.COMMON)
-	recipe:SetSkillLevels(235, 235, 245, 250, 255)
+	recipe:SetSkillLevels(210, 210, 220, 225, 230)
 	recipe:SetItemFilterType("ENCHANTING_GLOVES")
 	recipe:AddFilters(F.DPS)
 	recipe:AddTrainer(1317, 3011, 3345, 3606, 4213, 4616, 5157, 5695, 7949, 11072, 11073, 11074, 16160, 16633, 16725, 18753, 18773, 19251, 19252, 19540, 26906, 26990, 28693, 33583, 33610, 33633, 33676, 53410, 65127, 85914, 86027)
@@ -477,13 +490,14 @@ function module:InitializeRecipes()
 
 	-- Intellect -- 13822
 	recipe = AddRecipe(13822, V.ORIG, Q.COMMON)
-	recipe:SetSkillLevels(465, 465, 475, 480, 485)
+	recipe:SetSkillLevels(210, 210, 220, 225, 230)
 	recipe:SetItemFilterType("ENCHANTING_BRACER")
+	recipe:AddFilters(F.CASTER, F.HEALER)
 	recipe:AddTrainer(1317, 3011, 3345, 3606, 4213, 4616, 5157, 5695, 7949, 11072, 11073, 11074, 16160, 16633, 16725, 18753, 18773, 19251, 19252, 19540, 26906, 26990, 28693, 33583, 33610, 33633, 33676, 53410, 65127, 85914, 86027)
 
 	-- Stamina -- 13836
 	recipe = AddRecipe(13836, V.ORIG, Q.COMMON)
-	recipe:SetSkillLevels(460, 460, 470, 475, 480)
+	recipe:SetSkillLevels(215, 215, 225, 230, 235)
 	recipe:SetItemFilterType("ENCHANTING_BOOTS")
 	recipe:AddTrainer(1317, 3011, 3345, 3606, 4213, 4616, 5157, 5695, 7949, 11072, 11073, 11074, 16160, 16633, 16725, 18753, 18773, 19251, 19252, 19540, 26906, 26990, 28693, 33583, 33610, 33633, 33676, 53410, 65127, 85914, 86027)
 
@@ -527,6 +541,7 @@ function module:InitializeRecipes()
 	recipe = AddRecipe(13887, V.ORIG, Q.COMMON)
 	recipe:SetSkillLevels(225, 225, 245, 265, 285)
 	recipe:SetItemFilterType("ENCHANTING_GLOVES")
+	recipe:AddFilters(F.DPS)
 	recipe:AddTrainer(1317, 3011, 3345, 3606, 4213, 4616, 5157, 5695, 7949, 11072, 11073, 11074, 16160, 16633, 16725, 18753, 18773, 19251, 19252, 19540, 26906, 26990, 28693, 33583, 33610, 33633, 33676, 53410, 65127, 85914, 86027)
 
 	-- Minor Speed -- 13890
@@ -544,7 +559,7 @@ function module:InitializeRecipes()
 
 	-- Greater Spirit -- 13905
 	recipe = AddRecipe(13905, V.ORIG, Q.COMMON)
-	recipe:SetSkillLevels(410, 410, 420, 425, 430)
+	recipe:SetSkillLevels(230, 230, 240, 245, 250)
 	recipe:SetItemFilterType("ENCHANTING_SHIELD")
 	recipe:AddFilters(F.CASTER, F.HEALER)
 	recipe:AddTrainer(1317, 3011, 3345, 3606, 4213, 4616, 5157, 5695, 7949, 11072, 11073, 11074, 16160, 16633, 16725, 18753, 18773, 19251, 19252, 19540, 26906, 26990, 28693, 33583, 33610, 33633, 33676, 53410, 65127, 85914, 86027)
@@ -560,10 +575,11 @@ function module:InitializeRecipes()
 	recipe = AddRecipe(13917, V.ORIG, Q.COMMON)
 	recipe:SetSkillLevels(230, 230, 250, 270, 290)
 	recipe:SetItemFilterType("ENCHANTING_CHEST")
+	recipe:AddFilters(F.CASTER, F.HEALER)
 	recipe:AddTrainer(1317, 3011, 3345, 3606, 4213, 4616, 5157, 5695, 7949, 11072, 11073, 11074, 16160, 16633, 16725, 18753, 18773, 19251, 19252, 19540, 26906, 26990, 28693, 33583, 33610, 33633, 33676, 53410, 65127, 85914, 86027)
 
 	-- Dodge -- 13931
-	recipe = AddRecipe(13931, V.ORIG, Q.COMMON)
+	recipe = AddRecipe(13931, V.ORIG, Q.UNCOMMON)
 	recipe:SetSkillLevels(420, 420, 430, 435, 440)
 	recipe:SetRecipeItem(11223, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("ENCHANTING_BRACER")
@@ -574,6 +590,7 @@ function module:InitializeRecipes()
 	recipe = AddRecipe(13935, V.ORIG, Q.COMMON)
 	recipe:SetSkillLevels(235, 235, 255, 275, 295)
 	recipe:SetItemFilterType("ENCHANTING_BOOTS")
+	recipe:AddFilters(F.DPS)
 	recipe:AddTrainer(1317, 3011, 3345, 3606, 4213, 4616, 5157, 5695, 7949, 11072, 11073, 11074, 16160, 16633, 16725, 18753, 18773, 19251, 19252, 19540, 26906, 26990, 28693, 33583, 33610, 33633, 33676, 53410, 65127, 85914, 86027)
 
 	-- Greater Impact -- 13937
@@ -584,13 +601,14 @@ function module:InitializeRecipes()
 
 	-- Greater Strength -- 13939
 	recipe = AddRecipe(13939, V.ORIG, Q.COMMON)
-	recipe:SetSkillLevels(295, 295, 305, 310, 315)
+	recipe:SetSkillLevels(240, 240, 250, 255, 260)
 	recipe:SetItemFilterType("ENCHANTING_BRACER")
+	recipe:AddFilters(F.DPS)
 	recipe:AddTrainer(1317, 3011, 3345, 3606, 4213, 4616, 5157, 5695, 7949, 11072, 11073, 11074, 16160, 16633, 16725, 18753, 18773, 19251, 19252, 19540, 26906, 26990, 28693, 33583, 33610, 33633, 33676, 53410, 65127, 85914, 86027)
 
 	-- Stats -- 13941
 	recipe = AddRecipe(13941, V.ORIG, Q.COMMON)
-	recipe:SetSkillLevels(315, 315, 325, 330, 335)
+	recipe:SetSkillLevels(245, 245, 255, 260, 265)
 	recipe:SetItemFilterType("ENCHANTING_CHEST")
 	recipe:AddTrainer(1317, 3011, 3345, 3606, 4213, 4616, 5157, 5695, 7949, 11072, 11073, 11074, 16160, 16633, 16725, 18753, 18773, 19251, 19252, 19540, 26906, 26990, 28693, 33583, 33610, 33633, 33676, 53410, 65127, 85914, 86027)
 
@@ -618,6 +636,7 @@ function module:InitializeRecipes()
 	recipe = AddRecipe(13948, V.ORIG, Q.COMMON)
 	recipe:SetSkillLevels(250, 250, 270, 290, 310)
 	recipe:SetItemFilterType("ENCHANTING_GLOVES")
+	recipe:AddFilters(F.CASTER, F.DPS, F.HEALER)
 	recipe:AddTrainer(1317, 3011, 3345, 3606, 4213, 4616, 5157, 5695, 7949, 11072, 11073, 11074, 16160, 16633, 16725, 18753, 18773, 19251, 19252, 19540, 26906, 26990, 28693, 33583, 33610, 33633, 33676, 53410, 65127, 85914, 86027)
 
 	-- Lesser Magic Wand -- 14293
@@ -632,6 +651,7 @@ function module:InitializeRecipes()
 	recipe:SetSkillLevels(70, 70, 110, 130, 150)
 	recipe:SetCraftedItem(11288, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("ENCHANTING_WAND")
+	recipe:AddFilters(F.CASTER, F.HEALER)
 	recipe:AddTrainer(1317, 3011, 3345, 3606, 4213, 4616, 5157, 5695, 7949, 11072, 11073, 11074, 16160, 16633, 16725, 18753, 18773, 19251, 19252, 19540, 26906, 26990, 28693, 33583, 33610, 33633, 33676, 47384, 47396, 47400, 47418, 47419, 47420, 47431, 48619, 53410, 57620, 65043, 65127, 85914, 86027)
 
 	-- Lesser Mystic Wand -- 14809
@@ -639,6 +659,7 @@ function module:InitializeRecipes()
 	recipe:SetSkillLevels(155, 155, 175, 195, 215)
 	recipe:SetCraftedItem(11289, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("ENCHANTING_WAND")
+	recipe:AddFilters(F.CASTER, F.HEALER)
 	recipe:AddTrainer(1317, 3011, 3345, 3606, 4213, 4616, 5157, 5695, 7949, 11072, 11073, 11074, 16160, 16633, 16725, 18753, 18773, 19251, 19252, 19540, 26906, 26990, 28693, 33583, 33610, 33633, 33676, 53410, 65127, 85914, 86027)
 
 	-- Greater Mystic Wand -- 14810
@@ -646,6 +667,7 @@ function module:InitializeRecipes()
 	recipe:SetSkillLevels(175, 175, 195, 215, 235)
 	recipe:SetCraftedItem(11290, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("ENCHANTING_WAND")
+	recipe:AddFilters(F.CASTER, F.HEALER)
 	recipe:AddTrainer(1317, 3011, 3345, 3606, 4213, 4616, 5157, 5695, 7949, 11072, 11073, 11074, 16160, 16633, 16725, 18753, 18773, 19251, 19252, 19540, 26906, 26990, 28693, 33583, 33610, 33633, 33676, 53410, 65127, 85914, 86027)
 
 	-- Smoking Heart of the Mountain -- 15596
@@ -673,8 +695,9 @@ function module:InitializeRecipes()
 
 	-- Greater Intellect -- 20008
 	recipe = AddRecipe(20008, V.ORIG, Q.COMMON)
-	recipe:SetSkillLevels(510, 510, 520, 525, 530)
+	recipe:SetSkillLevels(255, 255, 265, 270, 275)
 	recipe:SetItemFilterType("ENCHANTING_BRACER")
+	recipe:AddFilters(F.CASTER, F.HEALER)
 	recipe:AddTrainer(1317, 3011, 3345, 3606, 4213, 4616, 5157, 5695, 7949, 11072, 11073, 11074, 16160, 16633, 16725, 18753, 18773, 19251, 19252, 19540, 26906, 26990, 28693, 33583, 33610, 33633, 33676, 53410, 65127, 85914, 86027)
 
 	-- Superior Spirit -- 20009
@@ -690,6 +713,7 @@ function module:InitializeRecipes()
 	recipe:SetSkillLevels(295, 295, 310, 325, 340)
 	recipe:SetRecipeItem(16246, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("ENCHANTING_BRACER")
+	recipe:AddFilters(F.DPS)
 	recipe:AddMobDrop(7372)
 
 	-- Superior Stamina -- 20011
@@ -701,14 +725,16 @@ function module:InitializeRecipes()
 
 	-- Greater Agility -- 20012
 	recipe = AddRecipe(20012, V.ORIG, Q.COMMON)
-	recipe:SetSkillLevels(310, 310, 320, 325, 330)
+	recipe:SetSkillLevels(270, 270, 280, 285, 290)
 	recipe:SetItemFilterType("ENCHANTING_GLOVES")
+	recipe:AddFilters(F.DPS)
 	recipe:AddTrainer(1317, 3011, 3345, 3606, 4213, 4616, 5157, 5695, 7949, 11072, 11073, 11074, 16160, 16633, 16725, 18753, 18773, 19251, 19252, 19540, 26906, 26990, 28693, 33583, 33610, 33633, 33676, 53410, 65127, 85914, 86027)
 
 	-- Greater Strength -- 20013
 	recipe = AddRecipe(20013, V.ORIG, Q.COMMON)
 	recipe:SetSkillLevels(295, 295, 310, 325, 340)
 	recipe:SetItemFilterType("ENCHANTING_GLOVES")
+	recipe:AddFilters(F.DPS)
 	recipe:AddTrainer(1317, 3011, 3345, 3606, 4213, 4616, 5157, 5695, 7949, 11072, 11073, 11074, 16160, 16633, 16725, 18753, 18773, 19251, 19252, 19540, 26906, 26990, 28693, 33583, 33610, 33633, 33676, 53410, 65127, 85914, 86027)
 
 	-- Superior Defense -- 20015
@@ -720,9 +746,10 @@ function module:InitializeRecipes()
 	recipe:AddLimitedVendor(12022, 1)
 
 	-- Vitality -- 20016
-	recipe = AddRecipe(20016, V.ORIG, Q.UNCOMMON)
+	recipe = AddRecipe(20016, V.ORIG, Q.COMMON)
 	recipe:SetSkillLevels(280, 280, 300, 320, 340)
 	recipe:SetItemFilterType("ENCHANTING_SHIELD")
+	recipe:AddFilters(F.CASTER, F.HEALER)
 	recipe:AddTrainer(1317, 3011, 3345, 3606, 4213, 4616, 5157, 5695, 7949, 11072, 11073, 11074, 16160, 16633, 16725, 18753, 18773, 19251, 19252, 19540, 26906, 26990, 28693, 33583, 33610, 33633, 33676, 53410, 65127, 85914, 86027)
 
 	-- Greater Stamina -- 20017
@@ -741,8 +768,8 @@ function module:InitializeRecipes()
 	recipe:AddWorldDrop(Z.EASTERN_KINGDOMS, Z.KALIMDOR)
 
 	-- Greater Agility -- 20023
-	recipe = AddRecipe(20023, V.ORIG, Q.RARE)
-	recipe:SetSkillLevels(310, 310, 320, 325, 330)
+	recipe = AddRecipe(20023, V.ORIG, Q.COMMON)
+	recipe:SetSkillLevels(295, 295, 305, 310, 315)
 	recipe:SetItemFilterType("ENCHANTING_BOOTS")
 	recipe:AddFilters(F.DPS)
 	recipe:AddTrainer(1317, 3011, 3345, 3606, 4213, 4616, 5157, 5695, 7949, 11072, 11073, 11074, 16160, 16633, 16725, 18753, 18773, 19251, 19252, 19540, 26906, 26990, 28693, 33583, 33610, 33633, 33676, 53410, 65127, 85914, 86027)
@@ -752,6 +779,7 @@ function module:InitializeRecipes()
 	recipe:SetSkillLevels(180, 180, 190, 195, 200)
 	recipe:SetRecipeItem(16220, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("ENCHANTING_BOOTS")
+	recipe:AddFilters(F.CASTER, F.HEALER)
 	recipe:AddWorldDrop(Z.EASTERN_KINGDOMS, Z.KALIMDOR)
 
 	-- Greater Stats -- 20025
@@ -772,6 +800,7 @@ function module:InitializeRecipes()
 	recipe = AddRecipe(20028, V.ORIG, Q.COMMON)
 	recipe:SetSkillLevels(290, 290, 305, 322, 340)
 	recipe:SetItemFilterType("ENCHANTING_CHEST")
+	recipe:AddFilters(F.CASTER, F.HEALER)
 	recipe:AddTrainer(1317, 3011, 3345, 3606, 4213, 4616, 5157, 5695, 7949, 11072, 11073, 11074, 16160, 16633, 16725, 18753, 18773, 19251, 19252, 19540, 26906, 26990, 28693, 33583, 33610, 33633, 33676, 53410, 65127, 85914, 86027)
 
 	-- Icy Chill -- 20029
@@ -822,6 +851,7 @@ function module:InitializeRecipes()
 	recipe:SetSkillLevels(420, 420, 430, 435, 440)
 	recipe:SetRecipeItem(16255, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("ENCHANTING_2H_WEAPON")
+	recipe:AddFilters(F.CASTER, F.HEALER)
 	recipe:AddMobDrop(10469)
 
 	-- Major Intellect -- 20036
@@ -829,6 +859,7 @@ function module:InitializeRecipes()
 	recipe:SetSkillLevels(575, 575, 585, 590, 595)
 	recipe:SetRecipeItem(16249, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("ENCHANTING_2H_WEAPON")
+	recipe:AddFilters(F.CASTER, F.HEALER)
 	recipe:AddMobDrop(10422)
 
 	-- Winter's Might -- 21931
@@ -844,6 +875,7 @@ function module:InitializeRecipes()
 	recipe:SetSkillLevels(385, 385, 395, 400, 405)
 	recipe:SetRecipeItem(18259, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("ENCHANTING_WEAPON")
+	recipe:AddFilters(F.CASTER, F.HEALER)
 	recipe:AddWorldDrop(Z.MOLTEN_CORE)
 
 	-- Healing Power -- 22750
@@ -863,7 +895,7 @@ function module:InitializeRecipes()
 	recipe:AddRepVendor(FAC.THORIUM_BROTHERHOOD, REP.FRIENDLY, 12944)
 
 	-- Agility -- 23800
-	recipe = AddRecipe(23800, V.ORIG, Q.RARE)
+	recipe = AddRecipe(23800, V.ORIG, Q.COMMON)
 	recipe:SetSkillLevels(235, 235, 245, 250, 255)
 	recipe:SetRecipeItem(19445, "BIND_ON_PICKUP")
 	recipe:SetRequiredFaction("Horde")
@@ -884,6 +916,7 @@ function module:InitializeRecipes()
 	recipe:SetSkillLevels(300, 300, 310, 325, 340)
 	recipe:SetRecipeItem(19447, "BIND_ON_PICKUP")
 	recipe:SetItemFilterType("ENCHANTING_BRACER")
+	recipe:AddFilters(F.CASTER, F.HEALER)
 	recipe:AddRepVendor(FAC.ARGENT_DAWN, REP.REVERED, 10856, 10857, 11536)
 
 	-- Mighty Spirit -- 23803
@@ -891,10 +924,11 @@ function module:InitializeRecipes()
 	recipe:SetSkillLevels(525, 525, 535, 540, 545)
 	recipe:SetRecipeItem(19448, "BIND_ON_PICKUP")
 	recipe:SetItemFilterType("ENCHANTING_WEAPON")
+	recipe:AddFilters(F.CASTER, F.HEALER)
 	recipe:AddRepVendor(FAC.THORIUM_BROTHERHOOD, REP.HONORED, 12944)
 
 	-- Mighty Intellect -- 23804
-	recipe = AddRecipe(23804, V.ORIG, Q.RARE)
+	recipe = AddRecipe(23804, V.ORIG, Q.COMMON)
 	recipe:SetSkillLevels(300, 300, 310, 325, 340)
 	recipe:SetRecipeItem(19449, "BIND_ON_PICKUP")
 	recipe:SetItemFilterType("ENCHANTING_WEAPON")
@@ -931,6 +965,7 @@ function module:InitializeRecipes()
 	recipe:SetSkillLevels(300, 300, 310, 325, 340)
 	recipe:SetRecipeItem(20729, "BIND_ON_PICKUP")
 	recipe:SetItemFilterType("ENCHANTING_GLOVES")
+	recipe:AddFilters(F.CASTER, F.HEALER)
 	recipe:AddWorldDrop(Z.AHNQIRAJ)
 
 	-- Healing Power -- 25079
@@ -938,6 +973,7 @@ function module:InitializeRecipes()
 	recipe:SetSkillLevels(300, 300, 310, 325, 340)
 	recipe:SetRecipeItem(20730, "BIND_ON_PICKUP")
 	recipe:SetItemFilterType("ENCHANTING_GLOVES")
+	recipe:AddFilters(F.CASTER, F.HEALER)
 	recipe:AddWorldDrop(Z.AHNQIRAJ)
 
 	-- Superior Agility -- 25080
@@ -945,7 +981,7 @@ function module:InitializeRecipes()
 	recipe:SetSkillLevels(415, 415, 425, 430, 435)
 	recipe:SetRecipeItem(20731, "BIND_ON_PICKUP")
 	recipe:SetItemFilterType("ENCHANTING_GLOVES")
-	recipe:AddTrainer(85914, 86027)
+	recipe:AddFilters(F.DPS)
 	recipe:AddWorldDrop(Z.AHNQIRAJ)
 	recipe:AddRepVendor(FAC.KEEPERS_OF_TIME, REP.EXALTED, 21643)
 
@@ -959,12 +995,11 @@ function module:InitializeRecipes()
 	recipe:AddWorldDrop(Z.AHNQIRAJ)
 
 	-- Dodge -- 25086
-	recipe = AddRecipe(25086, V.ORIG, Q.COMMON)
+	recipe = AddRecipe(25086, V.ORIG, Q.RARE)
 	recipe:SetSkillLevels(420, 420, 430, 435, 440)
 	recipe:SetRecipeItem(33148, "BIND_ON_PICKUP")
 	recipe:SetItemFilterType("ENCHANTING_CLOAK")
 	recipe:AddFilters(F.TANK)
-	recipe:AddTrainer(85914, 86027)
 	recipe:AddWorldDrop(Z.AHNQIRAJ)
 	recipe:AddRepVendor(FAC.LOWER_CITY, REP.EXALTED, 21655)
 
@@ -1036,6 +1071,7 @@ function module:InitializeRecipes()
 	recipe:SetSkillLevels(235, 235, 245, 250, 255)
 	recipe:SetRecipeItem(22392, "BIND_ON_PICKUP")
 	recipe:SetItemFilterType("ENCHANTING_2H_WEAPON")
+	recipe:AddFilters(F.DPS)
 	recipe:AddRepVendor(FAC.TIMBERMAW_HOLD, REP.FRIENDLY, 11557)
 
 	-------------------------------------------------------------------------------
@@ -1055,6 +1091,7 @@ function module:InitializeRecipes()
 	recipe = AddRecipe(27899, V.TBC, Q.COMMON)
 	recipe:SetSkillLevels(305, 305, 315, 330, 345)
 	recipe:SetItemFilterType("ENCHANTING_BRACER")
+	recipe:AddFilters(F.DPS)
 	recipe:AddTrainer(1317, 3011, 3345, 3606, 4213, 5157, 5695, 16725, 18753, 18773, 19251, 19252, 19540, 26906, 26990, 28693, 33583, 33610, 33633, 33676, 53410, 65127, 85914, 86027)
 
 	-- Stats -- 27905
@@ -1068,6 +1105,7 @@ function module:InitializeRecipes()
 	recipe:SetSkillLevels(400, 400, 410, 415, 420)
 	recipe:SetRecipeItem(22530, "BIND_ON_PICKUP")
 	recipe:SetItemFilterType("ENCHANTING_BRACER")
+	recipe:AddFilters(F.TANK)
 	recipe:AddMobDrop(22822, 23008)
 
 	-- Superior Healing -- 27911
@@ -1106,6 +1144,7 @@ function module:InitializeRecipes()
 	recipe = AddRecipe(27944, V.TBC, Q.COMMON)
 	recipe:SetSkillLevels(310, 310, 320, 335, 350)
 	recipe:SetItemFilterType("ENCHANTING_SHIELD")
+	recipe:AddFilters(F.TANK)
 	recipe:AddTrainer(1317, 3011, 3345, 3606, 4213, 5157, 5695, 16725, 18753, 18773, 19251, 19252, 19540, 26906, 26990, 28693, 33583, 33610, 33633, 33676, 53410, 65127, 85914, 86027)
 
 	-- Intellect -- 27945
@@ -1172,6 +1211,7 @@ function module:InitializeRecipes()
 	recipe = AddRecipe(27961, V.TBC, Q.COMMON)
 	recipe:SetSkillLevels(310, 310, 320, 335, 350)
 	recipe:SetItemFilterType("ENCHANTING_CLOAK")
+	recipe:AddFilters(F.TANK)
 	recipe:AddTrainer(1317, 3011, 3345, 3606, 4213, 5157, 5695, 16725, 18753, 18773, 19251, 19252, 19540, 26906, 26990, 28693, 33583, 33610, 33633, 33676, 53410, 65127, 85914, 86027)
 
 	-- Major Striking -- 27967
@@ -1218,6 +1258,7 @@ function module:InitializeRecipes()
 	recipe:SetSkillLevels(475, 475, 485, 490, 495)
 	recipe:SetRecipeItem(22556, "BIND_ON_PICKUP")
 	recipe:SetItemFilterType("ENCHANTING_2H_WEAPON")
+	recipe:AddFilters(F.DPS)
 	recipe:AddMobDrop(20880)
 
 	-- Sunfire -- 27981
@@ -1300,7 +1341,7 @@ function module:InitializeRecipes()
 
 	-- Major Spirit -- 33990
 	recipe = AddRecipe(33990, V.TBC, Q.COMMON)
-	recipe:SetSkillLevels(420, 420, 430, 435, 440)
+	recipe:SetSkillLevels(320, 320, 330, 335, 340)
 	recipe:SetItemFilterType("ENCHANTING_CHEST")
 	recipe:AddFilters(F.CASTER, F.HEALER)
 	recipe:AddTrainer(1317, 3011, 3345, 3606, 4213, 5157, 5695, 16725, 18753, 18773, 19251, 19252, 19540, 26906, 26990, 28693, 33583, 33610, 33633, 33676, 53410, 65127, 85914, 86027)
@@ -1323,6 +1364,7 @@ function module:InitializeRecipes()
 	recipe = AddRecipe(33993, V.TBC, Q.COMMON)
 	recipe:SetSkillLevels(305, 305, 315, 330, 345)
 	recipe:SetItemFilterType("ENCHANTING_GLOVES")
+	recipe:AddFilters(F.CASTER, F.DPS, F.HEALER)
 	recipe:AddTrainer(1317, 3011, 3345, 3606, 4213, 5157, 5695, 16725, 18753, 18773, 19251, 19252, 19540, 26906, 26990, 28693, 33583, 33610, 33633, 33676, 53410, 65127, 85914, 86027)
 
 	-- Precise Strikes -- 33994
@@ -1333,7 +1375,7 @@ function module:InitializeRecipes()
 	recipe:AddRepVendor(FAC.CENARION_EXPEDITION, REP.REVERED, 17904)
 
 	-- Major Strength -- 33995
-	recipe = AddRecipe(33995, V.TBC, Q.RARE)
+	recipe = AddRecipe(33995, V.TBC, Q.COMMON)
 	recipe:SetSkillLevels(340, 340, 350, 365, 380)
 	recipe:SetItemFilterType("ENCHANTING_GLOVES")
 	recipe:AddFilters(F.DPS)
@@ -1341,8 +1383,9 @@ function module:InitializeRecipes()
 
 	-- Assault -- 33996
 	recipe = AddRecipe(33996, V.TBC, Q.COMMON)
-	recipe:SetSkillLevels(375, 375, 385, 390, 395)
+	recipe:SetSkillLevels(310, 310, 320, 325, 330)
 	recipe:SetItemFilterType("ENCHANTING_GLOVES")
+	recipe:AddFilters(F.DPS)
 	recipe:AddTrainer(1317, 3011, 3345, 3606, 4213, 5157, 5695, 16725, 18753, 18773, 19251, 19252, 19540, 26906, 26990, 28693, 33583, 33610, 33633, 33676, 53410, 65127, 85914, 86027)
 
 	-- Major Spellpower -- 33997
@@ -1363,7 +1406,7 @@ function module:InitializeRecipes()
 
 	-- Major Intellect -- 34001
 	recipe = AddRecipe(34001, V.TBC, Q.COMMON)
-	recipe:SetSkillLevels(575, 575, 585, 590, 595)
+	recipe:SetSkillLevels(305, 305, 315, 320, 325)
 	recipe:SetItemFilterType("ENCHANTING_BRACER")
 	recipe:AddFilters(F.CASTER, F.HEALER)
 	recipe:AddTrainer(1317, 3011, 3345, 3606, 4213, 5157, 5695, 16725, 18753, 18773, 19251, 19252, 19540, 26906, 26990, 28693, 33583, 33610, 33633, 33676, 53410, 65127, 85914, 86027)
@@ -1372,6 +1415,7 @@ function module:InitializeRecipes()
 	recipe = AddRecipe(34002, V.TBC, Q.COMMON)
 	recipe:SetSkillLevels(300, 300, 310, 325, 340)
 	recipe:SetItemFilterType("ENCHANTING_BRACER")
+	recipe:AddFilters(F.DPS)
 	recipe:AddTrainer(1317, 3011, 3345, 3606, 4213, 5157, 5695, 16725, 18753, 18773, 19251, 19252, 19540, 26906, 26990, 28693, 33583, 33610, 33633, 33676, 53410, 65127, 85914, 86027)
 
 	-- PvP Power -- 34003
@@ -1404,7 +1448,7 @@ function module:InitializeRecipes()
 	recipe:AddMobDrop(24664)
 
 	-- Major Stamina -- 34009
-	recipe = AddRecipe(34009, V.TBC, Q.RARE)
+	recipe = AddRecipe(34009, V.TBC, Q.COMMON)
 	recipe:SetSkillLevels(325, 325, 335, 350, 365)
 	recipe:SetRecipeItem(28282, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("ENCHANTING_SHIELD")
@@ -1437,7 +1481,7 @@ function module:InitializeRecipes()
 	recipe:SetSkillLevels(310, 310, 320, 325, 330)
 	recipe:SetRecipeItem(33165, "BIND_ON_PICKUP")
 	recipe:SetItemFilterType("ENCHANTING_WEAPON")
-	recipe:AddTrainer(1317, 3011, 3345, 3606, 4213, 5157, 5695, 16725, 18753, 18773, 19251, 19252, 19540, 26906, 26990, 28693, 33583, 33610, 33633, 33676, 53410, 65127, 85914, 86027)
+	recipe:AddFilters(F.DPS)
 	recipe:AddRepVendor(FAC.THE_VIOLET_EYE, REP.EXALTED, 18255)
 
 	-- Executioner -- 42974
@@ -1472,12 +1516,11 @@ function module:InitializeRecipes()
 	recipe:AddWorldEvent("MIDSUMMER")
 
 	-- Greater Dodge -- 47051
-	recipe = AddRecipe(47051, V.TBC, Q.UNCOMMON)
+	recipe = AddRecipe(47051, V.TBC, Q.RARE)
 	recipe:SetSkillLevels(400, 400, 410, 415, 420)
 	recipe:SetRecipeItem(35756, "BIND_ON_PICKUP")
 	recipe:SetItemFilterType("ENCHANTING_CLOAK")
 	recipe:AddFilters(F.TANK)
-	recipe:AddTrainer(1317, 3011, 3345, 3606, 4213, 5157, 5695, 16725, 18753, 18773, 19251, 19252, 19540, 26906, 26990, 28693, 33583, 33610, 33633, 33676, 53410, 65127, 85914, 86027)
 	recipe:AddMobDrop(24560)
 
 	-------------------------------------------------------------------------------
@@ -1487,24 +1530,28 @@ function module:InitializeRecipes()
 	recipe = AddRecipe(27958, V.WOTLK, Q.COMMON)
 	recipe:SetSkillLevels(350, 350, 360, 370, 380)
 	recipe:SetItemFilterType("ENCHANTING_CHEST")
+	recipe:AddFilters(F.CASTER, F.HEALER)
 	recipe:AddTrainer(1317, 3011, 3345, 3606, 4213, 5157, 5695, 16725, 18773, 19251, 19252, 19540, 26906, 26954, 26980, 26990, 28693, 33583, 33610, 33633, 53410, 65127, 85914, 86027)
 
 	-- Haste -- 44484
 	recipe = AddRecipe(44484, V.WOTLK, Q.COMMON)
-	recipe:SetSkillLevels(455, 455, 465, 470, 475)
+	recipe:SetSkillLevels(405, 405, 415, 420, 425)
 	recipe:SetItemFilterType("ENCHANTING_GLOVES")
+	recipe:AddFilters(F.CASTER, F.DPS, F.HEALER)
 	recipe:AddTrainer(1317, 3011, 3345, 3606, 4213, 5157, 5695, 16725, 18773, 19251, 19252, 19540, 26906, 26954, 26980, 26990, 28693, 33583, 33610, 33633, 53410, 65127, 85914, 86027)
 
 	-- Precision -- 44488
 	recipe = AddRecipe(44488, V.WOTLK, Q.COMMON)
-	recipe:SetSkillLevels(505, 505, 515, 520, 525)
+	recipe:SetSkillLevels(410, 410, 420, 425, 430)
 	recipe:SetItemFilterType("ENCHANTING_GLOVES")
+	recipe:AddFilters(F.CASTER, F.DPS)
 	recipe:AddTrainer(1317, 3011, 3345, 3606, 4213, 5157, 5695, 16725, 18773, 19251, 19252, 19540, 26906, 26954, 26980, 26990, 28693, 33583, 33610, 33633, 53410, 65127, 85914, 86027)
 
 	-- Dodge -- 44489
 	recipe = AddRecipe(44489, V.WOTLK, Q.COMMON)
 	recipe:SetSkillLevels(420, 420, 430, 440, 450)
 	recipe:SetItemFilterType("ENCHANTING_SHIELD")
+	recipe:AddFilters(F.TANK)
 	recipe:AddTrainer(1317, 3011, 3345, 3606, 4213, 5157, 5695, 16725, 18773, 19251, 19252, 19540, 26906, 26954, 26980, 26990, 28693, 33583, 33610, 33633, 53410, 65127, 85914, 86027)
 
 	-- Mighty Health -- 44492
@@ -1515,8 +1562,9 @@ function module:InitializeRecipes()
 
 	-- Superior Agility -- 44500
 	recipe = AddRecipe(44500, V.WOTLK, Q.COMMON)
-	recipe:SetSkillLevels(415, 415, 425, 430, 435)
+	recipe:SetSkillLevels(395, 395, 405, 410, 415)
 	recipe:SetItemFilterType("ENCHANTING_CLOAK")
+	recipe:AddFilters(F.DPS)
 	recipe:AddTrainer(1317, 3011, 3345, 3606, 4213, 5157, 5695, 16725, 18773, 19251, 19252, 19540, 26906, 26954, 26980, 26990, 28693, 33583, 33610, 33633, 53410, 65127, 85914, 86027)
 
 	-- Gatherer -- 44506
@@ -1529,24 +1577,28 @@ function module:InitializeRecipes()
 	recipe = AddRecipe(44508, V.WOTLK, Q.COMMON)
 	recipe:SetSkillLevels(410, 410, 420, 430, 440)
 	recipe:SetItemFilterType("ENCHANTING_BOOTS")
+	recipe:AddFilters(F.CASTER, F.HEALER)
 	recipe:AddTrainer(1317, 3011, 3345, 3606, 4213, 5157, 5695, 16725, 18773, 19251, 19252, 19540, 26906, 26954, 26980, 26990, 28693, 33583, 33610, 33633, 53410, 65127, 85914, 86027)
 
 	-- Greater Mana Restoration -- 44509
 	recipe = AddRecipe(44509, V.WOTLK, Q.COMMON)
 	recipe:SetSkillLevels(420, 420, 430, 440, 450)
 	recipe:SetItemFilterType("ENCHANTING_CHEST")
+	recipe:AddFilters(F.CASTER, F.HEALER)
 	recipe:AddTrainer(1317, 3011, 3345, 3606, 4213, 5157, 5695, 16725, 18773, 19251, 19252, 19540, 26906, 26954, 26980, 26990, 28693, 33583, 33610, 33633, 53410, 65127, 85914, 86027)
 
 	-- Exceptional Spirit -- 44510
 	recipe = AddRecipe(44510, V.WOTLK, Q.COMMON)
-	recipe:SetSkillLevels(505, 505, 515, 520, 525)
+	recipe:SetSkillLevels(410, 410, 420, 425, 430)
 	recipe:SetItemFilterType("ENCHANTING_WEAPON")
+	recipe:AddFilters(F.CASTER, F.HEALER)
 	recipe:AddTrainer(1317, 3011, 3345, 3606, 4213, 5157, 5695, 16725, 18773, 19251, 19252, 19540, 26906, 26954, 26980, 26990, 28693, 33583, 33610, 33633, 53410, 65127, 85914, 86027)
 
 	-- Greater Assault -- 44513
 	recipe = AddRecipe(44513, V.WOTLK, Q.COMMON)
 	recipe:SetSkillLevels(395, 395, 405, 415, 425)
 	recipe:SetItemFilterType("ENCHANTING_GLOVES")
+	recipe:AddFilters(F.DPS)
 	recipe:AddTrainer(1317, 3011, 3345, 3606, 4213, 5157, 5695, 16725, 18773, 19251, 19252, 19540, 26906, 26954, 26980, 26990, 28693, 33583, 33610, 33633, 53410, 65127, 85914, 86027)
 
 	-- Icebreaker -- 44524
@@ -1564,14 +1616,16 @@ function module:InitializeRecipes()
 
 	-- Major Agility -- 44529
 	recipe = AddRecipe(44529, V.WOTLK, Q.COMMON)
-	recipe:SetSkillLevels(475, 475, 485, 490, 495)
+	recipe:SetSkillLevels(415, 415, 425, 430, 435)
 	recipe:SetItemFilterType("ENCHANTING_GLOVES")
+	recipe:AddFilters(F.DPS)
 	recipe:AddTrainer(1317, 3011, 3345, 3606, 4213, 5157, 5695, 16725, 18773, 19251, 19252, 19540, 26906, 26954, 26980, 26990, 28693, 33583, 33610, 33633, 53410, 65127, 85914, 86027)
 
 	-- Exceptional Intellect -- 44555
 	recipe = AddRecipe(44555, V.WOTLK, Q.COMMON)
 	recipe:SetSkillLevels(375, 375, 385, 392, 400)
 	recipe:SetItemFilterType("ENCHANTING_BRACER")
+	recipe:AddFilters(F.CASTER, F.HEALER)
 	recipe:AddTrainer(1317, 3011, 3345, 3606, 4213, 5157, 5695, 16725, 18773, 19251, 19252, 19540, 26906, 26954, 26980, 26990, 28693, 33583, 33610, 33633, 53410, 65127, 85914, 86027)
 
 	-- Greater Assault -- 44575
@@ -1580,7 +1634,7 @@ function module:InitializeRecipes()
 	recipe:SetRecipeItem(44484, "BIND_ON_PICKUP")
 	recipe:SetItemFilterType("ENCHANTING_BRACER")
 	recipe:AddFilters(F.DPS)
-	recipe:AddTrainer(1317, 3011, 3345, 3606, 4213, 5157, 5695, 16725, 18773, 19251, 19252, 19540, 26906, 26954, 26980, 26990, 28693, 33583, 33610, 33633, 53410, 65127, 85914, 86027)
+	recipe:AddTrainer(1317, 3011, 3606, 4213, 5157, 5695, 16725, 18773, 19251, 19252, 19540, 26906, 26954, 26980, 26990, 28693, 33583, 33610, 33633, 53410, 65127, 86027)
 	recipe:AddVendor(32514)
 
 	-- Lifeward -- 44576
@@ -1600,6 +1654,7 @@ function module:InitializeRecipes()
 	recipe = AddRecipe(44584, V.WOTLK, Q.COMMON)
 	recipe:SetSkillLevels(405, 405, 415, 425, 435)
 	recipe:SetItemFilterType("ENCHANTING_BOOTS")
+	recipe:AddFilters(F.CASTER, F.HEALER)
 	recipe:AddTrainer(1317, 3011, 3345, 3606, 4213, 5157, 5695, 16725, 18773, 19251, 19252, 19540, 26906, 26954, 26980, 26990, 28693, 33583, 33610, 33633, 53410, 65127, 85914, 86027)
 
 	-- Exceptional Resilience -- 44588
@@ -1613,6 +1668,7 @@ function module:InitializeRecipes()
 	recipe = AddRecipe(44589, V.WOTLK, Q.COMMON)
 	recipe:SetSkillLevels(415, 415, 425, 435, 445)
 	recipe:SetItemFilterType("ENCHANTING_BOOTS")
+	recipe:AddFilters(F.DPS)
 	recipe:AddTrainer(1317, 3011, 3345, 3606, 4213, 5157, 5695, 16725, 18773, 19251, 19252, 19540, 26906, 26954, 26980, 26990, 28693, 33583, 33610, 33633, 53410, 65127, 85914, 86027)
 
 	-- Superior Dodge -- 44591
@@ -1625,8 +1681,9 @@ function module:InitializeRecipes()
 
 	-- Exceptional Spellpower -- 44592
 	recipe = AddRecipe(44592, V.WOTLK, Q.COMMON)
-	recipe:SetSkillLevels(395, 395, 405, 410, 415)
+	recipe:SetSkillLevels(360, 360, 370, 375, 380)
 	recipe:SetItemFilterType("ENCHANTING_GLOVES")
+	recipe:AddFilters(F.CASTER, F.HEALER)
 	recipe:AddTrainer(1317, 3011, 3345, 3606, 4213, 5157, 5695, 16725, 18773, 19251, 19252, 19540, 26906, 26954, 26980, 26990, 28693, 33583, 33610, 33633, 53410, 65127, 85914, 86027)
 
 	-- Major Spirit -- 44593
@@ -1646,8 +1703,9 @@ function module:InitializeRecipes()
 
 	-- Haste -- 44598
 	recipe = AddRecipe(44598, V.WOTLK, Q.COMMON)
-	recipe:SetSkillLevels(455, 455, 465, 470, 475)
+	recipe:SetSkillLevels(415, 415, 425, 430, 435)
 	recipe:SetItemFilterType("ENCHANTING_BRACER")
+	recipe:AddFilters(F.CASTER, F.DPS, F.HEALER)
 	recipe:AddTrainer(1317, 3011, 3345, 3606, 4213, 5157, 5695, 16725, 18773, 19251, 19252, 19540, 26906, 26954, 26980, 26990, 28693, 33583, 33610, 33633, 53410, 65127, 85914, 86027)
 
 	-- Greater Stats -- 44616
@@ -1681,12 +1739,14 @@ function module:InitializeRecipes()
 	recipe = AddRecipe(44629, V.WOTLK, Q.COMMON)
 	recipe:SetSkillLevels(395, 395, 405, 415, 425)
 	recipe:SetItemFilterType("ENCHANTING_WEAPON")
+	recipe:AddFilters(F.CASTER, F.HEALER)
 	recipe:AddTrainer(1317, 3011, 3345, 3606, 4213, 5157, 5695, 16725, 18773, 19251, 19252, 19540, 26906, 26954, 26980, 26990, 28693, 33583, 33610, 33633, 53410, 65127, 85914, 86027)
 
 	-- Greater Savagery -- 44630
 	recipe = AddRecipe(44630, V.WOTLK, Q.COMMON)
 	recipe:SetSkillLevels(390, 390, 400, 410, 420)
 	recipe:SetItemFilterType("ENCHANTING_2H_WEAPON")
+	recipe:AddFilters(F.DPS)
 	recipe:AddTrainer(1317, 3011, 3345, 3606, 4213, 5157, 5695, 16725, 18773, 19251, 19252, 19540, 26906, 26954, 26980, 26990, 28693, 33583, 33610, 33633, 53410, 65127, 85914, 86027)
 
 	-- Shadow Armor -- 44631
@@ -1701,10 +1761,11 @@ function module:InitializeRecipes()
 	recipe = AddRecipe(44633, V.WOTLK, Q.COMMON)
 	recipe:SetSkillLevels(410, 410, 420, 430, 440)
 	recipe:SetItemFilterType("ENCHANTING_WEAPON")
+	recipe:AddFilters(F.DPS)
 	recipe:AddTrainer(1317, 3011, 3345, 3606, 4213, 5157, 5695, 16725, 18773, 19251, 19252, 19540, 26906, 26954, 26980, 26990, 28693, 33583, 33610, 33633, 53410, 65127, 85914, 86027)
 
 	-- Greater Spellpower -- 44635
-	recipe = AddRecipe(44635, V.WOTLK, Q.RARE)
+	recipe = AddRecipe(44635, V.WOTLK, Q.COMMON)
 	recipe:SetSkillLevels(395, 395, 405, 415, 425)
 	recipe:SetItemFilterType("ENCHANTING_BRACER")
 	recipe:AddFilters(F.CASTER, F.HEALER)
@@ -1715,6 +1776,7 @@ function module:InitializeRecipes()
 	recipe:SetSkillLevels(420, 420, 430, 435, 440)
 	recipe:SetRecipeItem(35500, "BIND_ON_PICKUP")
 	recipe:SetItemFilterType("ENCHANTING_CHEST")
+	recipe:AddFilters(F.TANK)
 	recipe:AddRepVendor(FAC.SHATTERED_SUN_OFFENSIVE, REP.HONORED, 25032)
 
 	-- Mighty Stamina -- 47672
@@ -1781,47 +1843,54 @@ function module:InitializeRecipes()
 	recipe:SetSkillLevels(440, 440, 450, 460, 470)
 	recipe:SetRecipeItem(44495, "BIND_ON_PICKUP")
 	recipe:SetItemFilterType("ENCHANTING_WEAPON")
+	recipe:AddFilters(F.CASTER, F.DPS, F.HEALER)
 	recipe:AddVendor(32514)
 
 	-- Assault -- 60606
 	recipe = AddRecipe(60606, V.WOTLK, Q.COMMON)
 	recipe:SetSkillLevels(375, 375, 385, 395, 405)
 	recipe:SetItemFilterType("ENCHANTING_BOOTS")
+	recipe:AddFilters(F.DPS)
 	recipe:AddTrainer(1317, 3011, 3345, 3606, 4213, 5157, 5695, 16725, 18773, 19251, 19252, 19540, 26906, 26954, 26980, 26990, 28693, 33583, 33610, 33633, 53410, 65127, 85914, 86027)
 
 	-- Speed -- 60609
 	recipe = AddRecipe(60609, V.WOTLK, Q.COMMON)
-	recipe:SetSkillLevels(435, 435, 445, 450, 455)
+	recipe:SetSkillLevels(350, 350, 360, 365, 370)
 	recipe:SetItemFilterType("ENCHANTING_CLOAK")
+	recipe:AddFilters(F.CASTER, F.DPS, F.HEALER)
 	recipe:AddTrainer(1317, 3011, 3345, 3606, 4213, 5157, 5695, 16725, 18773, 19251, 19252, 19540, 26906, 26954, 26980, 26990, 28693, 33583, 33610, 33633, 53410, 65127, 85914, 86027)
 
 	-- Assault -- 60616
 	recipe = AddRecipe(60616, V.WOTLK, Q.COMMON)
-	recipe:SetSkillLevels(375, 375, 385, 390, 395)
+	recipe:SetSkillLevels(360, 360, 370, 375, 380)
 	recipe:SetItemFilterType("ENCHANTING_BRACER")
+	recipe:AddFilters(F.DPS)
 	recipe:AddTrainer(1317, 3011, 3345, 3606, 4213, 5157, 5695, 16725, 18773, 19251, 19252, 19540, 26906, 26954, 26980, 26990, 28693, 33583, 33610, 33633, 53410, 65127, 85914, 86027)
 
 	-- Greater Potency -- 60621
 	recipe = AddRecipe(60621, V.WOTLK, Q.COMMON)
 	recipe:SetSkillLevels(380, 380, 390, 400, 410)
 	recipe:SetItemFilterType("ENCHANTING_WEAPON")
+	recipe:AddFilters(F.DPS)
 	recipe:AddTrainer(1317, 3011, 3345, 3606, 4213, 5157, 5695, 16725, 18773, 19251, 19252, 19540, 26906, 26954, 26980, 26990, 28693, 33583, 33610, 33633, 53410, 65127, 85914, 86027)
 
 	-- Icewalker -- 60623
 	recipe = AddRecipe(60623, V.WOTLK, Q.COMMON)
 	recipe:SetSkillLevels(385, 385, 395, 405, 415)
 	recipe:SetItemFilterType("ENCHANTING_BOOTS")
+	recipe:AddFilters(F.CASTER, F.DPS, F.HEALER)
 	recipe:AddTrainer(1317, 3011, 3345, 3606, 4213, 5157, 5695, 16725, 18773, 19251, 19252, 19540, 26906, 26954, 26980, 26990, 28693, 33583, 33610, 33633, 53410, 65127, 85914, 86027)
 
 	-- Greater Intellect -- 60653
 	recipe = AddRecipe(60653, V.WOTLK, Q.COMMON)
-	recipe:SetSkillLevels(510, 510, 520, 525, 530)
+	recipe:SetSkillLevels(395, 395, 405, 410, 415)
 	recipe:SetItemFilterType("ENCHANTING_SHIELD")
+	recipe:AddFilters(F.CASTER, F.HEALER)
 	recipe:AddTrainer(1317, 3011, 3345, 3606, 4213, 5157, 5695, 16725, 18773, 19251, 19252, 19540, 26906, 26954, 26980, 26990, 28693, 33583, 33610, 33633, 53410, 65127, 85914, 86027)
 
 	-- Major Agility -- 60663
 	recipe = AddRecipe(60663, V.WOTLK, Q.COMMON)
-	recipe:SetSkillLevels(475, 475, 485, 490, 495)
+	recipe:SetSkillLevels(420, 420, 430, 435, 440)
 	recipe:SetItemFilterType("ENCHANTING_CLOAK")
 	recipe:AddFilters(F.DPS)
 	recipe:AddTrainer(1317, 3011, 3345, 3606, 4213, 5157, 5695, 16725, 18773, 19251, 19252, 19540, 26906, 26954, 26980, 26990, 28693, 33583, 33610, 33633, 53410, 65127, 85914, 86027)
@@ -1830,6 +1899,7 @@ function module:InitializeRecipes()
 	recipe = AddRecipe(60668, V.WOTLK, Q.COMMON)
 	recipe:SetSkillLevels(425, 425, 435, 445, 455)
 	recipe:SetItemFilterType("ENCHANTING_GLOVES")
+	recipe:AddFilters(F.DPS)
 	recipe:AddTrainer(1317, 3011, 3345, 3606, 4213, 5157, 5695, 16725, 18773, 19251, 19252, 19540, 26906, 26954, 26980, 26990, 28693, 33583, 33610, 33633, 53410, 65127, 85914, 86027)
 
 	-- Massacre -- 60691
@@ -1868,7 +1938,7 @@ function module:InitializeRecipes()
 	recipe:SetSkillLevels(395, 395, 405, 410, 415)
 	recipe:SetRecipeItem(44490, "BIND_ON_PICKUP")
 	recipe:SetItemFilterType("ENCHANTING_BOOTS")
-	recipe:AddTrainer(85914, 86027)
+	recipe:AddFilters(F.DPS)
 	recipe:AddVendor(32514)
 
 	-- Superior Spellpower -- 60767
@@ -1943,7 +2013,7 @@ function module:InitializeRecipes()
 	-------------------------------------------------------------------------------
 	-- Mastery -- 74132
 	recipe = AddRecipe(74132, V.CATA, Q.COMMON)
-	recipe:SetSkillLevels(510, 510, 520, 525, 530)
+	recipe:SetSkillLevels(425, 425, 435, 440, 445)
 	recipe:SetItemFilterType("ENCHANTING_GLOVES")
 	recipe:AddTrainer(1317, 3011, 3345, 3606, 4213, 4616, 5157, 5695, 16633, 16725, 18773, 19251, 19252, 19540, 26906, 26990, 28693, 33583, 33610, 33633, 53410, 65127, 85914, 86027)
 
@@ -1969,6 +2039,7 @@ function module:InitializeRecipes()
 	recipe = AddRecipe(74193, V.CATA, Q.COMMON)
 	recipe:SetSkillLevels(435, 435, 450, 460, 470)
 	recipe:SetItemFilterType("ENCHANTING_BRACER")
+	recipe:AddFilters(F.CASTER, F.DPS, F.HEALER)
 	recipe:AddTrainer(1317, 3011, 3345, 3606, 4213, 4616, 5157, 5695, 16633, 16725, 18773, 19251, 19252, 19540, 26906, 26990, 28693, 33583, 33610, 33633, 53410, 65127, 85914, 86027)
 
 	-- Mending -- 74195
@@ -1987,12 +2058,14 @@ function module:InitializeRecipes()
 	recipe = AddRecipe(74198, V.CATA, Q.COMMON)
 	recipe:SetSkillLevels(455, 455, 465, 475, 485)
 	recipe:SetItemFilterType("ENCHANTING_GLOVES")
+	recipe:AddFilters(F.CASTER, F.DPS, F.HEALER)
 	recipe:AddTrainer(1317, 3011, 3345, 3606, 4213, 4616, 5157, 5695, 16633, 16725, 18773, 19251, 19252, 19540, 26906, 26990, 28693, 33583, 33610, 33633, 53410, 65127, 85914, 86027)
 
 	-- Haste -- 74199
 	recipe = AddRecipe(74199, V.CATA, Q.COMMON)
 	recipe:SetSkillLevels(455, 455, 465, 475, 485)
 	recipe:SetItemFilterType("ENCHANTING_BOOTS")
+	recipe:AddFilters(F.CASTER, F.DPS, F.HEALER)
 	recipe:AddTrainer(1317, 3011, 3345, 3606, 4213, 4616, 5157, 5695, 16633, 16725, 18773, 19251, 19252, 19540, 26906, 26990, 28693, 33583, 33610, 33633, 53410, 65127, 85914, 86027)
 
 	-- Stamina -- 74200
@@ -2003,19 +2076,21 @@ function module:InitializeRecipes()
 
 	-- Critical Strike -- 74201
 	recipe = AddRecipe(74201, V.CATA, Q.COMMON)
-	recipe:SetSkillLevels(490, 490, 500, 505, 510)
+	recipe:SetSkillLevels(460, 460, 470, 475, 480)
 	recipe:SetItemFilterType("ENCHANTING_BRACER")
+	recipe:AddFilters(F.CASTER, F.DPS, F.HEALER)
 	recipe:AddTrainer(1317, 3011, 3345, 3606, 4213, 4616, 5157, 5695, 16633, 16725, 18773, 19251, 19252, 19540, 26906, 26990, 28693, 33583, 33610, 33633, 53410, 65127, 85914, 86027)
 
 	-- Intellect -- 74202
 	recipe = AddRecipe(74202, V.CATA, Q.COMMON)
 	recipe:SetSkillLevels(465, 465, 475, 485, 495)
 	recipe:SetItemFilterType("ENCHANTING_CLOAK")
+	recipe:AddFilters(F.CASTER, F.HEALER)
 	recipe:AddTrainer(1317, 3011, 3345, 3606, 4213, 4616, 5157, 5695, 16633, 16725, 18773, 19251, 19252, 19540, 26906, 26990, 28693, 33583, 33610, 33633, 53410, 65127, 85914, 86027)
 
 	-- Protection -- 74207
 	recipe = AddRecipe(74207, V.CATA, Q.COMMON)
-	recipe:SetSkillLevels(500, 500, 510, 515, 520)
+	recipe:SetSkillLevels(465, 465, 475, 480, 485)
 	recipe:SetItemFilterType("ENCHANTING_SHIELD")
 	recipe:AddTrainer(1317, 3011, 3345, 3606, 4213, 4616, 5157, 5695, 16633, 16725, 18773, 19251, 19252, 19540, 26906, 26990, 28693, 33583, 33610, 33633, 53410, 65127, 85914, 86027)
 
@@ -2026,7 +2101,7 @@ function module:InitializeRecipes()
 	recipe:AddTrainer(1317, 3011, 3345, 3606, 4213, 4616, 5157, 5695, 16633, 16725, 18773, 19251, 19252, 19540, 26906, 26990, 28693, 33583, 33610, 33633, 53410, 65127, 85914, 86027)
 
 	-- Exceptional Strength -- 74212
-	recipe = AddRecipe(74212, V.CATA, Q.RARE)
+	recipe = AddRecipe(74212, V.CATA, Q.COMMON)
 	recipe:SetSkillLevels(470, 470, 480, 490, 500)
 	recipe:SetItemFilterType("ENCHANTING_GLOVES")
 	recipe:AddFilters(F.DPS)
@@ -2036,6 +2111,7 @@ function module:InitializeRecipes()
 	recipe = AddRecipe(74213, V.CATA, Q.COMMON)
 	recipe:SetSkillLevels(475, 475, 485, 495, 505)
 	recipe:SetItemFilterType("ENCHANTING_BOOTS")
+	recipe:AddFilters(F.DPS)
 	recipe:AddTrainer(1317, 3011, 3345, 3606, 4213, 4616, 5157, 5695, 16633, 16725, 18773, 19251, 19252, 19540, 26906, 26990, 28693, 33583, 33610, 33633, 53410, 65127, 85914, 86027)
 
 	-- Mighty Resilience -- 74214
@@ -2046,25 +2122,28 @@ function module:InitializeRecipes()
 
 	-- Greater Haste -- 74220
 	recipe = AddRecipe(74220, V.CATA, Q.COMMON)
-	recipe:SetSkillLevels(550, 550, 560, 565, 570)
+	recipe:SetSkillLevels(480, 480, 490, 495, 500)
 	recipe:SetItemFilterType("ENCHANTING_GLOVES")
+	recipe:AddFilters(F.CASTER, F.DPS, F.HEALER)
 	recipe:AddTrainer(1317, 3011, 3345, 3606, 4213, 4616, 5157, 5695, 16633, 16725, 18773, 19251, 19252, 19540, 26906, 26990, 28693, 33583, 33610, 33633, 53410, 65127, 85914, 86027)
 
 	-- Hurricane -- 74223
 	recipe = AddRecipe(74223, V.CATA, Q.COMMON)
 	recipe:SetSkillLevels(480, 480, 490, 500, 510)
 	recipe:SetItemFilterType("ENCHANTING_WEAPON")
+	recipe:AddFilters(F.CASTER, F.DPS, F.HEALER)
 	recipe:AddTrainer(1317, 3011, 3345, 3606, 4213, 4616, 5157, 5695, 16633, 16725, 18773, 19251, 19252, 19540, 26906, 26990, 28693, 33583, 33610, 33633, 53410, 65127, 85914, 86027)
 
 	-- Heartsong -- 74225
 	recipe = AddRecipe(74225, V.CATA, Q.COMMON)
 	recipe:SetSkillLevels(485, 485, 495, 505, 515)
 	recipe:SetItemFilterType("ENCHANTING_WEAPON")
+	recipe:AddFilters(F.CASTER, F.HEALER)
 	recipe:AddTrainer(1317, 3011, 3345, 3606, 4213, 4616, 5157, 5695, 16633, 16725, 18773, 19251, 19252, 19540, 26906, 26990, 28693, 33583, 33610, 33633, 53410, 65127, 85914, 86027)
 
 	-- Mastery -- 74226
 	recipe = AddRecipe(74226, V.CATA, Q.COMMON)
-	recipe:SetSkillLevels(510, 510, 520, 525, 530)
+	recipe:SetSkillLevels(485, 485, 495, 500, 505)
 	recipe:SetItemFilterType("ENCHANTING_SHIELD")
 	recipe:AddTrainer(1317, 3011, 3345, 3606, 4213, 4616, 5157, 5695, 16633, 16725, 18773, 19251, 19252, 19540, 26906, 26990, 28693, 33583, 33610, 33633, 53410, 65127, 85914, 86027)
 
@@ -2079,17 +2158,19 @@ function module:InitializeRecipes()
 	recipe = AddRecipe(74230, V.CATA, Q.COMMON)
 	recipe:SetSkillLevels(490, 490, 500, 510, 520)
 	recipe:SetItemFilterType("ENCHANTING_CLOAK")
+	recipe:AddFilters(F.CASTER, F.DPS, F.HEALER)
 	recipe:AddTrainer(1317, 3011, 3345, 3606, 4213, 4616, 5157, 5695, 16633, 16725, 18773, 19251, 19252, 19540, 26906, 26990, 28693, 33583, 33610, 33633, 53410, 65127, 85914, 86027)
 
 	-- Exceptional Spirit -- 74231
 	recipe = AddRecipe(74231, V.CATA, Q.COMMON)
-	recipe:SetSkillLevels(505, 505, 515, 520, 525)
+	recipe:SetSkillLevels(495, 495, 505, 510, 515)
 	recipe:SetItemFilterType("ENCHANTING_CHEST")
+	recipe:AddFilters(F.CASTER, F.HEALER)
 	recipe:AddTrainer(1317, 3011, 3345, 3606, 4213, 4616, 5157, 5695, 16633, 16725, 18773, 19251, 19252, 19540, 26906, 26990, 28693, 33583, 33610, 33633, 53410, 65127, 85914, 86027)
 
 	-- Precision -- 74232
 	recipe = AddRecipe(74232, V.CATA, Q.COMMON)
-	recipe:SetSkillLevels(505, 505, 515, 520, 525)
+	recipe:SetSkillLevels(495, 495, 505, 510, 515)
 	recipe:SetItemFilterType("ENCHANTING_BRACER")
 	recipe:AddTrainer(1317, 3011, 3345, 3606, 4213, 4616, 5157, 5695, 16633, 16725, 18773, 19251, 19252, 19540, 26906, 26990, 28693, 33583, 33610, 33633, 53410, 65127, 85914, 86027)
 
@@ -2101,8 +2182,9 @@ function module:InitializeRecipes()
 
 	-- Superior Intellect -- 74235
 	recipe = AddRecipe(74235, V.CATA, Q.COMMON)
-	recipe:SetSkillLevels(525, 525, 535, 540, 545)
+	recipe:SetSkillLevels(500, 500, 510, 515, 520)
 	recipe:SetItemFilterType("ENCHANTING_MISC")
+	recipe:AddFilters(F.CASTER, F.HEALER)
 	recipe:AddTrainer(1317, 3011, 3345, 3606, 4213, 4616, 5157, 5695, 16633, 16725, 18773, 19251, 19252, 19540, 26906, 26990, 28693, 33583, 33610, 33633, 53410, 65127, 85914, 86027)
 
 	-- Precision -- 74236
@@ -2115,6 +2197,7 @@ function module:InitializeRecipes()
 	recipe = AddRecipe(74237, V.CATA, Q.COMMON)
 	recipe:SetSkillLevels(505, 505, 515, 525, 535)
 	recipe:SetItemFilterType("ENCHANTING_BRACER")
+	recipe:AddFilters(F.CASTER, F.HEALER)
 	recipe:AddTrainer(1317, 3011, 3345, 3606, 4213, 4616, 5157, 5695, 16633, 16725, 18773, 19251, 19252, 19540, 26906, 26990, 28693, 33583, 33610, 33633, 53410, 65127, 85914, 86027)
 
 	-- Mastery -- 74238
@@ -2125,14 +2208,16 @@ function module:InitializeRecipes()
 
 	-- Greater Haste -- 74239
 	recipe = AddRecipe(74239, V.CATA, Q.COMMON)
-	recipe:SetSkillLevels(550, 550, 560, 565, 570)
+	recipe:SetSkillLevels(510, 510, 520, 525, 530)
 	recipe:SetItemFilterType("ENCHANTING_BRACER")
+	recipe:AddFilters(F.CASTER, F.DPS, F.HEALER)
 	recipe:AddTrainer(1317, 3011, 3345, 3606, 4213, 4616, 5157, 5695, 16633, 16725, 18773, 19251, 19252, 19540, 26906, 26990, 28693, 33583, 33610, 33633, 53410, 65127, 85914, 86027)
 
 	-- Greater Intellect -- 74240
 	recipe = AddRecipe(74240, V.CATA, Q.COMMON)
 	recipe:SetSkillLevels(510, 510, 520, 530, 540)
 	recipe:SetItemFilterType("ENCHANTING_CLOAK")
+	recipe:AddFilters(F.CASTER, F.HEALER)
 	recipe:AddTrainer(1317, 3011, 3345, 3606, 4213, 4616, 5157, 5695, 16633, 16725, 18773, 19251, 19252, 19540, 26906, 26990, 28693, 33583, 33610, 33633, 53410, 65127, 85914, 86027)
 
 	-- Power Torrent -- 74242
@@ -2140,6 +2225,7 @@ function module:InitializeRecipes()
 	recipe:SetSkillLevels(525, 525, 525, 532, 540)
 	recipe:SetRecipeItem(52733, "BIND_ON_PICKUP")
 	recipe:SetItemFilterType("ENCHANTING_WEAPON")
+	recipe:AddFilters(F.CASTER, F.HEALER)
 	recipe:AddVendor(1318, 3012, 3346, 4228, 4617, 5158, 16635, 16722, 50134, 50146)
 
 	-- Windwalk -- 74244
@@ -2147,6 +2233,7 @@ function module:InitializeRecipes()
 	recipe:SetSkillLevels(525, 525, 525, 532, 540)
 	recipe:SetRecipeItem(52735, "BIND_ON_PICKUP")
 	recipe:SetItemFilterType("ENCHANTING_WEAPON")
+	recipe:AddFilters(F.TANK)
 	recipe:AddVendor(1318, 3012, 3346, 4228, 4617, 5158, 16635, 16722, 50134, 50146)
 
 	-- Landslide -- 74246
@@ -2154,6 +2241,7 @@ function module:InitializeRecipes()
 	recipe:SetSkillLevels(525, 525, 525, 532, 540)
 	recipe:SetRecipeItem(52736, "BIND_ON_PICKUP")
 	recipe:SetItemFilterType("ENCHANTING_WEAPON")
+	recipe:AddFilters(F.DPS)
 	recipe:AddVendor(1318, 3012, 3346, 4228, 4617, 5158, 16635, 16722, 50134, 50146)
 
 	-- Greater Critical Strike -- 74247
@@ -2161,6 +2249,7 @@ function module:InitializeRecipes()
 	recipe:SetSkillLevels(525, 525, 525, 532, 540)
 	recipe:SetRecipeItem(52737, "BIND_ON_PICKUP")
 	recipe:SetItemFilterType("ENCHANTING_CLOAK")
+	recipe:AddFilters(F.CASTER, F.DPS, F.HEALER)
 	recipe:AddVendor(1318, 3012, 3346, 4228, 4617, 5158, 16635, 16722, 50134, 50146)
 
 	-- Greater Critical Strike -- 74248
@@ -2221,6 +2310,7 @@ function module:InitializeRecipes()
 	recipe:SetSkillLevels(525, 525, 525, 532, 540)
 	recipe:SetRecipeItem(64413, "BIND_ON_PICKUP")
 	recipe:SetItemFilterType("ENCHANTING_BRACER")
+	recipe:AddFilters(F.CASTER, F.DPS, F.HEALER)
 	recipe:AddVendor(1318, 3012, 3346, 4228, 4617, 5158, 16635, 16722, 50134, 50146)
 
 	-- Enchanted Lantern -- 93841
@@ -2245,6 +2335,7 @@ function module:InitializeRecipes()
 	recipe = AddRecipe(95471, V.CATA, Q.COMMON)
 	recipe:SetSkillLevels(470, 470, 480, 490, 500)
 	recipe:SetItemFilterType("ENCHANTING_2H_WEAPON")
+	recipe:AddFilters(F.DPS)
 	recipe:AddTrainer(1317, 3011, 3345, 3606, 4213, 4616, 5157, 5695, 16633, 16725, 18773, 19251, 19252, 19540, 26906, 26990, 28693, 33583, 33610, 33633, 53410, 65127, 85914, 86027)
 
 	-- Major Strength -- 96261
@@ -2252,7 +2343,7 @@ function module:InitializeRecipes()
 	recipe:SetSkillLevels(340, 340, 350, 355, 360)
 	recipe:SetRecipeItem(68788, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("ENCHANTING_BRACER")
-	recipe:AddTrainer(85914, 86027)
+	recipe:AddFilters(F.DPS)
 	recipe:AddWorldDrop(Z.DEEPHOLM, Z.EASTERN_KINGDOMS, Z.KALIMDOR)
 
 	-- Mighty Intellect -- 96262
@@ -2260,6 +2351,7 @@ function module:InitializeRecipes()
 	recipe:SetSkillLevels(515, 515, 525, 532, 540)
 	recipe:SetRecipeItem(68789, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("ENCHANTING_BRACER")
+	recipe:AddFilters(F.CASTER, F.HEALER)
 	recipe:AddWorldDrop(Z.DEEPHOLM, Z.EASTERN_KINGDOMS, Z.KALIMDOR)
 
 	-- Agility -- 96264
@@ -2267,12 +2359,13 @@ function module:InitializeRecipes()
 	recipe:SetSkillLevels(235, 235, 245, 250, 255)
 	recipe:SetRecipeItem(68787, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("ENCHANTING_BRACER")
-	recipe:AddTrainer(85914, 86027)
+	recipe:AddFilters(F.DPS)
 	recipe:AddWorldDrop(Z.DEEPHOLM, Z.EASTERN_KINGDOMS, Z.KALIMDOR)
 
 	-- Maelstrom Shatter -- 104698
 	recipe = AddRecipe(104698, V.CATA, Q.COMMON)
 	recipe:SetSkillLevels(515, 515, 525, 530, 535)
+	recipe:SetCraftedItem(52721, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("ENCHANTING_MISC")
 	recipe:AddTrainer(1317, 3011, 3345, 4213, 5695, 33583, 53410, 65127, 85914, 86027)
 
@@ -2281,7 +2374,7 @@ function module:InitializeRecipes()
 	-------------------------------------------------------------------------------
 	-- Mastery -- 104338
 	recipe = AddRecipe(104338, V.MOP, Q.COMMON)
-	recipe:SetSkillLevels(510, 510, 520, 525, 530)
+	recipe:SetSkillLevels(500, 500, 510, 515, 520)
 	recipe:SetItemFilterType("ENCHANTING_BRACER")
 	recipe:AddTrainer(1317, 3011, 3345, 3606, 4213, 4616, 5157, 5695, 16633, 16725, 18773, 19251, 19252, 19540, 26906, 26990, 28693, 33583, 33610, 33633, 53410, 65127, 85914, 86027)
 
@@ -2289,6 +2382,7 @@ function module:InitializeRecipes()
 	recipe = AddRecipe(104385, V.MOP, Q.COMMON)
 	recipe:SetSkillLevels(525, 525, 535, 540, 545)
 	recipe:SetItemFilterType("ENCHANTING_BRACER")
+	recipe:AddFilters(F.TANK)
 	recipe:AddTrainer(1317, 3011, 3345, 3606, 4213, 4616, 5157, 5695, 16633, 16725, 18773, 19251, 19252, 19540, 26906, 26990, 28693, 33583, 33610, 33633, 53410, 65127, 85914, 86027)
 
 	-- Super Intellect -- 104389
@@ -2304,6 +2398,7 @@ function module:InitializeRecipes()
 	recipe:SetSkillLevels(470, 470, 480, 485, 490)
 	recipe:SetRecipeItem(84561, "BIND_ON_PICKUP")
 	recipe:SetItemFilterType("ENCHANTING_BRACER")
+	recipe:AddFilters(F.DPS)
 	recipe:AddRepVendor(FAC.THE_AUGUST_CELESTIALS, REP.REVERED, 64001, 64032)
 
 	-- Greater Agility -- 104391
@@ -2311,6 +2406,7 @@ function module:InitializeRecipes()
 	recipe:SetSkillLevels(310, 310, 320, 325, 330)
 	recipe:SetRecipeItem(84557, "BIND_ON_PICKUP")
 	recipe:SetItemFilterType("ENCHANTING_BRACER")
+	recipe:AddFilters(F.DPS)
 	recipe:AddRepVendor(FAC.THE_AUGUST_CELESTIALS, REP.REVERED, 64001, 64032)
 
 	-- Super Resilience -- 104392
@@ -2342,7 +2438,6 @@ function module:InitializeRecipes()
 	recipe = AddRecipe(104398, V.MOP, Q.COMMON)
 	recipe:SetSkillLevels(550, 550, 560, 565, 570)
 	recipe:SetItemFilterType("ENCHANTING_CLOAK")
-	recipe:AddFilters(F.CASTER, F.DPS, F.HEALER)
 	recipe:AddTrainer(1317, 3011, 3345, 3606, 4213, 4616, 5157, 5695, 16633, 16725, 18773, 19251, 19252, 19540, 26906, 26990, 28693, 33583, 33610, 33633, 53410, 65127, 85914, 86027)
 
 	-- Greater Protection -- 104401
@@ -2355,18 +2450,21 @@ function module:InitializeRecipes()
 	recipe = AddRecipe(104403, V.MOP, Q.COMMON)
 	recipe:SetSkillLevels(525, 525, 535, 540, 545)
 	recipe:SetItemFilterType("ENCHANTING_CLOAK")
+	recipe:AddFilters(F.CASTER, F.HEALER)
 	recipe:AddTrainer(1317, 3011, 3345, 3606, 4213, 4616, 5157, 5695, 16633, 16725, 18773, 19251, 19252, 19540, 26906, 26990, 28693, 33583, 33610, 33633, 53410, 65127, 85914, 86027)
 
 	-- Superior Critical Strike -- 104404
 	recipe = AddRecipe(104404, V.MOP, Q.COMMON)
 	recipe:SetSkillLevels(500, 500, 510, 515, 520)
 	recipe:SetItemFilterType("ENCHANTING_CLOAK")
+	recipe:AddFilters(F.CASTER, F.DPS, F.HEALER)
 	recipe:AddTrainer(1317, 3011, 3345, 3606, 4213, 4616, 5157, 5695, 16633, 16725, 18773, 19251, 19252, 19540, 26906, 26990, 28693, 33583, 33610, 33633, 53410, 65127, 85914, 86027)
 
 	-- Greater Haste -- 104407
 	recipe = AddRecipe(104407, V.MOP, Q.COMMON)
 	recipe:SetSkillLevels(550, 550, 560, 565, 570)
 	recipe:SetItemFilterType("ENCHANTING_BOOTS")
+	recipe:AddFilters(F.CASTER, F.DPS, F.HEALER)
 	recipe:AddTrainer(1317, 3011, 3345, 3606, 4213, 4616, 5157, 5695, 16633, 16725, 18773, 19251, 19252, 19540, 26906, 26990, 28693, 33583, 33610, 33633, 53410, 65127, 85914, 86027)
 
 	-- Greater Precision -- 104408
@@ -2379,6 +2477,7 @@ function module:InitializeRecipes()
 	recipe = AddRecipe(104409, V.MOP, Q.COMMON)
 	recipe:SetSkillLevels(550, 550, 560, 565, 570)
 	recipe:SetItemFilterType("ENCHANTING_BOOTS")
+	recipe:AddFilters(F.DPS)
 	recipe:AddTrainer(1317, 3011, 3345, 3606, 4213, 4616, 5157, 5695, 16633, 16725, 18773, 19251, 19252, 19540, 26906, 26990, 28693, 33583, 33610, 33633, 53410, 65127, 85914, 86027)
 
 	-- Pandaren's Step -- 104414
@@ -2389,20 +2488,23 @@ function module:InitializeRecipes()
 
 	-- Greater Haste -- 104416
 	recipe = AddRecipe(104416, V.MOP, Q.COMMON)
-	recipe:SetSkillLevels(550, 550, 560, 565, 570)
+	recipe:SetSkillLevels(525, 525, 535, 540, 545)
 	recipe:SetItemFilterType("ENCHANTING_GLOVES")
+	recipe:AddFilters(F.CASTER, F.DPS, F.HEALER)
 	recipe:AddTrainer(1317, 3011, 3345, 3606, 4213, 4616, 5157, 5695, 16633, 16725, 18773, 19251, 19252, 19540, 26906, 26990, 28693, 33583, 33610, 33633, 53410, 65127, 85914, 86027)
 
 	-- Superior Haste -- 104417
 	recipe = AddRecipe(104417, V.MOP, Q.COMMON)
 	recipe:SetSkillLevels(550, 550, 560, 565, 570)
 	recipe:SetItemFilterType("ENCHANTING_GLOVES")
+	recipe:AddFilters(F.CASTER, F.DPS, F.HEALER)
 	recipe:AddTrainer(1317, 3011, 3345, 3606, 4213, 4616, 5157, 5695, 16633, 16725, 18773, 19251, 19252, 19540, 26906, 26990, 28693, 33583, 33610, 33633, 53410, 65127, 85914, 86027)
 
 	-- Super Strength -- 104419
 	recipe = AddRecipe(104419, V.MOP, Q.COMMON)
 	recipe:SetSkillLevels(575, 575, 585, 590, 595)
 	recipe:SetItemFilterType("ENCHANTING_GLOVES")
+	recipe:AddFilters(F.DPS)
 	recipe:AddTrainer(1317, 3011, 3345, 3606, 4213, 4616, 5157, 5695, 16633, 16725, 18773, 19251, 19252, 19540, 26906, 26990, 28693, 33583, 33610, 33633, 53410, 65127, 85914, 86027)
 
 	-- Superior Mastery -- 104420
@@ -2415,6 +2517,7 @@ function module:InitializeRecipes()
 	recipe = AddRecipe(104425, V.MOP, Q.COMMON)
 	recipe:SetSkillLevels(550, 550, 560, 565, 570)
 	recipe:SetItemFilterType("ENCHANTING_WEAPON")
+	recipe:AddFilters(F.CASTER, F.DPS, F.HEALER)
 	recipe:AddTrainer(1317, 3011, 3345, 3606, 4213, 4616, 5157, 5695, 16633, 16725, 18773, 19251, 19252, 19540, 26906, 26990, 28693, 33583, 33610, 33633, 53410, 65127, 85914, 86027)
 
 	-- Jade Spirit -- 104427
@@ -2422,6 +2525,7 @@ function module:InitializeRecipes()
 	recipe:SetSkillLevels(600, 600, 600, 600, 615)
 	recipe:SetRecipeItem(84583, "BIND_ON_PICKUP")
 	recipe:SetItemFilterType("ENCHANTING_WEAPON")
+	recipe:AddFilters(F.CASTER, F.HEALER)
 	recipe:AddRepVendor(FAC.SHADO_PAN, REP.REVERED, 64595)
 
 	-- Elemental Force -- 104430
@@ -2456,41 +2560,48 @@ function module:InitializeRecipes()
 	recipe = AddRecipe(104445, V.MOP, Q.COMMON)
 	recipe:SetSkillLevels(575, 575, 585, 590, 595)
 	recipe:SetItemFilterType("ENCHANTING_MISC")
+	recipe:AddFilters(F.CASTER, F.HEALER)
 	recipe:AddTrainer(1317, 3011, 3345, 3606, 4213, 4616, 5157, 5695, 16633, 16725, 18773, 19251, 19252, 19540, 26906, 26990, 28693, 33583, 33610, 33633, 53410, 65127, 85914, 86027)
 
 	-- Mysterious Essence -- 116497
 	recipe = AddRecipe(116497, V.MOP, Q.COMMON)
 	recipe:SetSkillLevels(500, 500, 510, 515, 520)
+	recipe:SetCraftedItem(74250, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("ENCHANTING_MISC")
 	recipe:AddTrainer(1317, 3011, 3345, 3606, 4213, 4616, 5157, 5695, 16633, 16725, 18773, 19251, 19252, 19540, 26906, 26990, 28693, 33583, 33610, 33633, 53410, 65127, 85914, 86027)
 
 	-- Ethereal Shard -- 116498
 	recipe = AddRecipe(116498, V.MOP, Q.COMMON)
 	recipe:SetSkillLevels(550, 550, 560, 565, 570)
+	recipe:SetCraftedItem(74247, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("ENCHANTING_MISC")
 	recipe:AddTrainer(1317, 3011, 3345, 3606, 4213, 4616, 5157, 5695, 16633, 16725, 18773, 19251, 19252, 19540, 26906, 26990, 28693, 33583, 33610, 33633, 53410, 65127, 85914, 86027)
 
 	-- Sha Crystal -- 116499
 	recipe = AddRecipe(116499, V.MOP, Q.COMMON)
 	recipe:SetSkillLevels(600, 600, 610, 615, 620)
+	recipe:SetCraftedItem(74248, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("ENCHANTING_MISC")
 	recipe:AddTrainer(1317, 3011, 3345, 3606, 4213, 4616, 5157, 5695, 16633, 16725, 18773, 19251, 19252, 19540, 26906, 26990, 28693, 33583, 33610, 33633, 53410, 65127, 85914, 86027)
 
 	-- Mysterious Diffusion -- 118237
 	recipe = AddRecipe(118237, V.MOP, Q.COMMON)
 	recipe:SetSkillLevels(535, 535, 545, 550, 555)
+	recipe:SetCraftedItem(74249, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("ENCHANTING_MISC")
 	recipe:AddTrainer(1317, 3011, 3345, 3606, 4213, 4616, 5157, 5695, 16633, 16725, 18773, 19251, 19252, 19540, 26906, 26990, 28693, 33583, 33610, 33633, 53410, 65127, 85914, 86027)
 
 	-- Ethereal Shatter -- 118238
 	recipe = AddRecipe(118238, V.MOP, Q.COMMON)
 	recipe:SetSkillLevels(585, 585, 595, 600, 605)
+	recipe:SetCraftedItem(74250, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("ENCHANTING_MISC")
 	recipe:AddTrainer(1317, 3011, 3345, 3606, 4213, 4616, 5157, 5695, 16633, 16725, 18773, 19251, 19252, 19540, 26906, 26990, 28693, 33583, 33610, 33633, 53410, 65127, 85914, 86027)
 
 	-- Sha Shatter -- 118239
 	recipe = AddRecipe(118239, V.MOP, Q.COMMON)
 	recipe:SetSkillLevels(600, 600, 610, 615, 620)
+	recipe:SetCraftedItem(74247, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("ENCHANTING_MISC")
 	recipe:AddTrainer(1317, 3011, 3345, 3606, 4213, 4616, 5157, 5695, 16633, 16725, 18773, 19251, 19252, 19540, 26906, 26990, 28693, 33583, 33610, 33633, 53410, 65127, 85914, 86027)
 
@@ -2498,6 +2609,7 @@ function module:InitializeRecipes()
 	recipe = AddRecipe(130758, V.MOP, Q.COMMON)
 	recipe:SetSkillLevels(575, 575, 585, 590, 595)
 	recipe:SetItemFilterType("ENCHANTING_SHIELD")
+	recipe:AddFilters(F.TANK)
 	recipe:AddTrainer(1317, 3011, 3345, 3606, 4213, 4616, 5157, 5695, 16633, 16725, 18773, 19251, 19252, 19540, 26906, 26990, 28693, 33583, 33610, 33633, 53410, 65127, 85914, 86027)
 
 	-------------------------------------------------------------------------------
@@ -2508,6 +2620,7 @@ function module:InitializeRecipes()
 	recipe:SetSkillLevels(1, 1, 625, 627, 630)
 	recipe:SetRecipeItem(118394, "BIND_ON_PICKUP")
 	recipe:SetItemFilterType("ENCHANTING_CLOAK")
+	recipe:AddFilters(F.CASTER, F.DPS, F.HEALER)
 	recipe:AddVendor(77354, 79821, 86045, 87022)
 
 	-- Breath of Haste -- 158878
@@ -2515,6 +2628,7 @@ function module:InitializeRecipes()
 	recipe:SetSkillLevels(1, 1, 625, 627, 630)
 	recipe:SetRecipeItem(118429, "BIND_ON_PICKUP")
 	recipe:SetItemFilterType("ENCHANTING_CLOAK")
+	recipe:AddFilters(F.CASTER, F.DPS, F.HEALER)
 	recipe:AddVendor(77354, 79821, 86045, 87022)
 
 	-- Breath of Mastery -- 158879
@@ -2543,6 +2657,7 @@ function module:InitializeRecipes()
 	recipe:SetSkillLevels(1, 1, 700, 702, 705)
 	recipe:SetRecipeItem(118433, "BIND_ON_PICKUP")
 	recipe:SetItemFilterType("ENCHANTING_CLOAK")
+	recipe:AddFilters(F.CASTER, F.DPS, F.HEALER)
 	recipe:AddVendor(77354, 79821, 86045, 87022)
 
 	-- Gift of Haste -- 158885
@@ -2587,6 +2702,7 @@ function module:InitializeRecipes()
 	recipe:SetSkillLevels(1, 1, 625, 627, 630)
 	recipe:SetRecipeItem(118439, "BIND_ON_PICKUP")
 	recipe:SetItemFilterType("ENCHANTING_NECK")
+	recipe:AddFilters(F.CASTER, F.DPS, F.HEALER)
 	recipe:AddVendor(77354, 79821, 86045, 87022)
 
 	-- Breath of Mastery -- 158894
@@ -2623,6 +2739,7 @@ function module:InitializeRecipes()
 	recipe:SetSkillLevels(1, 1, 700, 702, 705)
 	recipe:SetRecipeItem(118444, "BIND_ON_PICKUP")
 	recipe:SetItemFilterType("ENCHANTING_NECK")
+	recipe:AddFilters(F.CASTER, F.DPS, F.HEALER)
 	recipe:AddVendor(77354, 79821, 86045, 87022)
 
 	-- Gift of Mastery -- 158901
@@ -2650,35 +2767,32 @@ function module:InitializeRecipes()
 	recipe = AddRecipe(158907, V.WOD, Q.COMMON)
 	recipe:SetSkillLevels(1, 1, 625, 627, 630)
 	recipe:SetItemFilterType("ENCHANTING_RING")
-	recipe:AddFilters(F.CASTER, F.DPS, F.HEALER, F.MISC1)
+	recipe:AddFilters(F.CASTER, F.DPS, F.HEALER)
 	recipe:AddCustom("DRAENOR_DEFAULT")
 
 	-- Breath of Haste -- 158908
 	recipe = AddRecipe(158908, V.WOD, Q.COMMON)
 	recipe:SetSkillLevels(1, 1, 625, 627, 630)
 	recipe:SetItemFilterType("ENCHANTING_RING")
-	recipe:AddFilters(F.CASTER, F.DPS, F.HEALER, F.MISC1)
+	recipe:AddFilters(F.CASTER, F.DPS, F.HEALER)
 	recipe:AddCustom("DRAENOR_DEFAULT")
 
 	-- Breath of Mastery -- 158909
 	recipe = AddRecipe(158909, V.WOD, Q.COMMON)
 	recipe:SetSkillLevels(1, 1, 625, 627, 630)
 	recipe:SetItemFilterType("ENCHANTING_RING")
-	recipe:AddFilters(F.CASTER, F.DPS, F.HEALER, F.MISC1)
 	recipe:AddCustom("DRAENOR_DEFAULT")
 
 	-- Breath of Multistrike -- 158910
 	recipe = AddRecipe(158910, V.WOD, Q.COMMON)
 	recipe:SetSkillLevels(1, 1, 625, 627, 630)
 	recipe:SetItemFilterType("ENCHANTING_RING")
-	recipe:AddFilters(F.CASTER, F.DPS, F.HEALER, F.MISC1)
 	recipe:AddCustom("DRAENOR_DEFAULT")
 
 	-- Breath of Versatility -- 158911
 	recipe = AddRecipe(158911, V.WOD, Q.COMMON)
 	recipe:SetSkillLevels(1, 1, 625, 627, 630)
 	recipe:SetItemFilterType("ENCHANTING_RING")
-	recipe:AddFilters(F.CASTER, F.DPS, F.HEALER, F.MISC1)
 	recipe:AddCustom("DRAENOR_DEFAULT")
 
 	-- Gift of Critical Strike -- 158914
@@ -2723,13 +2837,13 @@ function module:InitializeRecipes()
 	recipe:SetSkillLevels(1, 1, 700, 702, 705)
 	recipe:SetRecipeItem(118458, "BIND_ON_PICKUP")
 	recipe:SetItemFilterType("ENCHANTING_WEAPON")
+	recipe:AddFilters(F.CASTER, F.DPS, F.HEALER)
 	recipe:AddVendor(77354, 79821, 86045, 87022)
 
 	-- Mark of the Shattered Hand -- 159236
 	recipe = AddRecipe(159236, V.WOD, Q.COMMON)
 	recipe:SetSkillLevels(1, 1, 700, 702, 705)
 	recipe:SetItemFilterType("ENCHANTING_WEAPON")
-	recipe:AddFilters(F.ALLIANCE, F.HORDE, F.DPS, F.MISC1)
 	recipe:AddCustom("DRAENOR_DEFAULT")
 
 	-- Mark of Warsong -- 159671
@@ -2737,6 +2851,7 @@ function module:InitializeRecipes()
 	recipe:SetSkillLevels(1, 1, 700, 702, 705)
 	recipe:SetRecipeItem(118460, "BIND_ON_PICKUP")
 	recipe:SetItemFilterType("ENCHANTING_WEAPON")
+	recipe:AddFilters(F.CASTER, F.DPS, F.HEALER)
 	recipe:AddVendor(77354, 79821, 86045, 87022)
 
 	-- Mark of the Frostwolf -- 159672
@@ -2751,6 +2866,7 @@ function module:InitializeRecipes()
 	recipe:SetSkillLevels(1, 1, 700, 702, 705)
 	recipe:SetRecipeItem(118462, "BIND_ON_PICKUP")
 	recipe:SetItemFilterType("ENCHANTING_WEAPON")
+	recipe:AddFilters(F.CASTER, F.HEALER)
 	recipe:AddVendor(77354, 79821, 86045, 87022)
 
 	-- Mark of Blackrock -- 159674
@@ -2758,6 +2874,7 @@ function module:InitializeRecipes()
 	recipe:SetSkillLevels(1, 1, 700, 702, 705)
 	recipe:SetRecipeItem(118463, "BIND_ON_PICKUP")
 	recipe:SetItemFilterType("ENCHANTING_WEAPON")
+	recipe:AddFilters(F.TANK)
 	recipe:AddVendor(77354, 79821, 86045, 87022)
 
 	-- Enchanted Dust -- 162948
@@ -2765,7 +2882,6 @@ function module:InitializeRecipes()
 	recipe:SetSkillLevels(1, 1, 50, 100, 150)
 	recipe:SetCraftedItem(112321, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("ENCHANTING_MATERIALS")
-	recipe:AddFilters(F.MISC1)
 	recipe:AddCustom("DRAENOR_DEFAULT")
 
 	-- Luminous Shard -- 169091
@@ -2773,7 +2889,6 @@ function module:InitializeRecipes()
 	recipe:SetSkillLevels(1, 1, 625, 627, 630)
 	recipe:SetCraftedItem(111245, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("ENCHANTING_MATERIALS")
-	recipe:AddFilters(F.ALLIANCE, F.HORDE, F.MISC1)
 	recipe:AddCustom("DRAENOR_DEFAULT")
 
 	-- Temporal Crystal -- 169092
@@ -2781,7 +2896,6 @@ function module:InitializeRecipes()
 	recipe:SetSkillLevels(1, 1, 600, 800, 1000)
 	recipe:SetCraftedItem(113588, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("ENCHANTING_MATERIALS")
-	recipe:AddFilters(F.ALLIANCE, F.HORDE, F.MISC1)
 	recipe:AddCustom("DRAENOR_DEFAULT")
 
 	-- Mark of Bleeding Hollow -- 173323
@@ -2796,7 +2910,6 @@ function module:InitializeRecipes()
 	recipe:SetSkillLevels(1, 1, 600, 650, 700)
 	recipe:SetCraftedItem(119293, "BIND_ON_PICKUP")
 	recipe:SetItemFilterType("ENCHANTING_MISC")
-	recipe:AddFilters(F.ALLIANCE, F.HORDE, F.MISC1)
 	recipe:AddCustom("DRAENOR_DEFAULT")
 
 	-- Temporal Binding -- 182129
