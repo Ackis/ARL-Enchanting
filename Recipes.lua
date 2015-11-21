@@ -286,7 +286,7 @@ function module:InitializeRecipes()
 	recipe:SetSkillLevels(145, 145, 170, 190, 210)
 	recipe:SetRecipeItem(11150, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("ENCHANTING_GLOVES")
-	recipe:Retire()
+	recipe:AddVendor(3180)
 
 	-- Herbalism -- 13617
 	recipe = AddRecipe(13617, V.ORIG, Q.UNCOMMON)

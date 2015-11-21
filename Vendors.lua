@@ -35,6 +35,7 @@ function module:InitializeVendors()
 		})
 	end
 
+	AddVendor(3180,		L["Dark Iron Entrepreneur"],		Z.ARATHI_HIGHLANDS,		42.6,	90.6,	"Neutral")
 	AddVendor(12043,	L["Kulwia"],				Z.STONETALON_MOUNTAINS,		48.6,	61.6,	"Horde")
 	AddVendor(18664,	L["Aged Dalaran Wizard"],		Z.OLD_HILLSBRAD_FOOTHILLS,	0,	0,	"Neutral")
 	AddVendor(19536,	L["Dealer Jadyan"],			Z.NETHERSTORM,			44.0,	36.6,	"Neutral")
