@@ -55,7 +55,7 @@ function module:InitializeRecipes()
 	recipe = AddRecipe(7418, V.ORIG, Q.COMMON)
 	recipe:SetSkillLevels(15, 15, 25, 30, 35)
 	recipe:SetItemFilterType("ENCHANTING_BRACER")
-	recipe:AddTrainer(1317, 3011, 3606, 4213, 5157, 7949, 11072, 11073, 11074, 16160, 16725, 19251, 19252, 19540, 26906, 26990, 33583, 33633, 47396, 47400, 47420, 47431, 48619, 53410, 57620, 65043, 65127, 86027)
+	recipe:AddCustom("DEFAULT_RECIPE")
 
 	-- Minor Health -- 7420
 	recipe = AddRecipe(7420, V.ORIG, Q.COMMON)
@@ -359,7 +359,7 @@ function module:InitializeRecipes()
 	recipe:SetSkillLevels(170, 170, 180, 185, 190)
 	recipe:SetItemFilterType("ENCHANTING_BRACER")
 	recipe:AddFilters(F.TANK)
-	recipe:AddTrainer(1317, 3011, 3345, 3606, 4213, 4616, 5157, 5695, 16633, 16725, 18753, 18773, 26906, 26990, 28693, 33583, 33610, 33676, 53410, 65127, 85914, 86027)
+	recipe:AddTrainer(1317, 3011, 3345, 3606, 4213, 4616, 5157, 5695, 16633, 16725, 18753, 18773, 19540, 26906, 26990, 28693, 33583, 33610, 33676, 53410, 65127, 85914, 86027)
 
 	-- Stamina -- 13648
 	recipe = AddRecipe(13648, V.ORIG, Q.COMMON)
@@ -1609,7 +1609,6 @@ function module:InitializeRecipes()
 	recipe:SetRecipeItem(44484, "BIND_ON_PICKUP")
 	recipe:SetItemFilterType("ENCHANTING_BRACER")
 	recipe:AddFilters(F.DPS)
-	recipe:AddTrainer(1317, 3011, 3606, 4213, 5157, 16725, 19251, 19252, 19540, 26906, 26954, 26980, 26990, 33583, 33633, 53410, 65127, 86027)
 	recipe:AddVendor(32514)
 
 	-- Lifeward -- 44576
@@ -1974,7 +1973,7 @@ function module:InitializeRecipes()
 	recipe:SetSkillLevels(390, 390, 400, 405, 410)
 	recipe:SetCraftedItem(89738, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("ENCHANTING_MISC")
-	recipe:AddTrainer(1317, 3011, 3345, 4213, 4616, 5695, 16633, 16725, 18753, 18773, 26906, 26954, 26980, 28693, 33583, 33610, 33633, 33676, 53410, 65127, 85914, 86027)
+	recipe:AddTrainer(1317, 3011, 3345, 4213, 4616, 5157, 5695, 16633, 16725, 18753, 18773, 19540, 26906, 26954, 26980, 28693, 33583, 33610, 33633, 33676, 53410, 65127, 85914, 86027)
 
 	-- Angler -- 71692
 	recipe = AddRecipe(71692, V.WOTLK, Q.UNCOMMON)
@@ -2342,7 +2341,7 @@ function module:InitializeRecipes()
 	recipe:SetSkillLevels(515, 515, 525, 530, 535)
 	recipe:SetCraftedItem(52721, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("ENCHANTING_MISC")
-	recipe:AddTrainer(1317, 3011, 3345, 4213, 4616, 5695, 16633, 18753, 18773, 28693, 33583, 33610, 33676, 53410, 65127, 85914, 86027)
+	recipe:AddTrainer(1317, 3011, 3345, 4213, 4616, 5157, 5695, 16633, 18753, 18773, 19540, 28693, 33583, 33610, 33676, 53410, 65127, 85914, 86027)
 
 	-------------------------------------------------------------------------------
 	-- Mists of Pandaria.
