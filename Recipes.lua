@@ -805,7 +805,7 @@ function module:InitializeRecipes()
 	recipe:SetSkillLevels(300, 300, 310, 325, 340)
 	recipe:SetRecipeItem(16254, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("ENCHANTING_WEAPON")
-	recipe:AddMobDrop(10499)
+	recipe:Retire()
 
 	-- Unholy Weapon -- 20033
 	recipe = AddRecipe(20033, V.ORIG, Q.UNCOMMON)
