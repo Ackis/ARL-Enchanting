@@ -1058,7 +1058,7 @@ function module:InitializeRecipes()
 	recipe:SetRecipeItem(33150, "BIND_ON_PICKUP")
 	recipe:SetItemFilterType("ENCHANTING_CLOAK")
 	recipe:AddFilters(F.TANK)
-	recipe:AddMobDrop(15276)
+	recipe:AddMobDrop(15275)
 	recipe:AddRepVendor(FAC.HONOR_HOLD, REP.EXALTED, 17657)
 	recipe:AddRepVendor(FAC.THRALLMAR, REP.EXALTED, 17585)
 
