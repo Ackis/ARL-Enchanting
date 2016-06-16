@@ -57,4 +57,5 @@ function module:OnEnable()
 	self:InitializeTrainers()
 	self:InitializeVendors()
 	self:InitializeRecipes()
+	self:InitializeQuests()
 end

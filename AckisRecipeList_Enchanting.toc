@@ -11,6 +11,7 @@
 Core.lua
 Filters.lua
 MobDrops.lua
+Quests.lua
 Trainers.lua
 Vendors.lua
 Recipes.lua
