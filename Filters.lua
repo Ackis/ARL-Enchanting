@@ -41,6 +41,7 @@ module.ITEM_FILTER_TYPES = {
 	ENCHANTING_WAND = true,
 	ENCHANTING_MISC = true,
 	ENCHANTING_MATERIALS = true,
+	ENCHANTING_ILLUSION = true,
 }
 
 function module:InitializeItemFilters(parent_panel)
@@ -164,6 +165,7 @@ function module:InitializeItemFilters(parent_panel)
 		enchanting_rod		= { tt = L["FILTER_DESC_FORMAT"]:format(L["Rod"]),		text = L["Rod"],		row = 2, col = 1 },
 		enchanting_wand		= { tt = L["FILTER_DESC_FORMAT"]:format(L["Wand"]),		text = L["Wand"],		row = 2, col = 2 },
 		enchanting_materials 	= { tt = L["FILTER_DESC_FORMAT"]:format(L["Materials"]),	text = L["Materials"],		row = 3, col = 1 },
+		enchanting_illusion	= { tt = L["FILTER_DESC_FORMAT"]:format(L["Illusion"]),		text = L["Illusion"],		row = 3, col = 2 },
 	}
 
 	general_toggle:SetScript("OnClick", function(self, button)
