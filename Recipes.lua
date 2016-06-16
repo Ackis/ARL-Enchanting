@@ -2894,5 +2894,244 @@ function module:InitializeRecipes()
 	recipe:SetItemFilterType("ENCHANTING_MATERIALS")
 	recipe:AddVendor(91020, 91029)
 
+	-------------------------------------------------------------------------------
+	-- Legion.
+	-------------------------------------------------------------------------------
+
+	-- Word of Critical Strike (1 star) -- 190866
+	recipe = AddRecipe(190866, V.LEGION, Q.COMMON)
+	recipe:SetSkillLevels(1, 1, 700, 710, 720)
+	recipe:SetRecipeItem(128566, "BIND_ON_PICKUP")
+	recipe:SetCraftedItem(128537, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("ENCHANTING_RING")
+	recipe:AddQuest(39905)
+
+	-- Word of Haste (1 star) -- 190867
+	recipe = AddRecipe(190867, V.LEGION, Q.COMMON)
+	recipe:SetSkillLevels(1, 1, 700, 710, 720)
+	recipe:SetRecipeItem(128563, "BIND_ON_PICKUP")
+	recipe:SetCraftedItem(128538, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("ENCHANTING_RING")
+	recipe:AddQuest(39905)
+
+	-- Word of Versatility (1 star) -- 190869
+	recipe = AddRecipe(190869, V.LEGION, Q.COMMON)
+	recipe:SetSkillLevels(1, 1, 700, 710, 720)
+	recipe:SetRecipeItem(128565, "BIND_ON_PICKUP")
+	recipe:SetCraftedItem(128540, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("ENCHANTING_RING")
+	recipe:AddQuest(39875)
+
+	-- Binding of Critical Strike (1 star) -- 190870
+	recipe = AddRecipe(190870, V.LEGION, Q.COMMON)
+	recipe:SetSkillLevels(1, 1, 740, 750, 760)
+	recipe:SetRecipeItem(128562, "BIND_ON_PICKUP")
+	recipe:SetCraftedItem(128541, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("ENCHANTING_RING")
+	recipe:AddQuest(39923)
+
+	-- Binding of Haste (1 star) -- 190871
+	recipe = AddRecipe(190871, V.LEGION, Q.COMMON)
+	recipe:SetSkillLevels(1, 1, 740, 750, 760)
+	recipe:SetRecipeItem(128567, "BIND_ON_PICKUP")
+	recipe:SetCraftedItem(128542, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("ENCHANTING_RING")
+	recipe:AddQuest(39923)
+
+	-- Binding of Mastery (1 star) -- 190872
+	recipe = AddRecipe(190872, V.LEGION, Q.COMMON)
+	recipe:SetSkillLevels(1, 1, 740, 750, 760)
+	recipe:SetRecipeItem(128568, "BIND_ON_PICKUP")
+	recipe:SetCraftedItem(12843, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("ENCHANTING_RING")
+	recipe:AddQuest(39923)
+
+	-- Binding of Versatility (1 star) -- 190873
+	recipe = AddRecipe(190873, V.LEGION, Q.COMMON)
+	recipe:SetSkillLevels(1, 1, 740, 750, 760)
+	recipe:SetRecipeItem(128569, "BIND_ON_PICKUP")
+	recipe:SetCraftedItem(128544, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("ENCHANTING_RING")
+	recipe:AddQuest(39923)
+
+	-- Word of Critical Strike (2 star) -- 190992
+	recipe = AddRecipe(190992, V.LEGION, Q.COMMON)
+	recipe:SetSkillLevels(1, 1, 720, 730, 740)
+	recipe:SetRecipeItem(128579, "BIND_ON_PICKUP")
+	recipe:SetCraftedItem(128537, "BIND_ON_EQUIP")
+	recipe:SetPreviousRankSpellID(190866)
+	recipe:SetItemFilterType("ENCHANTING_RING")
+	recipe:AddVendor(93530)
+
+	-- Word of Haste (2 star) -- 190993
+	recipe = AddRecipe(190993, V.LEGION, Q.COMMON)
+	recipe:SetSkillLevels(1, 1, 720, 730, 740)
+	recipe:SetRecipeItem(128580, "BIND_ON_PICKUP")
+	recipe:SetCraftedItem(128538, "BIND_ON_EQUIP")
+	recipe:SetPreviousRankSpellID(190867)
+	recipe:SetItemFilterType("ENCHANTING_RING")
+	recipe:AddVendor(93530)
+
+	-- Word of Versatility (2 star) -- 190995
+	recipe = AddRecipe(190995, V.LEGION, Q.COMMON)
+	recipe:SetSkillLevels(1, 1, 760, 770, 780)
+	recipe:SetRecipeItem(128582, "BIND_ON_PICKUP")
+	recipe:SetCraftedItem(128540, "BIND_ON_EQUIP")
+	recipe:SetPreviousRankSpellID(190869)
+	recipe:SetItemFilterType("ENCHANTING_RING")
+	recipe:AddVendor(93530)
+
+	-- Binding of Critical Strike (2 star) -- 190996
+	recipe = AddRecipe(190996, V.LEGION, Q.COMMON)
+	recipe:SetSkillLevels(1, 1, 760, 770, 780)
+	recipe:SetRecipeItem(128583, "BIND_ON_PICKUP")
+	recipe:SetCraftedItem(128541, "BIND_ON_EQUIP")
+	recipe:SetPreviousRankSpellID(190870)
+	recipe:SetItemFilterType("ENCHANTING_RING")
+	recipe:AddVendor(93530)
+
+	-- Binding of Haste (2 star) -- 190997
+	recipe = AddRecipe(190997, V.LEGION, Q.COMMON)
+	recipe:SetSkillLevels(1, 1, 760, 770, 780)
+	recipe:SetRecipeItem(128584, "BIND_ON_PICKUP")
+	recipe:SetCraftedItem(128542, "BIND_ON_EQUIP")
+	recipe:SetPreviousRankSpellID(190871)
+	recipe:SetItemFilterType("ENCHANTING_RING")
+	recipe:AddVendor(93530)
+
+	-- Binding of Mastery (2 star) -- 190998
+	recipe = AddRecipe(190998, V.LEGION, Q.COMMON)
+	recipe:SetSkillLevels(1, 1, 760, 770, 780)
+	recipe:SetRecipeItem(128585, "BIND_ON_PICKUP")
+	recipe:SetCraftedItem(12843, "BIND_ON_EQUIP")
+	recipe:SetPreviousRankSpellID(190872)
+	recipe:SetItemFilterType("ENCHANTING_RING")
+	recipe:AddVendor(93530)
+
+	-- Binding of Versatility (2 star) -- 190999
+	recipe = AddRecipe(190999, V.LEGION, Q.COMMON)
+	recipe:SetSkillLevels(1, 1, 760, 770, 780)
+	recipe:SetRecipeItem(128586, "BIND_ON_PICKUP")
+	recipe:SetCraftedItem(128544, "BIND_ON_EQUIP")
+	recipe:SetPreviousRankSpellID(190873)
+	recipe:SetItemFilterType("ENCHANTING_RING")
+	recipe:AddVendor(93530)
+
+	-- Word of Critical Strike (3 star) -- 191009
+	recipe = AddRecipe(191009, V.LEGION, Q.COMMON)
+	recipe:SetSkillLevels(1, 1, 740, 750, 760)
+	recipe:SetRecipeItem(128596, "BIND_ON_PICKUP")
+	recipe:SetCraftedItem(128537, "BIND_ON_EQUIP")
+	recipe:SetPreviousRankSpellID(190992)
+	recipe:SetItemFilterType("ENCHANTING_RING")
+	recipe:AddQuest(41669)
+
+	-- Word of Haste (3 star) -- 191010
+	recipe = AddRecipe(191010, V.LEGION, Q.COMMON)
+	recipe:SetSkillLevels(1, 1, 740, 750, 760)
+	recipe:SetRecipeItem(128597, "BIND_ON_PICKUP")
+	recipe:SetCraftedItem(128538, "BIND_ON_EQUIP")
+	recipe:SetPreviousRankSpellID(190993)
+	recipe:SetItemFilterType("ENCHANTING_RING")
+	recipe:AddQuest(41672)
+
+	-- Word of Versatility (3 star) -- 191012
+	recipe = AddRecipe(191012, V.LEGION, Q.COMMON)
+	recipe:SetSkillLevels(1, 1, 740, 750, 760)
+	recipe:SetRecipeItem(128599, "BIND_ON_PICKUP")
+	recipe:SetCraftedItem(128540, "BIND_ON_EQUIP")
+	recipe:SetPreviousRankSpellID(190995)
+	recipe:SetItemFilterType("ENCHANTING_RING")
+	recipe:AddVendor(112146)
+
+	-- Binding of Critical Strike (3 star) -- 191013
+	recipe = AddRecipe(191013, V.LEGION, Q.COMMON)
+	recipe:SetSkillLevels(1, 1, 780, 790, 800)
+	recipe:SetRecipeItem(128600, "BIND_ON_PICKUP")
+	recipe:SetCraftedItem(128541, "BIND_ON_EQUIP")
+	recipe:SetPreviousRankSpellID(190996)
+	recipe:SetItemFilterType("ENCHANTING_RING")
+	recipe:AddVendor(112146)
+
+	-- Binding of Haste (3 star) -- 191014
+	recipe = AddRecipe(191014, V.LEGION, Q.COMMON)
+	recipe:SetSkillLevels(1, 1, 780, 790, 800)
+	recipe:SetRecipeItem(128601, "BIND_ON_PICKUP")
+	recipe:SetCraftedItem(128542, "BIND_ON_EQUIP")
+	recipe:SetPreviousRankSpellID(190997)
+	recipe:SetItemFilterType("ENCHANTING_RING")
+	recipe:AddVendor(106901)
+
+	-- Binding of Mastery (3 star) -- 191015
+	recipe = AddRecipe(191015, V.LEGION, Q.COMMON)
+	recipe:SetSkillLevels(1, 1, 780, 790, 800)
+	recipe:SetRecipeItem(128602, "BIND_ON_PICKUP")
+	recipe:SetCraftedItem(12843, "BIND_ON_EQUIP")
+	recipe:SetPreviousRankSpellID(190998)
+	recipe:SetItemFilterType("ENCHANTING_RING")
+	recipe:AddVendor(112146)
+
+	-- Binding of Versatility (3 star) -- 191016
+	recipe = AddRecipe(191016, V.LEGION, Q.COMMON)
+	recipe:SetSkillLevels(1, 1, 780, 790, 800)
+	recipe:SetRecipeItem(128603, "BIND_ON_PICKUP")
+	recipe:SetCraftedItem(128544, "BIND_ON_EQUIP")
+	recipe:SetPreviousRankSpellID(190999)
+	recipe:SetItemFilterType("ENCHANTING_RING")
+	recipe:AddVendor(112146)
+
+	-- Tome of Illusions: Azeroth -- 217637
+	recipe = AddRecipe(217637, V.LEGION, Q.COMMON)
+	recipe:SetSkillLevels(275, 275, 290, 297, 305)
+	recipe:SetCraftedItem(138787, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("ENCHANTING_ILLUSION")
+	recipe:AddTrainer(3345)
+
+	-- Tome of Illusions: Outland -- 217641
+	recipe = AddRecipe(217641, V.LEGION, Q.COMMON)
+	recipe:SetSkillLevels(350, 350, 370, 377, 385)
+	recipe:SetCraftedItem(138789, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("ENCHANTING_ILLUSION")
+	recipe:AddTrainer(3345)
+
+	-- Tome of Illusions: Northrend -- 217644
+	recipe = AddRecipe(217644, V.LEGION, Q.COMMON)
+	recipe:SetSkillLevels(425, 425, 450, 460, 470)
+	recipe:SetCraftedItem(138790, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("ENCHANTING_ILLUSION")
+	recipe:AddTrainer(3345)
+
+	-- Tome of Illusions: Cataclysm -- 217645
+	recipe = AddRecipe(217645, V.LEGION, Q.COMMON)
+	recipe:SetSkillLevels(500, 500, 525, 532, 540)
+	recipe:SetCraftedItem(138791, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("ENCHANTING_ILLUSION")
+	recipe:AddTrainer(3345)
+
+	-- Tome of Illusions: Elemental Lords -- 217649
+	recipe = AddRecipe(217649, V.LEGION, Q.COMMON)
+	recipe:SetSkillLevels(525, 525, 525, 532, 540)
+	recipe:SetCraftedItem(138792, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("ENCHANTING_ILLUSION")
+	recipe:AddQuest(42971)
+
+	-- Tome of Illusions: Pandaria -- 217650
+	recipe = AddRecipe(217650, V.LEGION, Q.COMMON)
+	recipe:SetSkillLevels(575, 575, 615, 615, 615)
+	recipe:SetCraftedItem(138793, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("ENCHANTING_ILLUSION")
+	recipe:AddTrainer(3345)
+
+	-- Tome of Illusions: Secrets of the Shado-Pan -- 217651
+	recipe = AddRecipe(217651, V.LEGION, Q.RARE)
+	recipe:SetSkillLevels(575, 575, 615, 615, 615)
+	recipe:SetRecipeItem(138877, "BIND_ON_EQUIP")
+	recipe:SetCraftedItem(138794, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("ENCHANTING_ILLUSION")
+	recipe:AddRepVendor(FAC.SHADO_PAN, REP.REVERED, 64595)
+
+
+
+
 	self.InitializeRecipes = nil
 end
