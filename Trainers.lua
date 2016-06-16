@@ -67,6 +67,7 @@ function module:InitializeTrainers()
 	AddTrainer(65127, "Lai the Spellpaw", 		Z.THE_JADE_FOREST, 		46.8, 42.9, "Neutral")
 	AddTrainer(85914, "Bil Sparktonic", 		Z.STORMSHIELD, 			56.7, 65.4, "Alliance")
 	AddTrainer(86027, "Hane'ke", 			Z.WARSPEAR, 			78.8, 52.4, "Horde")
+	AddTrainer(93531, "Enchanter Nalthanis",	Z.AZSUNA,			0.0, 0.0, "Neutral") -- Needs updating
 
 	self.InitializeTrainers = nil
 end
