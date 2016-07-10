@@ -34,8 +34,8 @@ function module:InitializeQuests()
 		})
 	end
 
-	AddQuest(39905,	Z.AZSUNA,			0.0,	0.0,	"Neutral") --Needs updating
-	AddQuest(39923,	Z.AZSUNA,			0.0,	0.0,	"Neutral") --Needs updating
+	AddQuest(39905,	Z.AZSUNA,			0.0,	0.0,	"Neutral") -- Ringing True  --Needs updating
+	AddQuest(39923,	Z.AZSUNA,			0.0,	0.0,	"Neutral") -- Down to the Core --Needs updating
 	AddQuest(39875, Z.DALARAN_BROKENISLES,		38.3,	41.5,	"Neutral")
 	AddQuest(41672, Z.STORMHEIM,			0.0,	0.0,	"Neutral") --Needs updating
 	AddQuest(41669,	Z.AZSUNA,			0.0,	0.0,	"Neutral") --Needs updating
