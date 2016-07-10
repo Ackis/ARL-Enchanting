@@ -56,6 +56,6 @@ function module:OnEnable()
 	self:InitializeMobDrops()
 	self:InitializeTrainers()
 	self:InitializeVendors()
-	self:InitializeRecipes()
 	self:InitializeQuests()
+	self:InitializeRecipes()
 end
