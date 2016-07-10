@@ -51,7 +51,6 @@ function module:InitializeVendors()
 	AddVendor(87022,	L["Bob"],				Z.STORMSHIELD,			56.7,	64.6,	"Alliance") -- Alliance Ashran
 	AddVendor(91020,	L["Enchantress Ismae"],			Z.LUNARFALL,			 0.0,	 0.0,	"Alliance")
 	AddVendor(91029,	L["Rath'thul Moonvale"],		Z.FROSTWALL,			 0.0,	 0.0,	"Horde")
-	AddVendor(93530,	L["Ildine Sorrowspear"],		Z.DALARAN_BROKENISLES,		38.3,	41.5,	"Neutral")
 	AddVendor(106901,	L["Sylvia Hartshorn"],			Z.VALSHARAH,			54.7,	73.2,	"Neutral")
 	AddVendor(112146,	L["First Arcanist Thalyssra"],		Z.SURAMAR,			 0.0,	 0.0,	"Neutral") -- Needs updating, including Vendor ID
 
