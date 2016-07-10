@@ -59,14 +59,14 @@ function module:InitializeItemFilters(parent_panel)
 	addon.SetTooltipScripts(armor_toggle, L["GROUP_TOGGLE_FORMAT"]:format(_G.ARMOR))
 
 	local armor_types = {
-		enchanting_boots	= { tt = L["FILTER_DESC_FORMAT"]:format(L["Boots"]),		text = L["Boots"],		row = 1, col = 1},
-		enchanting_bracer	= { tt = L["FILTER_DESC_FORMAT"]:format(L["Bracer"]),		text = L["Bracer"],		row = 1, col = 2},
+		enchanting_boots	= { tt = L["FILTER_DESC_FORMAT"]:format(_G.INVTYPE_FEET),	text = _G.INVTYPE_FEET,		row = 1, col = 1},
+		enchanting_bracer	= { tt = L["FILTER_DESC_FORMAT"]:format(_G.INVTYPE_WRIST),	text = _G.INVTYPE_WRIST,	row = 1, col = 2},
 		enchanting_chest	= { tt = L["FILTER_DESC_FORMAT"]:format(_G.INVTYPE_CHEST),	text = _G.INVTYPE_CHEST,	row = 2, col = 1},
-		enchanting_cloak	= { tt = L["FILTER_DESC_FORMAT"]:format(L["Cloak"]),		text = L["Cloak"],		row = 2, col = 2},
-		enchanting_gloves	= { tt = L["FILTER_DESC_FORMAT"]:format(L["Gloves"]),		text = L["Gloves"],		row = 3, col = 1},
-		enchanting_ring		= { tt = L["FILTER_DESC_FORMAT"]:format(L["Ring"]),		text = L["Ring"],		row = 3, col = 2},
-		enchanting_shield	= { tt = L["FILTER_DESC_FORMAT"]:format(L["Shield"]),		text = L["Shield"],		row = 4, col = 1},
-		enchanting_neck		= { tt = L["FILTER_DESC_FORMAT"]:format(L["Necklace"]),		text = L["Necklace"],		row = 4, col = 2},
+		enchanting_cloak	= { tt = L["FILTER_DESC_FORMAT"]:format(_G.INVTYPE_CLOAK),	text = _G.INVTYPE_CLOAK,	row = 2, col = 2},
+		enchanting_gloves	= { tt = L["FILTER_DESC_FORMAT"]:format(_G.INVTYPE_HAND),	text = _G.INVTYPE_HAND,		row = 3, col = 1},
+		enchanting_ring		= { tt = L["FILTER_DESC_FORMAT"]:format(_G.INVTYPE_FINGER),	text = _G.INVTYPE_FINGER,	row = 3, col = 2},
+		enchanting_shield	= { tt = L["FILTER_DESC_FORMAT"]:format(_G.INVTYPE_SHIELD),	text = _G.INVTYPE_SHIELD,	row = 4, col = 1},
+		enchanting_neck		= { tt = L["FILTER_DESC_FORMAT"]:format(_G.INVTYPE_NECK),	text = _G.INVTYPE_NECK,		row = 4, col = 2},
 	}
 
 	armor_toggle:SetScript("OnClick", function(self, button)
