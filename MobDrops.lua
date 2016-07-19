@@ -17,7 +17,6 @@ local constants = addon.constants
 local module = addon:GetModule(private.module_name)
 local L = _G.LibStub("AceLocale-3.0"):GetLocale(addon.constants.addon_name)
 
-local BB = _G.LibStub("LibBabble-Boss-3.0"):GetLookupTable()
 local BN = constants.BOSS_NAMES
 local Z = constants.ZONE_NAMES
 
