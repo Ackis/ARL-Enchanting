@@ -3084,28 +3084,28 @@ function module:InitializeRecipes()
 	recipe:SetSkillLevels(275, 275, 290, 297, 305)
 	recipe:SetCraftedItem(138787, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("ENCHANTING_ILLUSION")
-	recipe:AddTrainer(3345, 33610, 85914)
+	recipe:AddTrainer(3345, 33610, 85914, 86027)
 
 	-- Tome of Illusions: Outland -- 217641
 	recipe = AddRecipe(217641, V.LEGION, Q.COMMON)
 	recipe:SetSkillLevels(350, 350, 370, 377, 385)
 	recipe:SetCraftedItem(138789, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("ENCHANTING_ILLUSION")
-	recipe:AddTrainer(3345, 33610, 85914)
+	recipe:AddTrainer(3345, 33610, 85914, 86027)
 
 	-- Tome of Illusions: Northrend -- 217644
 	recipe = AddRecipe(217644, V.LEGION, Q.COMMON)
 	recipe:SetSkillLevels(425, 425, 450, 460, 470)
 	recipe:SetCraftedItem(138790, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("ENCHANTING_ILLUSION")
-	recipe:AddTrainer(3345, 33610, 85914)
+	recipe:AddTrainer(3345, 33610, 85914, 86027)
 
 	-- Tome of Illusions: Cataclysm -- 217645
 	recipe = AddRecipe(217645, V.LEGION, Q.COMMON)
 	recipe:SetSkillLevels(500, 500, 525, 532, 540)
 	recipe:SetCraftedItem(138791, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("ENCHANTING_ILLUSION")
-	recipe:AddTrainer(3345, 33610, 85914)
+	recipe:AddTrainer(3345, 33610, 85914, 86027)
 
 	-- Tome of Illusions: Elemental Lords -- 217649
 	recipe = AddRecipe(217649, V.LEGION, Q.COMMON)
@@ -3119,7 +3119,7 @@ function module:InitializeRecipes()
 	recipe:SetSkillLevels(575, 575, 615, 615, 615)
 	recipe:SetCraftedItem(138793, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("ENCHANTING_ILLUSION")
-	recipe:AddTrainer(3345, 33610, 85914)
+	recipe:AddTrainer(3345, 33610, 85914, 86027)
 
 	-- Tome of Illusions: Secrets of the Shado-Pan -- 217651
 	recipe = AddRecipe(217651, V.LEGION, Q.RARE)
