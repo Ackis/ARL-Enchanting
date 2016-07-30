@@ -556,7 +556,7 @@ function module:InitializeRecipes()
 
 	-- Dodge -- 13931
 	recipe = AddRecipe(13931, V.ORIG, Q.UNCOMMON)
-	recipe:SetSkillLevels(420, 420, 430, 435, 440)
+	recipe:SetSkillLevels(235, 235, 255, 275, 295)
 	recipe:SetRecipeItem(11223, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("ENCHANTING_BRACER")
 	recipe:AddFilters(F.TANK)
