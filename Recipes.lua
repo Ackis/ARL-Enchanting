@@ -3124,10 +3124,18 @@ function module:InitializeRecipes()
 	-- Tome of Illusions: Secrets of the Shado-Pan -- 217651
 	recipe = AddRecipe(217651, V.LEGION, Q.RARE)
 	recipe:SetSkillLevels(575, 575, 615, 615, 615)
-	recipe:SetRecipeItem(138877, "BIND_ON_EQUIP")
+	recipe:SetRecipeItem(138877, "BIND_ON_PICKUP")
 	recipe:SetCraftedItem(138794, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("ENCHANTING_ILLUSION")
 	recipe:AddRepVendor(FAC.SHADO_PAN, REP.REVERED, 64595)
+
+	-- Tome of Illusions: Draenor -- 217655
+	recipe = AddRecipe(217655, V.LEGION, Q.RARE)
+	recipe:SetSkillLevels(1, 1, 700, 702, 705)
+	recipe:SetRecipeItem(138882, "BIND_ON_PICKUP")
+	recipe:SetCraftedItem(138795, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("ENCHANTING_ILLUSION")
+	recipe:AddVendor(86045, 87022)
 
 	self.InitializeRecipes = nil
 end
