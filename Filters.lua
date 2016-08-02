@@ -33,6 +33,7 @@ module.ITEM_FILTER_TYPES = {
 	ENCHANTING_RING = true,
 	ENCHANTING_NECK = true,
 	ENCHANTING_SHIELD = true,
+	ENCHANTING_SHOULDER = true,
 	ENCHANTING_WEAPON = true,
 	ENCHANTING_2H_WEAPON = true,
 	ENCHANTING_STAFF = true,
@@ -42,6 +43,9 @@ module.ITEM_FILTER_TYPES = {
 	ENCHANTING_MISC = true,
 	ENCHANTING_MATERIALS = true,
 	ENCHANTING_ILLUSION = true,
+	ENCHANTING_TOY = true,
+	ENCHANTING_PET = true,
+	ENCHANTING_RELIC = true,
 }
 
 function module:InitializeItemFilters(parent_panel)
@@ -67,6 +71,7 @@ function module:InitializeItemFilters(parent_panel)
 		enchanting_ring		= { tt = L["FILTER_DESC_FORMAT"]:format(_G.INVTYPE_FINGER),	text = _G.INVTYPE_FINGER,	row = 3, col = 2},
 		enchanting_shield	= { tt = L["FILTER_DESC_FORMAT"]:format(_G.INVTYPE_SHIELD),	text = _G.INVTYPE_SHIELD,	row = 4, col = 1},
 		enchanting_neck		= { tt = L["FILTER_DESC_FORMAT"]:format(_G.INVTYPE_NECK),	text = _G.INVTYPE_NECK,		row = 4, col = 2},
+		enchanting_shoulder	= { tt = L["FILTER_DESC_FORMAT"]:format(_G.INVTYPE_SHOULDER), 	text = _G.INVTYPE_SHOULDER,	row = 5, col = 1},
 	}
 
 	armor_toggle:SetScript("OnClick", function(self, button)
@@ -115,6 +120,7 @@ function module:InitializeItemFilters(parent_panel)
 		enchanting_2h_weapon	= { tt = L["FILTER_DESC_FORMAT"]:format(_G.ENCHSLOT_2HWEAPON),	text = _G.ENCHSLOT_2HWEAPON,	row = 1, col = 1 },
 		enchanting_staff	= { tt = L["FILTER_DESC_FORMAT"]:format(L["Staff"]),		text = L["Staff"],		row = 1, col = 2 },
 		enchanting_weapon	= { tt = L["FILTER_DESC_FORMAT"]:format(_G.ENCHSLOT_WEAPON),	text = _G.ENCHSLOT_WEAPON,	row = 2, col = 1 },
+		enchanting_wand		= { tt = L["FILTER_DESC_FORMAT"]:format(L["Wand"]),		text = L["Wand"],		row = 2, col = 2 },
 	}
 
 	weapon_toggle:SetScript("OnClick", function(self, button)
@@ -163,9 +169,11 @@ function module:InitializeItemFilters(parent_panel)
 		enchanting_misc		= { tt = L["FILTER_DESC_FORMAT"]:format(_G.MISCELLANEOUS),	text = _G.MISCELLANEOUS,	row = 1, col = 1 },
 		enchanting_oil		= { tt = L["FILTER_DESC_FORMAT"]:format(L["Oil"]),		text = L["Oil"],		row = 1, col = 2 },
 		enchanting_rod		= { tt = L["FILTER_DESC_FORMAT"]:format(L["Rod"]),		text = L["Rod"],		row = 2, col = 1 },
-		enchanting_wand		= { tt = L["FILTER_DESC_FORMAT"]:format(L["Wand"]),		text = L["Wand"],		row = 2, col = 2 },
-		enchanting_materials 	= { tt = L["FILTER_DESC_FORMAT"]:format(L["Materials"]),	text = L["Materials"],		row = 3, col = 1 },
-		enchanting_illusion	= { tt = L["FILTER_DESC_FORMAT"]:format(L["Illusion"]),		text = L["Illusion"],		row = 3, col = 2 },
+		enchanting_materials 	= { tt = L["FILTER_DESC_FORMAT"]:format(L["Materials"]),	text = L["Materials"],		row = 2, col = 2 },
+		enchanting_illusion	= { tt = L["FILTER_DESC_FORMAT"]:format(L["Illusion"]),		text = L["Illusion"],		row = 3, col = 1 },
+		enchanting_toy		= { tt = L["FILTER_DESC_FORMAT"]:format(_G.TOY_BOX),		text = _G.TOY_BOX,		row = 3, col = 2 },
+		enchanting_pet		= { tt = L["FILTER_DESC_FORMAT"]:format(_G.PETS),		text = _G.PETS,			row = 4, col = 1 },
+		enchanting_relic	= { tt = L["FILTER_DESC_FORMAT"]:format(_G.INVTYPE_RELIC), 	text = _G.INVTYPE_RELIC,	row = 4, col = 2 },
 	}
 
 	general_toggle:SetScript("OnClick", function(self, button)
