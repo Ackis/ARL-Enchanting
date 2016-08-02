@@ -2899,7 +2899,7 @@ function module:InitializeRecipes()
 	recipe = AddRecipe(190872, V.LEGION, Q.COMMON)
 	recipe:SetSkillLevels(1, 1, 740, 750, 760)
 	recipe:SetRecipeItem(128568, "BIND_ON_PICKUP")
-	recipe:SetCraftedItem(12843, "BIND_ON_EQUIP")
+	recipe:SetCraftedItem(128543, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("ENCHANTING_RING")
 	recipe:AddQuest(39923)
 
