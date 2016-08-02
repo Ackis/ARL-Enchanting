@@ -2611,13 +2611,6 @@ function module:InitializeRecipes()
 	recipe:SetItemFilterType("ENCHANTING_CLOAK")
 	recipe:AddVendor(77354, 79821, 86045, 87022)
 
-	-- Breath of Critical Strike -- 158880
-	recipe = AddRecipe(158880, V.WOD, Q.COMMON)
-	recipe:SetSkillLevels(1, 1, 625, 627, 630)
-	recipe:SetRecipeItem(118431, "BIND_ON_PICKUP")
-	recipe:SetItemFilterType("ENCHANTING_CLOAK")
-	recipe:AddVendor(77354, 79821, 86045, 87022)
-
 	-- Breath of Versatility -- 158881
 	recipe = AddRecipe(158881, V.WOD, Q.COMMON)
 	recipe:SetSkillLevels(1, 1, 625, 627, 630)
@@ -2645,13 +2638,6 @@ function module:InitializeRecipes()
 	recipe = AddRecipe(158886, V.WOD, Q.COMMON)
 	recipe:SetSkillLevels(1, 1, 700, 702, 705)
 	recipe:SetRecipeItem(118435, "BIND_ON_PICKUP")
-	recipe:SetItemFilterType("ENCHANTING_CLOAK")
-	recipe:AddVendor(77354, 79821, 86045, 87022)
-
-	-- Gift of Critical Strike -- 158887
-	recipe = AddRecipe(158887, V.WOD, Q.COMMON)
-	recipe:SetSkillLevels(1, 1, 700, 702, 705)
-	recipe:SetRecipeItem(118436, "BIND_ON_PICKUP")
 	recipe:SetItemFilterType("ENCHANTING_CLOAK")
 	recipe:AddVendor(77354, 79821, 86045, 87022)
 
@@ -2685,13 +2671,6 @@ function module:InitializeRecipes()
 	recipe:SetItemFilterType("ENCHANTING_NECK")
 	recipe:AddVendor(77354, 79821, 86045, 87022)
 
-	-- Breath of Haste -- 158895
-	recipe = AddRecipe(158895, V.WOD, Q.COMMON)
-	recipe:SetSkillLevels(1, 1, 625, 627, 630)
-	recipe:SetRecipeItem(118441, "BIND_ON_PICKUP")
-	recipe:SetItemFilterType("ENCHANTING_NECK")
-	recipe:AddVendor(77354, 79821, 86045, 87022)
-
 	-- Breath of Versatility -- 158896
 	recipe = AddRecipe(158896, V.WOD, Q.COMMON)
 	recipe:SetSkillLevels(1, 1, 625, 627, 630)
@@ -2722,13 +2701,6 @@ function module:InitializeRecipes()
 	recipe:SetItemFilterType("ENCHANTING_NECK")
 	recipe:AddVendor(77354, 79821, 86045, 87022)
 
-	-- Gift of Haste -- 158902
-	recipe = AddRecipe(158902, V.WOD, Q.COMMON)
-	recipe:SetSkillLevels(1, 1, 700, 702, 705)
-	recipe:SetRecipeItem(118446, "BIND_ON_PICKUP")
-	recipe:SetItemFilterType("ENCHANTING_NECK")
-	recipe:AddVendor(77354, 79821, 86045, 87022)
-
 	-- Gift of Versatility -- 158903
 	recipe = AddRecipe(158903, V.WOD, Q.COMMON)
 	recipe:SetSkillLevels(1, 1, 700, 702, 705)
@@ -2752,12 +2724,6 @@ function module:InitializeRecipes()
 
 	-- Breath of Mastery -- 158909
 	recipe = AddRecipe(158909, V.WOD, Q.COMMON)
-	recipe:SetSkillLevels(1, 1, 625, 627, 630)
-	recipe:SetItemFilterType("ENCHANTING_RING")
-	recipe:AddCustom("DRAENOR_DEFAULT")
-
-	-- Breath of Mastery -- 158910
-	recipe = AddRecipe(158910, V.WOD, Q.COMMON)
 	recipe:SetSkillLevels(1, 1, 625, 627, 630)
 	recipe:SetItemFilterType("ENCHANTING_RING")
 	recipe:AddCustom("DRAENOR_DEFAULT")
@@ -2788,13 +2754,6 @@ function module:InitializeRecipes()
 	recipe = AddRecipe(158916, V.WOD, Q.COMMON)
 	recipe:SetSkillLevels(1, 1, 700, 702, 705)
 	recipe:SetRecipeItem(118455, "BIND_ON_PICKUP")
-	recipe:SetItemFilterType("ENCHANTING_RING")
-	recipe:AddVendor(77354, 79821, 86045, 87022)
-
-	-- Gift of Mastery -- 158917
-	recipe = AddRecipe(158917, V.WOD, Q.COMMON)
-	recipe:SetSkillLevels(1, 1, 700, 702, 705)
-	recipe:SetRecipeItem(118456, "BIND_ON_PICKUP")
 	recipe:SetItemFilterType("ENCHANTING_RING")
 	recipe:AddVendor(77354, 79821, 86045, 87022)
 
