@@ -2292,7 +2292,7 @@ function module:InitializeRecipes()
 	recipe:SetRecipeItem(67308, "BIND_ON_PICKUP")
 	recipe:SetCraftedItem(67308, "BIND_ON_EQUIP")
 	recipe:SetRequiredFaction("Horde")
-	recipe:SetItemFilterType("ENCHANTING_MISC")
+	recipe:SetItemFilterType("ENCHANTING_PET")
 	recipe:AddVendor(3012, 3346, 4617, 16635, 50146)
 
 	-- Magic Lamp -- 93843
@@ -2301,7 +2301,7 @@ function module:InitializeRecipes()
 	recipe:SetRecipeItem(67312, "BIND_ON_PICKUP")
 	recipe:SetCraftedItem(67312, "BIND_ON_EQUIP")
 	recipe:SetRequiredFaction("Alliance")
-	recipe:SetItemFilterType("ENCHANTING_MISC")
+	recipe:SetItemFilterType("ENCHANTING_PET")
 	recipe:AddVendor(1318, 4228, 5158, 16722, 50134)
 
 	-- Mighty Agility -- 95471
@@ -2791,6 +2791,7 @@ function module:InitializeRecipes()
 	recipe:SetSkillLevels(1, 1, 700, 702, 705)
 	recipe:SetRecipeItem(118461, "BIND_ON_PICKUP")
 	recipe:SetItemFilterType("ENCHANTING_WEAPON")
+	recipe:AddFilters(F.CASTER, F.DPS, F.HEALER)
 	recipe:AddVendor(77354, 79821, 86045, 87022)
 
 	-- Mark of Shadowmoon -- 159673
@@ -2798,7 +2799,6 @@ function module:InitializeRecipes()
 	recipe:SetSkillLevels(1, 1, 700, 702, 705)
 	recipe:SetRecipeItem(118462, "BIND_ON_PICKUP")
 	recipe:SetItemFilterType("ENCHANTING_WEAPON")
-	recipe:AddFilters(F.CASTER, F.HEALER)
 	recipe:AddVendor(77354, 79821, 86045, 87022)
 
 	-- Mark of Blackrock -- 159674
@@ -2806,7 +2806,6 @@ function module:InitializeRecipes()
 	recipe:SetSkillLevels(1, 1, 700, 702, 705)
 	recipe:SetRecipeItem(118463, "BIND_ON_PICKUP")
 	recipe:SetItemFilterType("ENCHANTING_WEAPON")
-	recipe:AddFilters(F.TANK)
 	recipe:AddVendor(77354, 79821, 86045, 87022)
 
 	-- Enchanted Dust -- 162948
