@@ -37,9 +37,17 @@ function module:InitializeQuests()
 	AddQuest(39905,	Z.AZSUNA,			0.0,	0.0,	"Neutral") -- Ringing True  --Needs updating
 	AddQuest(39923,	Z.AZSUNA,			0.0,	0.0,	"Neutral") -- Down to the Core --Needs updating
 	AddQuest(39875, Z.DALARAN_BROKENISLES,		38.3,	41.5,	"Neutral")
+	AddQuest(39882,	Z.VALSHARAH,			0.0,	0.0,	"Neutral") --Needs updating
+	AddQuest(39883,	Z.HIGHMOUNTAIN,			0.0,	0.0,	"Neutral") --Needs updating
+	AddQuest(39904,	Z.STORMHEIM,			0.0,	0.0,	"Neutral") --Needs updating
+	AddQuest(41670,	Z.VALSHARAH,			0.0,	0.0,	"Neutral") --Needs updating
+	AddQuest(41671,	Z.HIGHMOUNTAIN,			0.0,	0.0,	"Neutral") --Needs updating
 	AddQuest(41672, Z.STORMHEIM,			0.0,	0.0,	"Neutral") --Needs updating
+	AddQuest(41673,	Z.SURAMAR,			0.0,	0.0,	"Neutral") --Needs updating
+	AddQuest(41674,	Z.DALARAN_BROKENISLES,		0.0,	0.0,	"Neutral") --Needs updating
 	AddQuest(41669,	Z.AZSUNA,			0.0,	0.0,	"Neutral") --Needs updating
 	AddQuest(42971,	Z.DEEPHOLM,			46.8,	13.2,	"Neutral") --Needs updating
+	AddQuest(42973,	Z.SURAMAR,			0.0,	0.0,	"Neutral") --Needs updating
 
 	self.InitializeQuests = nil
 end
