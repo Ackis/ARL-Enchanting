@@ -40,6 +40,9 @@ function module:InitializeQuests()
 	AddQuest(39882,	Z.VALSHARAH,			0.0,	0.0,	"Neutral") --Needs updating
 	AddQuest(39883,	Z.HIGHMOUNTAIN,			0.0,	0.0,	"Neutral") --Needs updating
 	AddQuest(39904,	Z.STORMHEIM,			0.0,	0.0,	"Neutral") --Needs updating
+	AddQuest(39910,	Z.AZSUNA,			0.0,	0.0,	"Neutral") --Needs updating
+	AddQuest(39914,	Z.AZSUNA,			0.0,	0.0,	"Neutral") --Needs updating
+	AddQuest(39918,	Z.AZSUNA,			0.0,	0.0,	"Neutral") --Needs updating
 	AddQuest(41670,	Z.VALSHARAH,			0.0,	0.0,	"Neutral") --Needs updating
 	AddQuest(41671,	Z.HIGHMOUNTAIN,			0.0,	0.0,	"Neutral") --Needs updating
 	AddQuest(41672, Z.STORMHEIM,			0.0,	0.0,	"Neutral") --Needs updating
