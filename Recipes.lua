@@ -1173,6 +1173,7 @@ function module:InitializeRecipes()
 	-- Exceptional Health -- 27957
 	recipe = AddRecipe(27957, V.TBC, Q.COMMON)
 	recipe:SetSkillLevels(315, 315, 325, 340, 355)
+	recipe:SetCraftedItem(38911, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("ENCHANTING_CHEST")
 	recipe:AddTrainer(1317, 3011, 3345, 3606, 4213, 4616, 5157, 5695, 16633, 16725, 18753, 18773, 19251, 19252, 19540, 26906, 26990, 28693, 33583, 33610, 33633, 33676, 53410, 65127, 85914, 86027, 93531)
 
