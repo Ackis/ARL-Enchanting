@@ -531,6 +531,7 @@ function module:InitializeRecipes()
 	recipe:SetSkillLevels(265, 265, 285, 305, 325)
 	recipe:SetRecipeItem(11207, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("ENCHANTING_WEAPON")
+	recipe:AddFilters(F.INSTANCE)
 	recipe:AddMobDrop(9024)
 
 	-- Greater Versatility -- 13905
@@ -652,7 +653,7 @@ function module:InitializeRecipes()
 	recipe:SetRecipeItem(45050, "BIND_ON_PICKUP")
 	recipe:SetCraftedItem(45050, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("ENCHANTING_MISC")
-	recipe:AddFilters(F.CASTER, F.DPS, F.HEALER)
+	recipe:AddFilters(F.CASTER, F.DPS, F.HEALER, F.INSTANCE)
 	recipe:AddMobDrop(9025)
 
 	-- Enchanted Thorium Bar -- 17180
@@ -915,7 +916,7 @@ function module:InitializeRecipes()
 	recipe:SetSkillLevels(300, 300, 310, 325, 340)
 	recipe:SetRecipeItem(20726, "BIND_ON_PICKUP")
 	recipe:SetItemFilterType("ENCHANTING_GLOVES")
-	recipe:AddFilters(F.TANK)
+	recipe:AddFilters(F.TANK, F.RAID)
 	recipe:AddMobDrop(15275)
 	recipe:AddRepVendor(FAC.THE_SHATAR, REP.EXALTED, 21432)
 
@@ -1104,6 +1105,7 @@ function module:InitializeRecipes()
 	recipe:SetSkillLevels(350, 350, 370, 375, 380)
 	recipe:SetRecipeItem(22533, "BIND_ON_PICKUP")
 	recipe:SetItemFilterType("ENCHANTING_BRACER")
+	recipe:AddFilters(F.INSTANCE)
 	recipe:AddMobDrop(17803)
 
 	-- Spellpower -- 27917
@@ -1149,6 +1151,7 @@ function module:InitializeRecipes()
 	recipe:SetSkillLevels(320, 320, 330, 345, 360)
 	recipe:SetRecipeItem(22543, "BIND_ON_PICKUP")
 	recipe:SetItemFilterType("ENCHANTING_BOOTS")
+	recipe:AddFilters(F.INSTANCE)
 	recipe:AddMobDrop(18317)
 
 	-- Dexterity -- 27951
@@ -1156,7 +1159,7 @@ function module:InitializeRecipes()
 	recipe:SetSkillLevels(340, 340, 350, 365, 380)
 	recipe:SetRecipeItem(22544, "BIND_ON_PICKUP")
 	recipe:SetItemFilterType("ENCHANTING_BOOTS")
-	recipe:AddFilters(F.DPS)
+	recipe:AddFilters(F.DPS, F.INSTANCE)
 	recipe:AddMobDrop(18521)
 
 	-- Surefooted -- 27954
@@ -1164,7 +1167,7 @@ function module:InitializeRecipes()
 	recipe:SetSkillLevels(370, 370, 380, 385, 390)
 	recipe:SetRecipeItem(22545, "BIND_ON_PICKUP")
 	recipe:SetItemFilterType("ENCHANTING_BOOTS")
-	recipe:AddFilters(F.CASTER, F.DPS, F.HEALER)
+	recipe:AddFilters(F.CASTER, F.DPS, F.HEALER, F.RAID)
 	recipe:AddMobDrop(16472)
 
 	-- Exceptional Health -- 27957
@@ -1208,7 +1211,7 @@ function module:InitializeRecipes()
 	recipe:SetSkillLevels(350, 350, 370, 375, 380)
 	recipe:SetRecipeItem(22554, "BIND_ON_PICKUP")
 	recipe:SetItemFilterType("ENCHANTING_2H_WEAPON")
-	recipe:AddFilters(F.DPS)
+	recipe:AddFilters(F.DPS, F.INSTANCE)
 	recipe:AddMobDrop(17465)
 
 	-- Potency -- 27972
@@ -1232,7 +1235,7 @@ function module:InitializeRecipes()
 	recipe:SetSkillLevels(475, 475, 485, 490, 495)
 	recipe:SetRecipeItem(22556, "BIND_ON_PICKUP")
 	recipe:SetItemFilterType("ENCHANTING_2H_WEAPON")
-	recipe:AddFilters(F.DPS)
+	recipe:AddFilters(F.DPS, F.INSTANCE)
 	recipe:AddMobDrop(20880)
 
 	-- Sunfire -- 27981
@@ -1240,7 +1243,7 @@ function module:InitializeRecipes()
 	recipe:SetSkillLevels(375, 375, 375, 375, 390)
 	recipe:SetRecipeItem(22560, "BIND_ON_PICKUP")
 	recipe:SetItemFilterType("ENCHANTING_WEAPON")
-	recipe:AddFilters(F.CASTER, F.HEALER)
+	recipe:AddFilters(F.CASTER, F.HEALER, F.RAID)
 	recipe:AddMobDrop(16524)
 
 	-- Soulfrost -- 27982
@@ -1248,7 +1251,7 @@ function module:InitializeRecipes()
 	recipe:SetSkillLevels(375, 375, 380, 385, 390)
 	recipe:SetRecipeItem(22561, "BIND_ON_PICKUP")
 	recipe:SetItemFilterType("ENCHANTING_WEAPON")
-	recipe:AddFilters(F.CASTER, F.HEALER)
+	recipe:AddFilters(F.CASTER, F.HEALER, F.RAID)
 	recipe:AddMobDrop(15688)
 
 	-- Mongoose -- 27984
@@ -1256,7 +1259,7 @@ function module:InitializeRecipes()
 	recipe:SetSkillLevels(375, 375, 380, 385, 390)
 	recipe:SetRecipeItem(22559, "BIND_ON_PICKUP")
 	recipe:SetItemFilterType("ENCHANTING_WEAPON")
-	recipe:AddFilters(F.CASTER, F.DPS, F.HEALER)
+	recipe:AddFilters(F.CASTER, F.DPS, F.HEALER, F.RAID)
 	recipe:AddMobDrop(15687)
 
 	-- Spellsurge -- 28003
@@ -1494,7 +1497,7 @@ function module:InitializeRecipes()
 	recipe:SetSkillLevels(400, 400, 410, 415, 420)
 	recipe:SetRecipeItem(35756, "BIND_ON_PICKUP")
 	recipe:SetItemFilterType("ENCHANTING_CLOAK")
-	recipe:AddFilters(F.TANK)
+	recipe:AddFilters(F.TANK, F.INSTANCE)
 	recipe:AddMobDrop(24560)
 
 	-------------------------------------------------------------------------------
