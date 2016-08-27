@@ -984,7 +984,6 @@ function module:InitializeRecipes()
 	recipe:SetRecipeItem(20758, "BIND_ON_EQUIP")
 	recipe:SetCraftedItem(20744, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("ENCHANTING_OIL")
-	recipe:AddFilters(F.CASTER, F.HEALER)
 	recipe:AddVendor(1318, 3012, 3346, 4228, 4617, 5158, 5757, 5758, 15419, 16635, 16722, 18753, 18773, 18951, 19234, 19537, 19540, 19663, 26569, 27030, 27054, 27147, 28714, 44030, 53410, 93530)
 
 	-- Minor Mana Oil -- 25125
@@ -1001,7 +1000,6 @@ function module:InitializeRecipes()
 	recipe:SetRecipeItem(20753, "BIND_ON_EQUIP")
 	recipe:SetCraftedItem(20746, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("ENCHANTING_OIL")
-	recipe:AddFilters(F.CASTER, F.HEALER)
 	recipe:AddVendor(1318, 3012, 3346, 4228, 4617, 5158, 5757, 5758, 15419, 16635, 16722, 18753, 18773, 18951, 19234, 19537, 19540, 19663, 26569, 27030, 27054, 27147, 28714, 53410, 93530)
 
 	-- Lesser Mana Oil -- 25127
@@ -3177,6 +3175,7 @@ function module:InitializeRecipes()
 	recipe:SetCraftedItem(128537, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("ENCHANTING_RING")
 	recipe:AddQuest(41669)
+	recipe:AddCustom("WORLD_QUEST")
 
 	-- Word of Haste -- 191010
 	recipe = AddRecipe(191010, V.LEGION, Q.COMMON)
@@ -3185,6 +3184,7 @@ function module:InitializeRecipes()
 	recipe:SetCraftedItem(128538, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("ENCHANTING_RING")
 	recipe:AddQuest(41672)
+	recipe:AddCustom("WORLD_QUEST")
 
 	-- Word of Mastery -- 191011
 	recipe = AddRecipe(191011, V.LEGION, Q.COMMON)
@@ -3193,6 +3193,7 @@ function module:InitializeRecipes()
 	recipe:SetCraftedItem(128539, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("ENCHANTING_RING")
 	recipe:AddQuest(41673)
+	recipe:AddCustom("WORLD_QUEST")
 
 	-- Word of Versatility -- 191012
 	recipe = AddRecipe(191012, V.LEGION, Q.COMMON)
@@ -3200,7 +3201,7 @@ function module:InitializeRecipes()
 	recipe:SetRecipeItem(128599, "BIND_ON_PICKUP")
 	recipe:SetCraftedItem(128540, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("ENCHANTING_RING")
-	recipe:AddVendor(112146)
+	recipe:AddVendor(97140)
 
 	-- Binding of Critical Strike -- 191013
 	recipe = AddRecipe(191013, V.LEGION, Q.COMMON)
@@ -3208,7 +3209,7 @@ function module:InitializeRecipes()
 	recipe:SetRecipeItem(128600, "BIND_ON_PICKUP")
 	recipe:SetCraftedItem(128541, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("ENCHANTING_RING")
-	recipe:AddVendor(112146)
+	recipe:AddVendor(97140)
 
 	-- Binding of Haste -- 191014
 	recipe = AddRecipe(191014, V.LEGION, Q.COMMON)
@@ -3224,7 +3225,7 @@ function module:InitializeRecipes()
 	recipe:SetRecipeItem(128602, "BIND_ON_PICKUP")
 	recipe:SetCraftedItem(12843, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("ENCHANTING_RING")
-	recipe:AddVendor(112146)
+	recipe:AddVendor(97140)
 
 	-- Binding of Versatility -- 191016
 	recipe = AddRecipe(191016, V.LEGION, Q.COMMON)
@@ -3232,7 +3233,7 @@ function module:InitializeRecipes()
 	recipe:SetRecipeItem(128603, "BIND_ON_PICKUP")
 	recipe:SetCraftedItem(128544, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("ENCHANTING_RING")
-	recipe:AddVendor(112146)
+	recipe:AddVendor(97140)
 
 	-- Word of Strength -- 191017
 	recipe = AddRecipe(191017, V.LEGION, Q.COMMON)
@@ -3241,6 +3242,7 @@ function module:InitializeRecipes()
 	recipe:SetCraftedItem(128545, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("ENCHANTING_CLOAK")
 	recipe:AddQuest(41671)
+	recipe:AddCustom("WORLD_QUEST")
 
 	-- Word of Agility -- 191018
 	recipe = AddRecipe(191018, V.LEGION, Q.COMMON)
@@ -3249,6 +3251,7 @@ function module:InitializeRecipes()
 	recipe:SetCraftedItem(128546, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("ENCHANTING_CLOAK")
 	recipe:AddQuest(41670)
+	recipe:AddCustom("WORLD_QUEST")
 
 	-- Word of Intellect -- 191019
 	recipe = AddRecipe(191019, V.LEGION, Q.COMMON)
@@ -3257,6 +3260,7 @@ function module:InitializeRecipes()
 	recipe:SetCraftedItem(128547, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("ENCHANTING_CLOAK")
 	recipe:AddQuest(41674)
+	recipe:AddCustom("WORLD_QUEST")
 
 	-- Binding of Strength -- 191020
 	recipe = AddRecipe(191020, V.LEGION, Q.COMMON)
@@ -3282,7 +3286,7 @@ function module:InitializeRecipes()
 	recipe:SetRecipeItem(128609, "BIND_ON_PICKUP")
 	recipe:SetCraftedItem(128550, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("ENCHANTING_CLOAK")
-	recipe:AddRepVendor(FAC.THE_NIGHTFALLEN, REP.EXALTED, 112146)
+	recipe:AddRepVendor(FAC.THE_NIGHTFALLEN, REP.EXALTED, 97140)
 
 	-- Mark of the Claw -- 191023
 	recipe = AddRecipe(191023, V.LEGION, Q.COMMON)
@@ -3363,28 +3367,28 @@ function module:InitializeRecipes()
 	recipe:SetSkillLevels(275, 275, 290, 297, 305)
 	recipe:SetCraftedItem(138787, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("ENCHANTING_ILLUSION")
-	recipe:AddTrainer(3345, 33610, 85914, 86027)
+	recipe:AddTrainer(3345, 28693, 33610, 85914, 86027)
 
 	-- Tome of Illusions: Outland -- 217641
 	recipe = AddRecipe(217641, V.LEGION, Q.COMMON)
 	recipe:SetSkillLevels(350, 350, 370, 377, 385)
 	recipe:SetCraftedItem(138789, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("ENCHANTING_ILLUSION")
-	recipe:AddTrainer(3345, 33610, 85914, 86027)
+	recipe:AddTrainer(3345, 28693, 33610, 85914, 86027)
 
 	-- Tome of Illusions: Northrend -- 217644
 	recipe = AddRecipe(217644, V.LEGION, Q.COMMON)
 	recipe:SetSkillLevels(425, 425, 450, 460, 470)
 	recipe:SetCraftedItem(138790, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("ENCHANTING_ILLUSION")
-	recipe:AddTrainer(3345, 33610, 85914, 86027)
+	recipe:AddTrainer(3345, 28693, 33610, 85914, 86027)
 
 	-- Tome of Illusions: Cataclysm -- 217645
 	recipe = AddRecipe(217645, V.LEGION, Q.COMMON)
 	recipe:SetSkillLevels(500, 500, 525, 532, 540)
 	recipe:SetCraftedItem(138791, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("ENCHANTING_ILLUSION")
-	recipe:AddTrainer(3345, 33610, 85914, 86027)
+	recipe:AddTrainer(3345, 28693, 33610, 85914, 86027)
 
 	-- Tome of Illusions: Elemental Lords -- 217649
 	recipe = AddRecipe(217649, V.LEGION, Q.COMMON)
@@ -3398,7 +3402,7 @@ function module:InitializeRecipes()
 	recipe:SetSkillLevels(575, 575, 615, 615, 615)
 	recipe:SetCraftedItem(138793, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("ENCHANTING_ILLUSION")
-	recipe:AddTrainer(3345, 33610, 85914, 86027)
+	recipe:AddTrainer(3345, 28693, 33610, 85914, 86027)
 
 	-- Tome of Illusions: Secrets of the Shado-Pan -- 217651
 	recipe = AddRecipe(217651, V.LEGION, Q.RARE)
