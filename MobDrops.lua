@@ -76,9 +76,6 @@ function module:InitializeMobDrops()
 	AddMob(26336,	L["Indu'le Mystic"],			Z.DRAGONBLIGHT,				40.2, 65.5)
 	AddMob(26343,	L["Indu'le Fisherman"],			Z.DRAGONBLIGHT,				40.2, 65.5)
 	AddMob(26344,	L["Indu'le Warrior"],			Z.DRAGONBLIGHT,				40.2, 65.5)
-	AddMob(80927,	BN.CORDANA_FELSONG,			Z.VAULT_OF_THE_WARDENS)
-	AddMob(101403,	BN.SHADE_OF_XAVIUS,			Z.DARKHEART_THICKET)
-	AddMob(106576,	BN.ADVISOR_MELANDRUS,			Z.COURT_OF_STARS)
 
 	self.InitializeMobDrops = nil
 end
