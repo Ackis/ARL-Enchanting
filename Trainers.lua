@@ -68,6 +68,7 @@ function module:InitializeTrainers()
 	AddTrainer(85914, "Bil Sparktonic", 		Z.STORMSHIELD, 			56.7, 65.4, "Alliance")
 	AddTrainer(86027, "Hane'ke", 			Z.WARSPEAR, 			78.8, 52.4, "Horde")
 	AddTrainer(93531, "Enchanter Nalthanis",	Z.DALARAN_BROKENISLES,		38.3, 40.4, "Neutral")
+	AddTrainer(98017, "Guron Twaintail",		Z.THUNDER_TOTEM,		44.5, 45.5, "Neutral")
 
 	self.InitializeTrainers = nil
 end
