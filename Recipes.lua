@@ -3157,7 +3157,7 @@ function module:InitializeRecipes()
 	recipe:SetCraftedItem(128552, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("ENCHANTING_NECK")
 	recipe:AddFilters(F.INSTANCE)
-	recipe:AddMobDrop(106576)
+	recipe:AddMobDrop(104218)
 
 	-- Mark of the Hidden Satyr -- 191008
 	recipe = AddRecipe(191008, V.LEGION, Q.COMMON)
