@@ -3201,7 +3201,7 @@ function module:InitializeRecipes()
 	recipe:SetRecipeItem(128599, "BIND_ON_PICKUP")
 	recipe:SetCraftedItem(128540, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("ENCHANTING_RING")
-	recipe:AddVendor(97140)
+	recipe:AddVendor(97140, 115736)
 
 	-- Binding of Critical Strike -- 191013
 	recipe = AddRecipe(191013, V.LEGION, Q.COMMON)
@@ -3209,7 +3209,7 @@ function module:InitializeRecipes()
 	recipe:SetRecipeItem(128600, "BIND_ON_PICKUP")
 	recipe:SetCraftedItem(128541, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("ENCHANTING_RING")
-	recipe:AddVendor(97140)
+	recipe:AddVendor(97140, 115736)
 
 	-- Binding of Haste -- 191014
 	recipe = AddRecipe(191014, V.LEGION, Q.COMMON)
@@ -3225,7 +3225,7 @@ function module:InitializeRecipes()
 	recipe:SetRecipeItem(128602, "BIND_ON_PICKUP")
 	recipe:SetCraftedItem(12843, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("ENCHANTING_RING")
-	recipe:AddVendor(97140)
+	recipe:AddVendor(97140, 115736)
 
 	-- Binding of Versatility -- 191016
 	recipe = AddRecipe(191016, V.LEGION, Q.COMMON)
@@ -3233,7 +3233,7 @@ function module:InitializeRecipes()
 	recipe:SetRecipeItem(128603, "BIND_ON_PICKUP")
 	recipe:SetCraftedItem(128544, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("ENCHANTING_RING")
-	recipe:AddVendor(97140)
+	recipe:AddVendor(97140, 115736)
 
 	-- Word of Strength -- 191017
 	recipe = AddRecipe(191017, V.LEGION, Q.COMMON)
@@ -3286,7 +3286,7 @@ function module:InitializeRecipes()
 	recipe:SetRecipeItem(128609, "BIND_ON_PICKUP")
 	recipe:SetCraftedItem(128550, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("ENCHANTING_CLOAK")
-	recipe:AddRepVendor(FAC.THE_NIGHTFALLEN, REP.EXALTED, 97140)
+	recipe:AddRepVendor(FAC.THE_NIGHTFALLEN, REP.EXALTED, 97140, 115736)
 
 	-- Mark of the Claw -- 191023
 	recipe = AddRecipe(191023, V.LEGION, Q.COMMON)
