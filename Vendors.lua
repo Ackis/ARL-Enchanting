@@ -48,6 +48,7 @@ function module:InitializeVendors()
 	AddVendor(91029,	L["Rath'thul Moonvale"],		Z.FROSTWALL,			 0.0,	 0.0,	"Horde")
 	AddVendor(98367,	L["Tigrid the Charmer"],		Z.STORMHEIM,			39.4,	42.5,	"Neutral")
 	AddVendor(99420,	L["Kharmeera"],				Z.AZSUNA,			47.2,	26.4,	"Neutral")
+	AddVendor(107139,	L["Enchantress Ilanya"],		Z.AZSUNA,			46.8,	40.8,	"Neutral")
 
 	self.InitializeVendors = nil
 end

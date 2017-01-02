@@ -3496,5 +3496,101 @@ function module:InitializeRecipes()
 	recipe:SetItemFilterType("ENCHANTING_NECK")
 	recipe:AddWorldDrop(Z.BROKEN_ISLES)
 
+	-- Mark of the Master -- 235695
+	recipe = AddRecipe(235695, V.LEGION, Q.COMMON)
+	recipe:SetSkillLevels(1, 1, 720, 730, 740)
+	recipe:SetRecipeItem(144308, "BIND_ON_PICKUP")
+	recipe:SetCraftedItem(144304, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("ENCHANTING_NECK")
+	recipe:AddVendor(107139)
+
+	-- Mark of the Versatile -- 235696
+	recipe = AddRecipe(235696, V.LEGION, Q.COMMON)
+	recipe:SetSkillLevels(1, 1, 720, 730, 740)
+	recipe:SetRecipeItem(144311, "BIND_ON_PICKUP")
+	recipe:SetCraftedItem(144305, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("ENCHANTING_NECK")
+	recipe:AddVendor(107139)
+
+	-- Mark of the Quick -- 235697
+	recipe = AddRecipe(235697, V.LEGION, Q.COMMON)
+	recipe:SetSkillLevels(1, 1, 720, 730, 740)
+	recipe:SetRecipeItem(144314, "BIND_ON_PICKUP")
+	recipe:SetCraftedItem(144306, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("ENCHANTING_NECK")
+	recipe:AddVendor(107139)
+
+	-- Mark of the Deadly -- 235698
+	recipe = AddRecipe(235698, V.LEGION, Q.COMMON)
+	recipe:SetSkillLevels(1, 1, 720, 730, 740)
+	recipe:SetRecipeItem(144317, "BIND_ON_PICKUP")
+	recipe:SetCraftedItem(144307, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("ENCHANTING_NECK")
+	recipe:AddVendor(107139)
+
+	-- Mark of the Master -- 235699
+	recipe = AddRecipe(235699, V.LEGION, Q.COMMON)
+	recipe:SetSkillLevels(1, 1, 730, 740, 750)
+	recipe:SetRecipeItem(144309, "BIND_ON_PICKUP")
+	recipe:SetCraftedItem(144304, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("ENCHANTING_NECK")
+	recipe:AddWorldDrop(Z.STORMHEIM)
+
+	-- Mark of the Versatile -- 235700
+	recipe = AddRecipe(235700, V.LEGION, Q.COMMON)
+	recipe:SetSkillLevels(1, 1, 730, 740, 750)
+	recipe:SetRecipeItem(144312, "BIND_ON_PICKUP")
+	recipe:SetCraftedItem(144305, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("ENCHANTING_NECK")
+	recipe:AddWorldDrop(Z.HIGHMOUNTAIN)
+
+	-- Mark of the Quick -- 235701
+	recipe = AddRecipe(235701, V.LEGION, Q.COMMON)
+	recipe:SetSkillLevels(1, 1, 730, 740, 750)
+	recipe:SetRecipeItem(144315, "BIND_ON_PICKUP")
+	recipe:SetCraftedItem(144306, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("ENCHANTING_NECK")
+	recipe:AddWorldDrop(Z.AZSUNA)
+
+	-- Mark of the Deadly -- 235702
+	recipe = AddRecipe(235702, V.LEGION, Q.COMMON)
+	recipe:SetSkillLevels(1, 1, 730, 740, 750)
+	recipe:SetRecipeItem(144318, "BIND_ON_PICKUP")
+	recipe:SetCraftedItem(144307, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("ENCHANTING_NECK")
+	recipe:AddWorldDrop(Z.VALSHARAH)
+
+	-- Mark of the Master -- 235703
+	recipe = AddRecipe(235703, V.LEGION, Q.COMMON)
+	recipe:SetSkillLevels(1, 1, 740, 750, 760)
+	recipe:SetRecipeItem(144310, "BIND_ON_PICKUP")
+	recipe:SetCraftedItem(144304, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("ENCHANTING_NECK")
+	recipe:AddCustom("VALARJAR_CACHE")
+
+	-- Mark of the Versatile -- 235704
+	recipe = AddRecipe(235704, V.LEGION, Q.COMMON)
+	recipe:SetSkillLevels(1, 1, 740, 750, 760)
+	recipe:SetRecipeItem(144313, "BIND_ON_PICKUP")
+	recipe:SetCraftedItem(144305, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("ENCHANTING_NECK")
+	recipe:AddCustom("HIGHMOUNTAIN_CACHE")
+
+	-- Mark of the Quick -- 235705
+	recipe = AddRecipe(235705, V.LEGION, Q.COMMON)
+	recipe:SetSkillLevels(1, 1, 740, 750, 760)
+	recipe:SetRecipeItem(144316, "BIND_ON_PICKUP")
+	recipe:SetCraftedItem(144306, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("ENCHANTING_NECK")
+	recipe:AddCustom("COURT_OF_FARONDIS_CACHE")
+
+	-- Mark of the Deadly -- 235706
+	recipe = AddRecipe(235706, V.LEGION, Q.COMMON)
+	recipe:SetSkillLevels(1, 1, 740, 750, 760)
+	recipe:SetRecipeItem(144319, "BIND_ON_PICKUP")
+	recipe:SetCraftedItem(144307, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("ENCHANTING_NECK")
+	recipe:AddCustom("DREAMWEAVERS_CACHE")
+
 	self.InitializeRecipes = nil
 end
