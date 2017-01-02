@@ -3103,7 +3103,7 @@ function module:InitializeRecipes()
 	recipe:SetRecipeItem(128588, "BIND_ON_PICKUP")
 	recipe:SetCraftedItem(128546, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("ENCHANTING_CLOAK")
-	recipe:AddVendor(93530)
+	recipe:AddRepVendor(FAC.DREAMWEAVERS, REP.HONORED, 106901)
 
 	-- Word of Intellect -- 191002
 	recipe = AddRecipe(191002, V.LEGION, Q.COMMON)
@@ -3140,7 +3140,7 @@ function module:InitializeRecipes()
 	-- Mark of the Claw -- 191006
 	recipe = AddRecipe(191006, V.LEGION, Q.COMMON)
 	recipe:SetSkillLevels(1, 1, 740, 750, 760)
-	recipe:SetRecipeItem(128576, "BIND_ON_PICKUP")
+	recipe:SetRecipeItem(128593, "BIND_ON_PICKUP")
 	recipe:SetCraftedItem(128551, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("ENCHANTING_NECK")
 	recipe:AddRepVendor(FAC.DREAMWEAVERS, REP.EXALTED, 106901)
@@ -3196,7 +3196,7 @@ function module:InitializeRecipes()
 	recipe:SetRecipeItem(128599, "BIND_ON_PICKUP")
 	recipe:SetCraftedItem(128540, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("ENCHANTING_RING")
-	recipe:AddVendor(97140, 115736)
+	recipe:AddRepVendor(FAC.DREAMWEAVERS, REP.EXALTED, 106901)
 
 	-- Binding of Critical Strike -- 191013
 	recipe = AddRecipe(191013, V.LEGION, Q.COMMON)
