@@ -3566,7 +3566,7 @@ function module:InitializeRecipes()
 	recipe:SetRecipeItem(144310, "BIND_ON_PICKUP")
 	recipe:SetCraftedItem(144304, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("ENCHANTING_NECK")
-	recipe:AddCustom("VALARJAR_CACHE")
+	recipe:AddQuest(42234)
 
 	-- Mark of the Versatile -- 235704
 	recipe = AddRecipe(235704, V.LEGION, Q.COMMON)
@@ -3574,7 +3574,7 @@ function module:InitializeRecipes()
 	recipe:SetRecipeItem(144313, "BIND_ON_PICKUP")
 	recipe:SetCraftedItem(144305, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("ENCHANTING_NECK")
-	recipe:AddCustom("HIGHMOUNTAIN_CACHE")
+	recipe:AddQuest(42233)
 
 	-- Mark of the Quick -- 235705
 	recipe = AddRecipe(235705, V.LEGION, Q.COMMON)
@@ -3582,7 +3582,7 @@ function module:InitializeRecipes()
 	recipe:SetRecipeItem(144316, "BIND_ON_PICKUP")
 	recipe:SetCraftedItem(144306, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("ENCHANTING_NECK")
-	recipe:AddCustom("COURT_OF_FARONDIS_CACHE")
+	recipe:AddQuest(42420)
 
 	-- Mark of the Deadly -- 235706
 	recipe = AddRecipe(235706, V.LEGION, Q.COMMON)
@@ -3590,7 +3590,7 @@ function module:InitializeRecipes()
 	recipe:SetRecipeItem(144319, "BIND_ON_PICKUP")
 	recipe:SetCraftedItem(144307, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("ENCHANTING_NECK")
-	recipe:AddCustom("DREAMWEAVERS_CACHE")
+	recipe:AddQuest(42170)
 
 	self.InitializeRecipes = nil
 end
