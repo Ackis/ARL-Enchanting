@@ -34,11 +34,11 @@ function module:InitializeQuests()
 	AddQuest(39875, Z.DALARAN_BROKENISLES,		38.3,	41.5,	"Neutral")
 	AddQuest(39882,	Z.VALSHARAH,			54.4,	57.6,	"Neutral")
 	AddQuest(39883,	Z.THUNDER_TOTEM,		44.2,	45.2,	"Neutral")
-	AddQuest(39904,	Z.STORMHEIM,			0.0,	0.0,	"Neutral") --Needs updating
+	AddQuest(39904,	Z.STORMHEIM,			39.4,	42.6,	"Neutral")
 	AddQuest(39910,	Z.AZSUNA,			46.8,	40.8,	"Neutral")
 	AddQuest(39914,	Z.AZSUNA,			46.8,	40.8,	"Neutral")
 	AddQuest(39918,	Z.AZSUNA,			46.8,	40.8,	"Neutral")
-	AddQuest(41669,	Z.AZSUNA,			0.0,	0.0,	"Neutral") --Needs updating
+	AddQuest(41669,	Z.AZSUNA,			46.8,	41.4,	"Neutral")
 	AddQuest(41670,	Z.VALSHARAH,			54.6,	73.2,	"Neutral")
 	AddQuest(41671,	Z.THUNDER_TOTEM,		38.4,	46.0,	"Neutral")
 	AddQuest(41672, Z.STORMHEIM,			60.2,	51.2,	"Neutral")
