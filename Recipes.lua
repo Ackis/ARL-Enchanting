@@ -3592,5 +3592,13 @@ function module:InitializeRecipes()
 	recipe:SetItemFilterType("ENCHANTING_NECK")
 	recipe:AddQuest(42170)
 
+	-- Chaos Shatter -- 252106
+	recipe = AddRecipe(252106, V.LEGION, Q.COMMON)
+	recipe:SetSkillLevels(1, 1, 760, 770, 780)
+	recipe:SetRecipeItem(152658, "BIND_ON_PICKUP")
+	recipe:SetCraftedItem(124441, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("ENCHANTING_MATERIALS")
+	recipe:AddVendor(127151)
+
 	self.InitializeRecipes = nil
 end
