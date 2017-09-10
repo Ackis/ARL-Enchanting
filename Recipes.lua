@@ -3598,7 +3598,7 @@ function module:InitializeRecipes()
 	recipe:SetRecipeItem(152658, "BIND_ON_PICKUP")
 	recipe:SetCraftedItem(124441, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("ENCHANTING_MATERIALS")
-	recipe:AddVendor(127151)
+	recipe:AddRepVendor(FAC.ARGUSSIAN_REACH, REP.FRIENDLY, 127151)
 
 	self.InitializeRecipes = nil
 end
