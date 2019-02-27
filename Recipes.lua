@@ -3259,7 +3259,7 @@ function module:InitializeRecipes()
 	recipe:SetCraftedItem(128548, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("ENCHANTING_CLOAK")
 	recipe:AddFilters(F.INSTANCE)
-	recipe:AddMobDrop(80927)
+	recipe:AddMobDrop(95888)
 	recipe:AddCustom("MYTHIC")
 
 	-- Binding of Agility -- 191021
@@ -3357,28 +3357,28 @@ function module:InitializeRecipes()
 	recipe:SetSkillLevels(275, 275, 290, 297, 305)
 	recipe:SetCraftedItem(138787, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("ENCHANTING_ILLUSION")
-	recipe:AddTrainer(1317, 3011, 3345, 3606, 4213, 4616, 5157, 5695, 7949, 11072, 11073, 11074, 16160, 16633, 16725, 18753, 18773, 19251, 19252, 19540, 26906, 26990, 28693, 33583, 33610, 33633, 33676, 47384, 47396, 47400, 47418, 47419, 47420, 47421, 47431, 48619, 49885, 53410, 57620, 65043, 65127, 85914, 86027, 93531)
+	recipe:AddTrainer(1317, 3011, 3345, 3606, 4213, 4616, 5157, 5695, 7949, 11072, 11073, 11074, 16160, 16633, 16725, 18753, 18773, 19251, 19252, 19540, 26906, 26990, 28693, 33583, 33610, 33633, 33676, 47384, 47400, 47418, 47419, 47420, 47421, 47431, 48619, 49885, 53410, 57620, 65043, 65127, 85914, 86027, 93531)
 
 	-- Tome of Illusions: Outland -- 217641
 	recipe = AddRecipe(217641, V.LEGION, Q.COMMON)
 	recipe:SetSkillLevels(350, 350, 370, 377, 385)
 	recipe:SetCraftedItem(138789, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("ENCHANTING_ILLUSION")
-	recipe:AddTrainer(1317, 3011, 3345, 3606, 4213, 4616, 5157, 5695, 7949, 11072, 11073, 11074, 16160, 16633, 16725, 18753, 18773, 19251, 19252, 19540, 26906, 26990, 28693, 33583, 33610, 33633, 33676, 47384, 47396, 47400, 47418, 47419, 47420, 47421, 47431, 48619, 49885, 53410, 57620, 65043, 65127, 85914, 86027, 93531)
+	recipe:AddTrainer(1317, 3011, 3345, 3606, 4213, 4616, 5157, 5695, 7949, 11072, 11073, 11074, 16160, 16633, 16725, 18753, 18773, 19251, 19252, 19540, 26906, 26990, 28693, 33583, 33610, 33633, 33676, 47384, 47400, 47418, 47419, 47420, 47421, 47431, 48619, 49885, 53410, 57620, 65043, 65127, 85914, 86027, 93531)
 
 	-- Tome of Illusions: Northrend -- 217644
 	recipe = AddRecipe(217644, V.LEGION, Q.COMMON)
 	recipe:SetSkillLevels(425, 425, 450, 460, 470)
 	recipe:SetCraftedItem(138790, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("ENCHANTING_ILLUSION")
-	recipe:AddTrainer(1317, 3011, 3345, 3606, 4213, 4616, 5157, 5695, 7949, 11072, 11073, 11074, 16160, 16633, 16725, 18753, 18773, 19251, 19252, 19540, 26906, 26990, 28693, 33583, 33610, 33633, 33676, 47384, 47396, 47400, 47418, 47419, 47420, 47421, 47431, 48619, 49885, 53410, 57620, 65043, 65127, 85914, 86027, 93531)
+	recipe:AddTrainer(1317, 3011, 3345, 3606, 4213, 4616, 5157, 5695, 7949, 11072, 11073, 11074, 16160, 16633, 16725, 18753, 18773, 19251, 19252, 19540, 26906, 26990, 28693, 33583, 33610, 33633, 33676, 47384, 47400, 47418, 47419, 47420, 47421, 47431, 48619, 49885, 53410, 57620, 65043, 65127, 85914, 86027, 93531)
 
 	-- Tome of Illusions: Cataclysm -- 217645
 	recipe = AddRecipe(217645, V.LEGION, Q.COMMON)
 	recipe:SetSkillLevels(500, 500, 525, 532, 540)
 	recipe:SetCraftedItem(138791, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("ENCHANTING_ILLUSION")
-	recipe:AddTrainer(1317, 3011, 3345, 3606, 4213, 4616, 5157, 5695, 7949, 11072, 11073, 11074, 16160, 16633, 16725, 18753, 18773, 19251, 19252, 19540, 26906, 26990, 28693, 33583, 33610, 33633, 33676, 47384, 47396, 47400, 47418, 47419, 47420, 47421, 47431, 48619, 49885, 53410, 57620, 65043, 65127, 85914, 86027, 93531)
+	recipe:AddTrainer(1317, 3011, 3345, 3606, 4213, 4616, 5157, 5695, 7949, 11072, 11073, 11074, 16160, 16633, 16725, 18753, 18773, 19251, 19252, 19540, 26906, 26990, 28693, 33583, 33610, 33633, 33676, 47384, 47400, 47418, 47419, 47420, 47421, 47431, 48619, 49885, 53410, 57620, 65043, 65127, 85914, 86027, 93531)
 
 	-- Tome of Illusions: Elemental Lords -- 217649
 	recipe = AddRecipe(217649, V.LEGION, Q.COMMON)
@@ -3392,7 +3392,7 @@ function module:InitializeRecipes()
 	recipe:SetSkillLevels(575, 575, 615, 615, 615)
 	recipe:SetCraftedItem(138793, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("ENCHANTING_ILLUSION")
-	recipe:AddTrainer(1317, 3011, 3345, 3606, 4213, 4616, 5157, 5695, 7949, 11072, 11073, 11074, 16160, 16633, 16725, 18753, 18773, 19251, 19252, 19540, 26906, 26990, 28693, 33583, 33610, 33633, 33676, 47384, 47396, 47400, 47418, 47419, 47420, 47421, 47431, 48619, 49885, 53410, 57620, 65043, 65127, 85914, 86027, 93531)
+	recipe:AddTrainer(1317, 3011, 3345, 3606, 4213, 4616, 5157, 5695, 7949, 11072, 11073, 11074, 16160, 16633, 16725, 18753, 18773, 19251, 19252, 19540, 26906, 26990, 28693, 33583, 33610, 33633, 33676, 47384, 47400, 47418, 47419, 47420, 47421, 47431, 48619, 49885, 53410, 57620, 65043, 65127, 85914, 86027, 93531)
 
 	-- Tome of Illusions: Secrets of the Shado-Pan -- 217651
 	recipe = AddRecipe(217651, V.LEGION, Q.RARE)
@@ -3594,6 +3594,620 @@ function module:InitializeRecipes()
 	recipe:SetCraftedItem(124441, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("ENCHANTING_MATERIALS")
 	recipe:AddRepVendor(FAC.ARGUSSIAN_REACH, REP.FRIENDLY, 127151)
+
+	-- ----------------------------------------------------------------------------
+	-- Battle for Azeroth.
+	-- ----------------------------------------------------------------------------
+	-- Kul Tiran Herbalism -- 255035
+	recipe = AddRecipe(255035, V.BFA, Q.RARE)
+	recipe:SetSkillLevels(1, 1, 11, 16, 21)
+	recipe:SetCraftedItem(153430, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("ENCHANTING_BRACER")
+	recipe:SetRequiredFaction("Alliance")
+	recipe:AddTrainer(136041)
+
+	-- Kul Tiran Mining -- 255040
+	recipe = AddRecipe(255040, V.BFA, Q.RARE)
+	recipe:SetSkillLevels(1, 1, 11, 16, 21)
+	recipe:SetCraftedItem(153431, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("ENCHANTING_BRACER")
+	recipe:SetRequiredFaction("Alliance")
+	recipe:AddTrainer(136041)
+
+	-- Kul Tiran Skinning -- 255065
+	recipe = AddRecipe(255065, V.BFA, Q.RARE)
+	recipe:SetSkillLevels(1, 1, 11, 16, 21)
+	recipe:SetCraftedItem(153434, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("ENCHANTING_BRACER")
+	recipe:SetRequiredFaction("Alliance")
+	recipe:AddTrainer(136041)
+
+	-- Kul Tiran Surveying -- 255066
+	recipe = AddRecipe(255066, V.BFA, Q.RARE)
+	recipe:SetSkillLevels(1, 1, 11, 16, 21)
+	recipe:SetCraftedItem(153435, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("ENCHANTING_BRACER")
+	recipe:SetRequiredFaction("Alliance")
+	recipe:AddTrainer(136041)
+
+	-- Swift Hearthing -- 255068
+	recipe = AddRecipe(255068, V.BFA, Q.RARE)
+	recipe:SetSkillLevels(10, 10, 20, 25, 30)
+	recipe:SetCraftedItem(153436, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("ENCHANTING_BRACER")
+	recipe:SetRequiredFaction("Alliance")
+	recipe:AddTrainer(136041)
+
+	-- Kul Tiran Crafting -- 255070
+	recipe = AddRecipe(255070, V.BFA, Q.RARE)
+	recipe:SetSkillLevels(10, 10, 10, 30, 50)
+	recipe:SetCraftedItem(153436, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("ENCHANTING_BRACER")
+	recipe:SetRequiredFaction("Alliance")
+	recipe:AddCustom("DEFAULT_RECIPE")
+
+	-- Seal of Critical Strike -- 255071
+	recipe = AddRecipe(255071, V.BFA, Q.UNCOMMON)
+	recipe:SetSkillLevels(1, 1, 11, 16, 21)
+	recipe:SetCraftedItem(153438, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("ENCHANTING_RING")
+	recipe:AddTrainer(122702, 136041)
+
+	-- Seal of Haste -- 255072
+	recipe = AddRecipe(255072, V.BFA, Q.UNCOMMON)
+	recipe:SetSkillLevels(1, 1, 11, 16, 21)
+	recipe:SetCraftedItem(153439, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("ENCHANTING_RING")
+	recipe:AddTrainer(122702, 136041)
+
+	-- Seal of Mastery -- 255073
+	recipe = AddRecipe(255073, V.BFA, Q.UNCOMMON)
+	recipe:SetSkillLevels(1, 1, 11, 16, 21)
+	recipe:SetCraftedItem(153440, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("ENCHANTING_RING")
+	recipe:AddTrainer(122702, 136041)
+
+	-- Seal of Versatility -- 255074
+	recipe = AddRecipe(255074, V.BFA, Q.UNCOMMON)
+	recipe:SetSkillLevels(1, 1, 25, 37, 50)
+	recipe:SetCraftedItem(153441, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("ENCHANTING_RING")
+	recipe:AddCustom("DEFAULT_RECIPE")
+
+	-- Pact of Critical Strike -- 255075
+	recipe = AddRecipe(255075, V.BFA, Q.COMMON)
+	recipe:SetSkillLevels(75, 75, 85, 90, 95)
+	recipe:SetCraftedItem(153442, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("ENCHANTING_RING")
+	recipe:AddTrainer(122702, 136041)
+
+	-- Pact of Haste -- 255076
+	recipe = AddRecipe(255076, V.BFA, Q.COMMON)
+	recipe:SetSkillLevels(75, 75, 85, 90, 95)
+	recipe:SetCraftedItem(153443, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("ENCHANTING_RING")
+	recipe:AddTrainer(122702, 136041)
+
+	-- Pact of Mastery -- 255077
+	recipe = AddRecipe(255077, V.BFA, Q.COMMON)
+	recipe:SetSkillLevels(75, 75, 85, 90, 95)
+	recipe:SetCraftedItem(153447, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("ENCHANTING_RING")
+	recipe:AddTrainer(122702, 136041)
+
+	-- Pact of Versatility -- 255078
+	recipe = AddRecipe(255078, V.BFA, Q.COMMON)
+	recipe:SetSkillLevels(75, 75, 85, 90, 95)
+	recipe:SetCraftedItem(153445, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("ENCHANTING_RING")
+	recipe:AddTrainer(122702, 136041)
+
+	-- Seal of Critical Strike -- 255086
+	recipe = AddRecipe(255086, V.BFA, Q.COMMON)
+	recipe:SetSkillLevels(35, 35, 45, 50, 55)
+	recipe:SetCraftedItem(153438, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("ENCHANTING_RING")
+	recipe:AddTrainer(122702, 136041)
+
+	-- Seal of Haste -- 255087
+	recipe = AddRecipe(255087, V.BFA, Q.COMMON)
+	recipe:SetSkillLevels(35, 35, 45, 50, 55)
+	recipe:SetCraftedItem(153439, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("ENCHANTING_RING")
+	recipe:AddTrainer(122702, 136041)
+
+	-- Seal of Mastery -- 255088
+	recipe = AddRecipe(255088, V.BFA, Q.COMMON)
+	recipe:SetSkillLevels(35, 35, 45, 50, 55)
+	recipe:SetCraftedItem(153440, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("ENCHANTING_RING")
+	recipe:AddTrainer(122702, 136041)
+
+	-- Seal of Versatility -- 255089
+	recipe = AddRecipe(255089, V.BFA, Q.COMMON)
+	recipe:SetSkillLevels(35, 35, 45, 50, 55)
+	recipe:SetCraftedItem(153441, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("ENCHANTING_RING")
+	recipe:AddTrainer(122702, 136041)
+
+	-- Pact of Critical Strike -- 255090
+	recipe = AddRecipe(255090, V.BFA, Q.COMMON)
+	recipe:SetSkillLevels(100, 100, 110, 115, 120)
+	recipe:SetCraftedItem(153442, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("ENCHANTING_RING")
+	recipe:AddTrainer(122702, 136041)
+
+	-- Pact of Haste -- 255091
+	recipe = AddRecipe(255091, V.BFA, Q.COMMON)
+	recipe:SetSkillLevels(100, 100, 110, 115, 120)
+	recipe:SetCraftedItem(153443, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("ENCHANTING_RING")
+	recipe:AddTrainer(122702, 136041)
+
+	-- Pact of Mastery -- 255092
+	recipe = AddRecipe(255092, V.BFA, Q.COMMON)
+	recipe:SetSkillLevels(100, 100, 110, 115, 120)
+	recipe:SetCraftedItem(153444, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("ENCHANTING_RING")
+	recipe:AddTrainer(122702, 136041)
+
+	-- Pact of Versatility -- 255093
+	recipe = AddRecipe(255093, V.BFA, Q.COMMON)
+	recipe:SetSkillLevels(100, 100, 110, 115, 120)
+	recipe:SetCraftedItem(153445, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("ENCHANTING_RING")
+	recipe:AddTrainer(122702, 136041)
+
+	-- Seal of Critical Strike -- 255094
+	recipe = AddRecipe(255094, V.BFA, Q.UNCOMMON)
+	recipe:SetSkillLevels(60, 60, 75, 87, 100)
+	recipe:SetCraftedItem(153438, "BIND_ON_EQUIP")
+	recipe:SetRecipeItem(162298, "BIND_ON_PICKUP")
+	recipe:SetItemFilterType("ENCHANTING_RING")
+	recipe:AddRepVendor(FAC.TORTOLLAN_SEEKERS, REP.REVERED, 134345, 135793)
+
+	-- Seal of Haste -- 255095
+	recipe = AddRecipe(255095, V.BFA, Q.UNCOMMON)
+	recipe:SetSkillLevels(60, 60, 75, 87, 100)
+	recipe:SetCraftedItem(153439, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("ENCHANTING_RING")
+	recipe:AddQuest(52353, 52358)
+
+	-- Seal of Mastery -- 255096
+	recipe = AddRecipe(255096, V.BFA, Q.UNCOMMON)
+	recipe:SetSkillLevels(60, 60, 75, 87, 100)
+	recipe:SetCraftedItem(153440, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("ENCHANTING_RING")
+	recipe:AddQuest(52354, 52359)
+
+	-- Seal of Versatility -- 255097
+	recipe = AddRecipe(255097, V.BFA, Q.UNCOMMON)
+	recipe:SetSkillLevels(60, 60, 75, 87, 100)
+	recipe:SetCraftedItem(153441, "BIND_ON_EQUIP")
+	recipe:SetRecipeItem(162301, "BIND_ON_PICKUP")
+	recipe:SetItemFilterType("ENCHANTING_RING")
+	recipe:AddRepVendor(FAC.TORTOLLAN_SEEKERS, REP.REVERED, 134345, 135793)
+
+	-- Pact of Critical Strike -- 255098
+	recipe = AddRecipe(255098, V.BFA, Q.COMMON)
+	recipe:SetSkillLevels(1, 1, 115, 132, 150)
+	recipe:SetCraftedItem(153442, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("ENCHANTING_RING")
+	recipe:SetRecipeItem(162302, "BIND_ON_PICKUP")
+	recipe:AddRepVendor(FAC.SEVENTH_LEGION, REP.REVERED, 135446)
+	recipe:AddRepVendor(FAC.THE_HONORBOUND, REP.REVERED, 135447)
+
+	-- Pact of Haste -- 255099
+	recipe = AddRecipe(255099, V.BFA, Q.COMMON)
+	recipe:SetSkillLevels(1, 1, 115, 132, 150)
+	recipe:SetCraftedItem(153443, "BIND_ON_EQUIP")
+	recipe:SetRecipeItem(162303, "BIND_ON_PICKUP")
+	recipe:SetItemFilterType("ENCHANTING_RING")
+	recipe:AddRepVendor(FAC.ZANDALARI_EMPIRE, REP.REVERED, 131287)
+	recipe:AddRepVendor(FAC.STORMS_WAKE, REP.REVERED, 135800)
+
+	-- Pact of Mastery -- 255100
+	recipe = AddRecipe(255100, V.BFA, Q.COMMON)
+	recipe:SetSkillLevels(1, 1, 115, 132, 150)
+	recipe:SetCraftedItem(153444, "BIND_ON_EQUIP")
+	recipe:SetRecipeItem(162304, "BIND_ON_PICKUP")
+	recipe:SetItemFilterType("ENCHANTING_RING")
+	recipe:AddRepVendor(FAC.PROUDMOORE_ADMIRALTY, REP.REVERED, 135808)
+	recipe:AddRepVendor(FAC.TALANJIS_EXPEDITION, REP.REVERED, 135459)
+
+	-- Pact of Versatility -- 255101
+	recipe = AddRecipe(255101, V.BFA, Q.COMMON)
+	recipe:SetSkillLevels(1, 1, 115, 132, 150)
+	recipe:SetCraftedItem(153445, "BIND_ON_EQUIP")
+	recipe:SetRecipeItem(162305, "BIND_ON_PICKUP")
+	recipe:SetItemFilterType("ENCHANTING_RING")
+	recipe:AddRepVendor(FAC.ORDER_OF_EMBERS, REP.REVERED, 135815)
+	recipe:AddRepVendor(FAC.VOLDUNAI, REP.REVERED, 135804)
+
+	-- Weapon Enchant - Coastal Surge -- 255103
+	recipe = AddRecipe(255103, V.BFA, Q.UNCOMMON)
+	recipe:SetSkillLevels(40, 40, 50, 55, 60)
+	recipe:SetCraftedItem(153476, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("ENCHANTING_WEAPON")
+	recipe:AddTrainer(122702, 136041)
+
+	-- Weapon Enchant - Coastal Surge -- 255104
+	recipe = AddRecipe(255104, V.BFA, Q.UNCOMMON)
+	recipe:SetSkillLevels(95, 95, 105, 110, 115)
+	recipe:SetCraftedItem(153476, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("ENCHANTING_WEAPON")
+	recipe:AddTrainer(122702, 136041)
+
+	-- Weapon Enchant - Coastal Surge -- 255105
+	recipe = AddRecipe(255105, V.BFA, Q.UNCOMMON)
+	recipe:SetSkillLevels(95, 95, 115, 130, 145)
+	recipe:SetRecipeItem(162315, "BIND_ON_PICKUP")
+	recipe:SetCraftedItem(153476, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("ENCHANTING_WEAPON")
+	recipe:AddQuest(52355, 52360)
+
+	-- Weapon Enchant - Siphoning -- 255110
+	recipe = AddRecipe(255110, V.BFA, Q.COMMON)
+	recipe:SetSkillLevels(40, 40, 50, 55, 60)
+	recipe:SetCraftedItem(153478, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("ENCHANTING_WEAPON")
+	recipe:AddTrainer(122702, 136041)
+
+	-- Weapon Enchant - Siphoning -- 255111
+	recipe = AddRecipe(255111, V.BFA, Q.COMMON)
+	recipe:SetSkillLevels(95, 95, 105, 110, 115)
+	recipe:SetCraftedItem(153478, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("ENCHANTING_WEAPON")
+	recipe:AddTrainer(122702, 136041)
+
+	-- Weapon Enchant - Siphoning -- 255112
+	recipe = AddRecipe(255112, V.BFA, Q.COMMON)
+	recipe:SetSkillLevels(95, 95, 115, 130, 145)
+	recipe:SetCraftedItem(153478, "BIND_ON_EQUIP")
+	recipe:SetRecipeItem(162316, "BIND_ON_PICKUP")
+	recipe:SetItemFilterType("ENCHANTING_WEAPON")
+	recipe:AddRepVendor(FAC.PROUDMOORE_ADMIRALTY, REP.REVERED, 135808)
+	recipe:AddRepVendor(FAC.TALANJIS_EXPEDITION, REP.REVERED, 135459)
+
+	-- Weapon Enchant - Torrent of Elements -- 255129
+	recipe = AddRecipe(255129, V.BFA, Q.UNCOMMON)
+	recipe:SetSkillLevels(40, 40, 50, 55, 60)
+	recipe:SetCraftedItem(153479, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("ENCHANTING_WEAPON")
+	recipe:AddTrainer(122702, 136041)
+
+	-- Weapon Enchant - Torrent of Elements -- 255130
+	recipe = AddRecipe(255130, V.BFA, Q.UNCOMMON)
+	recipe:SetSkillLevels(95, 95, 105, 110, 115)
+	recipe:SetCraftedItem(153479, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("ENCHANTING_WEAPON")
+	recipe:AddTrainer(122702, 136041)
+
+	-- Weapon Enchant - Torrent of Elements -- 255131
+	recipe = AddRecipe(255131, V.BFA, Q.UNCOMMON)
+	recipe:SetSkillLevels(95, 95, 115, 130, 145)
+	recipe:SetCraftedItem(153479, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("ENCHANTING_WEAPON")
+	recipe:AddQuest(52356, 52361)
+
+	-- Weapon Enchant - Gale-Force Striking -- 255141
+	recipe = AddRecipe(255141, V.BFA, Q.UNCOMMON)
+	recipe:SetSkillLevels(40, 40, 50, 55, 60)
+	recipe:SetCraftedItem(153480, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("ENCHANTING_WEAPON")
+	recipe:AddTrainer(122702, 136041)
+
+	-- Weapon Enchant - Gale-Force Striking -- 255142
+	recipe = AddRecipe(255142, V.BFA, Q.UNCOMMON)
+	recipe:SetSkillLevels(95, 95, 105, 110, 115)
+	recipe:SetCraftedItem(153480, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("ENCHANTING_WEAPON")
+	recipe:AddTrainer(122702, 136041)
+
+	-- Weapon Enchant - Gale-Force Striking -- 255143
+	recipe = AddRecipe(255143, V.BFA, Q.UNCOMMON)
+	recipe:SetSkillLevels(95, 95, 115, 130, 145)
+	recipe:SetCraftedItem(153480, "BIND_ON_EQUIP")
+	recipe:SetRecipeItem(162318, "BIND_ON_PICKUP")
+	recipe:SetItemFilterType("ENCHANTING_WEAPON")
+	recipe:AddRepVendor(FAC.ORDER_OF_EMBERS, REP.REVERED, 135815)
+	recipe:AddRepVendor(FAC.VOLDUNAI, REP.REVERED, 135804)
+
+	-- Enchanter's Umbral Wand -- 265106
+	recipe = AddRecipe(265106, V.BFA, Q.UNCOMMON)
+	recipe:SetSkillLevels(10, 10, 20, 25, 30)
+	recipe:SetCraftedItem(152872, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("ENCHANTING_WAND")
+	recipe:AddTrainer(122702, 136041)
+
+	-- Enchanter's Sorcerous Scepter -- 265110
+	recipe = AddRecipe(265110, V.BFA, Q.COMMON)
+	recipe:SetSkillLevels(85, 85, 95, 100, 105)
+	recipe:SetCraftedItem(152874, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("ENCHANTING_WAND")
+	recipe:AddTrainer(122702, 136041)
+
+	-- Enchanter's Sorcerous Scepter -- 265111
+	recipe = AddRecipe(265111, V.BFA, Q.COMMON)
+	recipe:SetSkillLevels(100, 100, 110, 115, 120)
+	recipe:SetCraftedItem(152874, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("ENCHANTING_WAND")
+	recipe:AddTrainer(122702, 136041)
+
+	-- Enchanter's Sorcerous Scepter -- 265112
+	recipe = AddRecipe(265112, V.BFA, Q.COMMON)
+	recipe:SetSkillLevels(100, 100, 125, 137, 150)
+	recipe:SetCraftedItem(152874, "BIND_ON_EQUIP")
+	recipe:SetRecipeItem(162306, "BIND_ON_PICKUP")
+	recipe:SetItemFilterType("ENCHANTING_WAND")
+	recipe:AddRepVendor(FAC.SEVENTH_LEGION, REP.REVERED, 135446)
+	recipe:AddRepVendor(FAC.THE_HONORBOUND, REP.REVERED, 135447)
+
+	-- Zandalari Herbalism -- 267458
+	recipe = AddRecipe(267458, V.BFA, Q.RARE)
+	recipe:SetSkillLevels(1, 1, 11, 16, 21)
+	recipe:SetCraftedItem(159464, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("ENCHANTING_BRACER")
+	recipe:SetRequiredFaction("Horde")
+	recipe:AddTrainer(122702)
+
+	-- Zandalari Mining -- 267482
+	recipe = AddRecipe(267482, V.BFA, Q.RARE)
+	recipe:SetSkillLevels(1, 1, 11, 16, 21)
+	recipe:SetCraftedItem(159466, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("ENCHANTING_BRACER")
+	recipe:SetRequiredFaction("Horde")
+	recipe:AddTrainer(122702)
+
+	-- Zandalari Skinning -- 267486
+	recipe = AddRecipe(267486, V.BFA, Q.RARE)
+	recipe:SetSkillLevels(1, 1, 11, 16, 21)
+	recipe:SetCraftedItem(159467, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("ENCHANTING_BRACER")
+	recipe:SetRequiredFaction("Horde")
+	recipe:AddTrainer(122702)
+
+	-- Zandalari Surveying -- 267490
+	recipe = AddRecipe(267490, V.BFA, Q.RARE)
+	recipe:SetSkillLevels(1, 1, 11, 16, 21)
+	recipe:SetCraftedItem(159468, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("ENCHANTING_BRACER")
+	recipe:SetRequiredFaction("Horde")
+	recipe:AddTrainer(122702)
+
+	-- Swift Hearthing -- 267495
+	recipe = AddRecipe(267495, V.BFA, Q.COMMON)
+	recipe:SetSkillLevels(10, 10, 20, 25, 30)
+	recipe:SetCraftedItem(159469, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("ENCHANTING_BRACER")
+	recipe:SetRequiredFaction("Horde")
+	recipe:AddTrainer(122702)
+
+	-- Zandalari Crafting -- 267498
+	recipe = AddRecipe(267498, V.BFA, Q.COMMON)
+	recipe:SetSkillLevels(10, 10, 10, 30, 50)
+	recipe:SetCraftedItem(159471, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("ENCHANTING_BRACER")
+	recipe:SetRequiredFaction("Horde")
+	recipe:AddCustom("DEFAULT_RECIPE")
+
+	-- Weapon Enchant - Versatile Navigation -- 268852
+	recipe = AddRecipe(268852, V.BFA, Q.UNCOMMON)
+	recipe:SetSkillLevels(60, 60, 70, 75, 80)
+	recipe:SetCraftedItem(159788, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("ENCHANTING_WEAPON")
+	recipe:AddTrainer(122702, 136041)
+
+	-- Weapon Enchant - Versatile Navigation -- 268878
+	recipe = AddRecipe(268878, V.BFA, Q.UNCOMMON)
+	recipe:SetSkillLevels(125, 125, 135, 140, 145)
+	recipe:SetCraftedItem(159788, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("ENCHANTING_WEAPON")
+	recipe:AddTrainer(122702, 136041)
+
+	-- Weapon Enchant - Versatile Navigation -- 268879
+	recipe = AddRecipe(268879, V.BFA, Q.UNCOMMON)
+	recipe:SetSkillLevels(125, 125, 150, 150, 150)
+	recipe:SetCraftedItem(159788, "BIND_ON_EQUIP")
+	recipe:SetRecipeItem(162320, "BIND_ON_PICKUP")
+	recipe:SetItemFilterType("ENCHANTING_WEAPON")
+	recipe:AddRepVendor(FAC.ORDER_OF_EMBERS, REP.REVERED, 135815)
+	recipe:AddRepVendor(FAC.VOLDUNAI, REP.REVERED, 135804)
+
+	-- Weapon Enchant - Quick Navigation -- 268894
+	recipe = AddRecipe(268894, V.BFA, Q.UNCOMMON)
+	recipe:SetSkillLevels(60, 60, 70, 75, 80)
+	recipe:SetCraftedItem(159786, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("ENCHANTING_WEAPON")
+	recipe:AddTrainer(122702, 136041)
+
+	-- Weapon Enchant - Quick Navigation -- 268895
+	recipe = AddRecipe(268895, V.BFA, Q.UNCOMMON)
+	recipe:SetSkillLevels(125, 125, 135, 140, 145)
+	recipe:SetCraftedItem(159786, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("ENCHANTING_WEAPON")
+	recipe:AddTrainer(122702, 136041)
+
+	-- Weapon Enchant - Quick Navigation -- 268897
+	recipe = AddRecipe(268897, V.BFA, Q.UNCOMMON)
+	recipe:SetSkillLevels(125, 125, 150, 150, 150)
+	recipe:SetCraftedItem(159786, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("ENCHANTING_WEAPON")
+	recipe:AddQuest(52357, 52362)
+
+	-- Weapon Enchant - Masterful Navigation -- 268901
+	recipe = AddRecipe(268901, V.BFA, Q.UNCOMMON)
+	recipe:SetSkillLevels(60, 60, 70, 75, 80)
+	recipe:SetCraftedItem(159787, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("ENCHANTING_WEAPON")
+	recipe:AddTrainer(122702, 136041)
+
+	-- Weapon Enchant - Masterful Navigation -- 268902
+	recipe = AddRecipe(268902, V.BFA, Q.UNCOMMON)
+	recipe:SetSkillLevels(125, 125, 135, 140, 145)
+	recipe:SetCraftedItem(159787, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("ENCHANTING_WEAPON")
+	recipe:AddTrainer(122702, 136041)
+
+	-- Weapon Enchant - Masterful Navigation -- 268903
+	recipe = AddRecipe(268903, V.BFA, Q.UNCOMMON)
+	recipe:SetSkillLevels(125, 125, 150, 150, 150)
+	recipe:SetCraftedItem(159787, "BIND_ON_EQUIP")
+	recipe:SetRecipeItem(162317, "BIND_ON_PICKUP")
+	recipe:SetItemFilterType("ENCHANTING_WEAPON")
+	recipe:AddRepVendor(FAC.PROUDMOORE_ADMIRALTY, REP.REVERED, 135808)
+	recipe:AddRepVendor(FAC.TALANJIS_EXPEDITION, REP.REVERED, 135459)
+
+	-- Weapon Enchant - Deadly Navigation -- 268907
+	recipe = AddRecipe(268907, V.BFA, Q.COMMON)
+	recipe:SetSkillLevels(60, 60, 70, 75, 80)
+	recipe:SetCraftedItem(159785, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("ENCHANTING_WEAPON")
+	recipe:AddTrainer(122702, 136041)
+
+	-- Weapon Enchant - Deadly Navigation -- 268908
+	recipe = AddRecipe(268908, V.BFA, Q.COMMON)
+	recipe:SetSkillLevels(125, 125, 135, 140, 145)
+	recipe:SetCraftedItem(159785, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("ENCHANTING_WEAPON")
+	recipe:AddTrainer(122702, 136041)
+
+	-- Weapon Enchant - Deadly Navigation -- 268909
+	recipe = AddRecipe(268909, V.BFA, Q.COMMON)
+	recipe:SetSkillLevels(125, 125, 150, 150, 150)
+	recipe:SetCraftedItem(159785, "BIND_ON_EQUIP")
+	recipe:SetRecipeItem(162313, "BIND_ON_PICKUP")
+	recipe:SetItemFilterType("ENCHANTING_WEAPON")
+	recipe:AddRepVendor(FAC.ZANDALARI_EMPIRE, REP.REVERED, 131287)
+	recipe:AddRepVendor(FAC.STORMS_WAKE, REP.REVERED, 135800)
+
+	-- Weapon Enchant - Stalwart Navigation -- 268913
+	recipe = AddRecipe(268913, V.BFA, Q.COMMON)
+	recipe:SetSkillLevels(60, 60, 70, 75, 80)
+	recipe:SetCraftedItem(159789, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("ENCHANTING_WEAPON")
+	recipe:AddTrainer(122702, 136041)
+
+	-- Weapon Enchant - Stalwart Navigation -- 268914
+	recipe = AddRecipe(268914, V.BFA, Q.COMMON)
+	recipe:SetSkillLevels(125, 125, 135, 140, 145)
+	recipe:SetCraftedItem(159789, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("ENCHANTING_WEAPON")
+	recipe:AddTrainer(122702, 136041)
+
+	-- Weapon Enchant - Stalwart Navigation -- 268915
+	recipe = AddRecipe(268915, V.BFA, Q.COMMON)
+	recipe:SetSkillLevels(125, 125, 150, 150, 150)
+	recipe:SetCraftedItem(159789, "BIND_ON_EQUIP")
+	recipe:SetRecipeItem(162312, "BIND_ON_PICKUP")
+	recipe:SetItemFilterType("ENCHANTING_WEAPON")
+	recipe:AddRepVendor(FAC.ZANDALARI_EMPIRE, REP.REVERED, 131287)
+	recipe:AddRepVendor(FAC.STORMS_WAKE, REP.REVERED, 135800)
+
+	-- Honorable Combatant's Sorcerous Scepter -- 269715
+	recipe = AddRecipe(269715, V.BFA, Q.EPIC)
+	recipe:SetSkillLevels(85, 85, 95, 100, 105)
+	recipe:SetCraftedItem(159922, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("ENCHANTING_WAND")
+	recipe:AddTrainer(122702, 136041)
+
+	-- Honorable Combatant's Sorcerous Scepter -- 269716
+	recipe = AddRecipe(269716, V.BFA, Q.EPIC)
+	recipe:SetSkillLevels(85, 85, 110, 127, 145)
+	recipe:SetCraftedItem(159922, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("ENCHANTING_WAND")
+	recipe:AddVendor(142552, 142564)
+
+	-- Honorable Combatant's Sorcerous Scepter -- 269719
+	recipe = AddRecipe(269719, V.BFA, Q.EPIC)
+	recipe:SetSkillLevels(85, 85, 115, 132, 150)
+	recipe:SetCraftedItem(159922, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("ENCHANTING_WAND")
+	recipe:AddVendor(142552, 142564)
+
+	-- Safe Hearthing -- 271366
+	recipe = AddRecipe(271366, V.BFA, Q.COMMON)
+	recipe:SetSkillLevels(10, 10, 20, 25, 30)
+	recipe:SetCraftedItem(160328, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("ENCHANTING_BRACER")
+	recipe:AddTrainer(122702, 136041)
+
+	-- Cooled Hearthing -- 271433
+	recipe = AddRecipe(271433, V.BFA, Q.COMMON)
+	recipe:SetSkillLevels(10, 10, 20, 25, 30)
+	recipe:SetCraftedItem(160330, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("ENCHANTING_BRACER")
+	recipe:AddTrainer(122702, 136041)
+
+	-- Disenchanting Rod -- 278418
+	recipe = AddRecipe(278418, V.BFA, Q.COMMON)
+	recipe:SetSkillLevels(60, 60, 70, 75, 80)
+	recipe:SetCraftedItem(165741, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("ENCHANTING_MISC")
+	recipe:AddTrainer(122702, 136041)
+
+	-- Sinister Combatant's Sorcerous Scepter -- 282851
+	recipe = AddRecipe(282851, V.BFA, Q.EPIC)
+	recipe:SetSkillLevels(130, 130, 140, 145, 150)
+	recipe:SetCraftedItem(164677, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("ENCHANTING_WAND")
+	recipe:AddTrainer(122702, 136041)
+
+	-- Sinister Combatant's Sorcerous Scepter -- 282855
+	recipe = AddRecipe(282855, V.BFA, Q.EPIC)
+	recipe:SetSkillLevels(140, 140, 140, 145, 150)
+	recipe:SetCraftedItem(164677, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("ENCHANTING_WAND")
+	recipe:AddVendor(142552, 142564)
+
+	-- Sinister Combatant's Sorcerous Scepter -- 282857
+	recipe = AddRecipe(282857, V.BFA, Q.EPIC)
+	recipe:SetSkillLevels(145, 145, 145, 147, 150)
+	recipe:SetCraftedItem(164677, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("ENCHANTING_WAND")
+	recipe:AddVendor(142552, 142564)
+
+	-- Enchanted Tiki Mask -- 285644
+	recipe = AddRecipe(285644, V.BFA, Q.RARE)
+	recipe:SetSkillLevels(140, 140, 140, 145, 150)
+	recipe:SetCraftedItem(152878, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("ENCHANTING_PET")
+	recipe:AddMobDrop(145616)
+
+	-- Sanguinated Invocation -- 286644
+	recipe = AddRecipe(286644, V.BFA, Q.COMMON)
+	recipe:SetSkillLevels(1, 1, 11, 16, 21)
+	recipe:SetCraftedItem(162461, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("ENCHANTING_MATERIALS")
+	recipe:AddTrainer(122702, 136041)
+
+	-- Sanguinated Expulsion -- 286665
+	recipe = AddRecipe(286665, V.BFA, Q.COMMON)
+	recipe:SetSkillLevels(1, 1, 11, 16, 21)
+	recipe:SetCraftedItem(152668, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("ENCHANTING_MATERIALS")
+	recipe:AddTrainer(122702, 136041)
+
+	-- Aqueous Invocation -- 287270
+	recipe = AddRecipe(287270, V.BFA, Q.COMMON)
+	recipe:SetSkillLevels(1, 1, 11, 16, 21)
+	recipe:SetCraftedItem(162460, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("ENCHANTING_MATERIALS")
+	recipe:AddTrainer(122702, 136041)
+
+	-- Umbra Shatter -- 290360
+	recipe = AddRecipe(290360, V.BFA, Q.COMMON)
+	recipe:SetSkillLevels(40, 40, 50, 55, 60)
+	recipe:SetCraftedItem(152875, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("ENCHANTING_MATERIALS")
+	recipe:AddTrainer(122702, 136041)
+
+	-- Veiled Shatter -- 290361
+	recipe = AddRecipe(290361, V.BFA, Q.COMMON)
+	recipe:SetSkillLevels(85, 85, 95, 100, 105)
+	recipe:SetCraftedItem(152876, "BIND_ON_EQUIP")
+	recipe:SetItemFilterType("ENCHANTING_MATERIALS")
+	recipe:AddTrainer(122702, 136041)
 
 	self.InitializeRecipes = nil
 end

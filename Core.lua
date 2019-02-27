@@ -2,7 +2,7 @@
 -- Constants
 -------------------------------------------------------------------------------
 local MODULE_NAME = "Enchanting"
-local MODULE_VERSION = 2
+local MODULE_VERSION = 3
 
 -------------------------------------------------------------------------------
 -- AddOn namespace.

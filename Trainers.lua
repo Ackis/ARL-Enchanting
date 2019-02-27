@@ -64,6 +64,9 @@ function module:InitializeTrainers()
 	AddTrainer(86027, "Hane'ke", 			Z.WARSPEAR, 			78.8, 52.4, "Horde")
 	AddTrainer(93531, "Enchanter Nalthanis",	Z.DALARAN_BROKENISLES,		38.3, 40.4, "Neutral")
 	AddTrainer(98017, "Guron Twaintail",		Z.THUNDER_TOTEM,		44.5, 45.5, "Neutral")
+	AddTrainer(122702, "Enchantress Quinni", 	Z.DAZARALOR,			47.01, 35.78, "Horde")
+	AddTrainer(136041, "Emily Fairweather", 	Z.BORALUS, 			74.07, 11.44, "Alliance")
+
 
 	self.InitializeTrainers = nil
 end

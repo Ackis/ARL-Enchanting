@@ -48,7 +48,6 @@ function module:InitializeMobDrops()
 	AddMob(10398,	L["Thuzadin Shadowcaster"],		Z.STRATHOLME)
 	AddMob(10422,	L["Risen Sorcerer"],			Z.STRATHOLME)
 	AddMob(10469,	L["Scholomance Adept"],			Z.SCHOLOMANCE)
-	AddMob(10499,	L["Spectral Researcher"],		Z.SCHOLOMANCE)
 	AddMob(14276,	L["Scargil"],				Z.HILLSBRAD_FOOTHILLS,			26.6, 71.2)
 	AddMob(15275,	BN.THE_TWIN_EMPERORS,			Z.AHNQIRAJ_THE_FALLEN_KINGDOM)
 	AddMob(15687,	BN.MOROES,				Z.KARAZHAN)
@@ -71,6 +70,7 @@ function module:InitializeMobDrops()
 	AddMob(26336,	L["Indu'le Mystic"],			Z.DRAGONBLIGHT,				40.2, 65.5)
 	AddMob(26343,	L["Indu'le Fisherman"],			Z.DRAGONBLIGHT,				40.2, 65.5)
 	AddMob(26344,	L["Indu'le Warrior"],			Z.DRAGONBLIGHT,				40.2, 65.5)
+	AddMob(145616,	BN.KING_RASTAKHAN,			Z.BATTLE_OF_DAZARALOR,			0.0, 0.0)
 
 	self.InitializeMobDrops = nil
 end
