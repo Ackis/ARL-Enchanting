@@ -4167,6 +4167,10 @@ function module:InitializeRecipes()
 	recipe:SetItemFilterType("ENCHANTING_WAND")
 	recipe:AddVendor(142552, 142564)
 
+	-- Enchant Runic Power Core -- 284415
+	recipe = AddRecipe(284415, V.BFA, Q.COMMON)
+	recipe:SetSkillLevels(0, 0, 0, 0, 0)
+
 	-- Enchanted Tiki Mask -- 285644
 	recipe = AddRecipe(285644, V.BFA, Q.RARE)
 	recipe:SetSkillLevels(140, 140, 140, 145, 150)
@@ -4194,6 +4198,13 @@ function module:InitializeRecipes()
 	recipe:SetCraftedItem(162460, "BIND_ON_EQUIP")
 	recipe:SetItemFilterType("ENCHANTING_MATERIALS")
 	recipe:AddTrainer(122702, 136041)
+
+	-- Iwen's Enchanting Rod -- 287494
+	recipe = AddRecipe(287494, V.BFA, Q.COMMON)
+	recipe:SetSkillLevels(150, 150, 150, 150, 150)
+	recipe:SetCraftedItem(164766, "BIND_ON_PICKUP")
+	recipe:SetItemFilterType("ENCHANTING_MISC")
+	recipe:AddQuest(54005, 54161)
 
 	-- Umbra Shatter -- 290360
 	recipe = AddRecipe(290360, V.BFA, Q.COMMON)
